@@ -10,6 +10,7 @@ export default defineConfig({
   ],
   themeConfig: {
     nav: [
+      { text: '無料版と有料版', link: '/guide/editions' },
       { text: '導入', link: '/guide/install' },
       { text: '使い方', link: '/guide/auto-fix' },
       { text: 'FAQ', link: '/faq' },
@@ -21,6 +22,7 @@ export default defineConfig({
         text: 'はじめに',
         items: [
           { text: 'Avatar Blink Fix とは', link: '/' },
+          { text: '無料版と有料版の違い', link: '/guide/editions' },
           { text: '導入方法', link: '/guide/install' },
           { text: '2.x をお使いの方へ', link: '/guide/from-2x' },
         ],
