@@ -9,8 +9,8 @@ hero:
     alt: Avatar Blink Fix
   actions:
     - theme: brand
-      text: 導入方法を見る
-      link: /guide/install
+      text: VCC / ALCOM に追加
+      link: /add
     - theme: alt
       text: 使い方を見る
       link: /guide/auto-fix
@@ -62,6 +62,8 @@ VRChatで使われるまばたきのBlendShapeを、自動で正しい形へ修�
 
 **VCC / ALCOM に直接導入できるようになりました。**
 アップデートのたびにファイルを入れ直す必要はもうありません。新しいバージョンが出たら「更新」を押すだけです。
+
+**→ [VCC / ALCOM に追加する](/add)**（ボタンひとつで登録できます）
 
 ![ALCOMのパッケージ管理画面。Avatar Blink Fix の行と追加ボタン](/images/alcom-add-package.png)
 
