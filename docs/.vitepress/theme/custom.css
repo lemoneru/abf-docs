@@ -31,6 +31,75 @@
   text-align: center;
 }
 
+/* FAQ: 質問一覧のジャンプリンク */
+.faq-index {
+  margin: 20px 0 8px;
+  padding: 14px 18px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-soft);
+  line-height: 2;
+}
+.faq-index p {
+  margin: 0 !important;
+}
+
+/* FAQ: 質問は畳んでおき、クリックで開く */
+.vp-doc details {
+  margin: 8px 0;
+  padding: 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-soft);
+  transition: border-color 0.2s;
+}
+.vp-doc details:hover {
+  border-color: var(--vp-c-brand-1);
+}
+.vp-doc details > summary {
+  padding: 12px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-left: 38px;
+}
+.vp-doc details > summary::-webkit-details-marker {
+  display: none;
+}
+.vp-doc details > summary::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid var(--vp-c-text-3);
+  border-bottom: 2px solid var(--vp-c-text-3);
+  transform: translateY(-70%) rotate(-45deg);
+  transition: transform 0.2s;
+}
+.vp-doc details[open] > summary::before {
+  transform: translateY(-30%) rotate(45deg);
+}
+.vp-doc details[open] > summary {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.vp-doc details > summary + * {
+  margin-top: 14px;
+}
+.vp-doc details > *:not(summary) {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.vp-doc details > *:last-child:not(summary) {
+  margin-bottom: 14px;
+}
+/* details 内の details（旧「詳しくは」）は従来どおりの見た目に戻す */
+.vp-doc .custom-block.details {
+  margin: 16px 0;
+}
+
 /* VCC / ALCOM へのワンクリック追加ボタン */
 .vcc-button {
   display: inline-block;
