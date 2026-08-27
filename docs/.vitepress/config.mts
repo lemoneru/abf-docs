@@ -22,6 +22,7 @@ export default defineConfig({
         items: [
           { text: 'Avatar Blink Fix とは', link: '/' },
           { text: '導入方法', link: '/guide/install' },
+          { text: '2.x をお使いの方へ', link: '/guide/from-2x' },
         ],
       },
       {
