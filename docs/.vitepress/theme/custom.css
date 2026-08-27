@@ -31,6 +31,23 @@
   text-align: center;
 }
 
+/* VCC / ALCOM へのワンクリック追加ボタン */
+.vcc-button {
+  display: inline-block;
+  margin: 8px 0 4px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: var(--vp-button-brand-text) !important;
+  background-color: var(--vp-button-brand-bg);
+  border: 1px solid var(--vp-button-brand-border);
+  transition: background-color 0.2s;
+}
+.vcc-button:hover {
+  background-color: var(--vp-button-brand-hover-bg);
+}
+
 /* ヒーローのサムネイルも控えめに */
 .VPHero .image-container .image-src {
   max-width: 240px;

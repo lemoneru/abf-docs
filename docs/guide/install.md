@@ -13,9 +13,21 @@
 アップデートのたびにファイルを入れ直さなくてよくなります。新しいバージョンが出たら「更新」を押すだけ！
 :::
 
-1. 商品に同梱されている「**VCCに追加**」ショートカットを開く
-   （<https://lemoneru.github.io/vpm-repos/> から「Add to VCC」でもOK）
-2. VCC / ALCOM にリポジトリ「LEMONERU」を追加するか聞かれるので、承認する
+1. 下のボタンを押す（VCC / ALCOM が起動します）
+
+   <a class="vcc-button" href="vcc://vpm/addRepo?url=https%3A%2F%2Flemoneru.github.io%2Fvpm-repos%2Findex.json">VCC / ALCOM にリポジトリを追加</a>
+
+   ::: details ボタンで開かないときは
+   VCC / ALCOM の設定 →「Packages」→「Add Repository」に、次のURLを貼り付けてください。
+
+   ```
+   https://lemoneru.github.io/vpm-repos/index.json
+   ```
+
+   ご購入者は、商品に同梱されている「**VCCに追加**」ショートカットからでも同じことができます。
+   :::
+
+2. リポジトリ「LEMONERU」を追加するか聞かれるので、承認する
 3. プロジェクトのパッケージ管理で「**Avatar Blink Fix**」を探して、＋ボタンで追加する（検索欄に「blink」と入れると早いです）
 
    ![ALCOMのパッケージ管理画面。Avatar Blink Fix の行と追加ボタン](/images/alcom-add-package.png)
