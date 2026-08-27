@@ -12,5 +12,11 @@
 .figure-sm img {
   display: block;
   margin-inline: auto;
-  max-width: min(100%, 400px);
+  max-width: min(100%, 280px);
+}
+
+/* ヒーローのサムネイルも控えめに */
+.VPHero .image-container .image-src {
+  max-width: 240px;
+  max-height: 240px;
 }
