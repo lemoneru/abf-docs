@@ -3,3 +3,14 @@
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
 }
+
+/* 正方形の商品画像は大きくなりすぎるので幅を抑えて中央に置く */
+.figure-sm {
+  text-align: center;
+  margin: 24px 0;
+}
+.figure-sm img {
+  display: block;
+  margin-inline: auto;
+  max-width: min(100%, 400px);
+}
