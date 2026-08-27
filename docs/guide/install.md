@@ -13,9 +13,9 @@
 アップデートのたびにファイルを入れ直さなくてよくなります。新しいバージョンが出たら「更新」を押すだけ！
 :::
 
-1. 下のボタンを押す（VCC / ALCOM が起動します）
+1. [利用規約](/terms)を確認してチェックを入れ、ボタンを押す（VCC / ALCOM が起動します）
 
-   <a class="vcc-button" href="vcc://vpm/addRepo?url=https%3A%2F%2Flemoneru.github.io%2Fvpm-repos%2Findex.json">VCC / ALCOM にリポジトリを追加</a>
+   <AgreeInstall />
 
    ::: details ボタンで開かないときは
    VCC / ALCOM の設定 →「Packages」→「Add Repository」に、次のURLを貼り付けてください。

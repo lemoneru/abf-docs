@@ -48,6 +48,34 @@
   background-color: var(--vp-button-brand-hover-bg);
 }
 
+/* 同意チェックが入るまではボタンを押せない見た目にする */
+.vcc-button--disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+  background-color: var(--vp-button-alt-bg);
+  border-color: var(--vp-button-alt-border);
+  color: var(--vp-button-alt-text) !important;
+}
+.vcc-button--disabled:hover {
+  background-color: var(--vp-button-alt-bg);
+}
+.agree-install {
+  margin: 12px 0 4px;
+}
+.agree-install__check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.agree-install__check input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
 /* ヒーローのサムネイルも控えめに */
 .VPHero .image-container .image-src {
   max-width: 240px;

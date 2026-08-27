@@ -40,6 +40,7 @@ export default defineConfig({
         items: [
           { text: 'よくある質問（FAQ）', link: '/faq' },
           { text: '更新履歴', link: '/changelog' },
+          { text: '利用規約', link: '/terms' },
         ],
       },
     ],
@@ -69,7 +70,7 @@ export default defineConfig({
     sidebarMenuLabel: 'メニュー',
     darkModeSwitchLabel: 'ダークモード',
     footer: {
-      message: 'お問い合わせは <a href="https://lemoneru.booth.pm/items/7074770">BOOTH</a> のメッセージからお願いします。',
+      message: '<a href="/abf-docs/terms">利用規約</a>　|　お問い合わせは <a href="https://lemoneru.booth.pm/items/7074770">BOOTH</a> のメッセージからお願いします。',
       copyright: '© LEMONERU',
     },
   },
