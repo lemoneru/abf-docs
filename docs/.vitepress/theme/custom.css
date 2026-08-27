@@ -15,6 +15,22 @@
   max-width: min(100%, 280px);
 }
 
+/* 無料版／有料版の比較表: 1文字だけ折り返すのを防ぐため列幅を固定する */
+.editions-table table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.editions-table th:first-child,
+.editions-table td:first-child {
+  width: 46%;
+}
+.editions-table th:not(:first-child),
+.editions-table td:not(:first-child) {
+  width: 27%;
+  text-align: center;
+}
+
 /* ヒーローのサムネイルも控えめに */
 .VPHero .image-container .image-src {
   max-width: 240px;

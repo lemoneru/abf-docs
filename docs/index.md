@@ -30,7 +30,7 @@ features:
     details: MMD用のBlendShapeや、フェイストラッキング用の目閉じBlendShapeも修正できます。
   - icon: ✨
     title: 対応アバターはワンクリック
-    details: Auto Fixプリセットを133体分同梱。対応アバターなら選ぶだけで自動修復できます。
+    details: Auto Fixプリセットを130体以上同梱。対応アバターなら選ぶだけで自動修復できます。
 ---
 
 ## Avatar Blink Fix とは？
