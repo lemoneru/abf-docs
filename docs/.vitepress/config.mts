@@ -33,6 +33,7 @@ export default defineConfig({
         text: '使い方',
         items: [
           { text: '自動修正（推奨）', link: '/guide/auto-fix' },
+          { text: '手動修正（プリセットが無いとき）', link: '/guide/manual-fix' },
           { text: 'ベイクモード', link: '/guide/bake' },
           { text: 'メッシュ入れ替え式（従来方式）', link: '/guide/meshswap' },
         ],
