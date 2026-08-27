@@ -37,7 +37,7 @@ features:
 
 表情改変をすると、**まばたきや目を閉じるBlendShapeが破綻する**ことがあります。
 いい顔ができたのに、ゲーム内でまばたきすると目が突き抜ける・閉じきらない——
-Avatar Blink Fix は、その原因になっている目のBlendShapeそのものを修正して解決するツールです。
+Avatar Blink Fix は、その原因になっている目のBlendShapeそのものを修正するツールです。
 
 <div class="figure-sm">
 
@@ -46,6 +46,11 @@ Avatar Blink Fix は、その原因になっている目のBlendShapeそのも�
 </div>
 
 MMD用のBlendShapeや、フェイストラッキング用の目閉じBlendShapeも修正できます。
+
+::: tip 直すのは「BlendShape」です
+本ツールが直すのは、目のBlendShapeそのものです。
+ゲーム内での見え方は表情アニメーションの組み方にも左右されるため、アニメーションと競合している場合は[ベイクモード](/guide/bake)で対応できます。
+:::
 
 ## 無料でお試しできます
 
