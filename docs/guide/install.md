@@ -16,7 +16,10 @@
 1. 商品に同梱されている「**VCCに追加**」ショートカットを開く
    （<https://lemoneru.github.io/vpm-repos/> から「Add to VCC」でもOK）
 2. VCC / ALCOM にリポジトリ「LEMONERU」を追加するか聞かれるので、承認する
-3. プロジェクトの「Manage Project」で「**Avatar Blink Fix**」を追加する
+3. プロジェクトのパッケージ管理で「**Avatar Blink Fix**」を探して、＋ボタンで追加する（検索欄に「blink」と入れると早いです）
+
+   ![ALCOMのパッケージ管理画面。Avatar Blink Fix の行と追加ボタン](/images/alcom-add-package.png)
+
 4. Unity でプロジェクトを開けば、もう使える状態です
 
 ## unitypackage で導入する
