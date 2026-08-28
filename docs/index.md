@@ -1,5 +1,5 @@
 ---
-layout: home
+aside: false
 
 hero:
   name: Avatar Blink Fix
@@ -32,6 +32,8 @@ features:
     title: 対応アバターはワンクリック
     details: Auto Fixプリセットで100体以上のアバターに対応。選ぶだけで自動修復できます。
 ---
+
+<HomeTop />
 
 ## Avatar Blink Fix とは？
 

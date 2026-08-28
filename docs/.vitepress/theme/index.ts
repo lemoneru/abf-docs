@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 import AgreeInstall from './components/AgreeInstall.vue'
+import HomeTop from './components/HomeTop.vue'
 
 /**
  * FAQ は質問を <details> で畳んでいるため、`/faq#anchor` で来たときに
@@ -21,6 +22,7 @@ export default {
   extends: DefaultTheme,
   enhanceApp({ app, router }: { app: any; router: any }) {
     app.component('AgreeInstall', AgreeInstall)
+    app.component('HomeTop', HomeTop)
 
     if (typeof window !== 'undefined') {
       window.addEventListener('hashchange', openTargetDetails)
