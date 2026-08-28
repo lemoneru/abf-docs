@@ -153,7 +153,7 @@ BlendShape の値を変えて改変したら、そのあとで「表情を再読
 2. ごみ箱が空になっていたら、[Avatar Blink Fix の販売ページ（BOOTH）](https://lemoneru.booth.pm/items/7074770)の **2.x 最終版**から入れ直してください
 3. 3.0 を外すときは、VCC / ALCOM の Manage Project から削除します
 
-**`Data`・`Animation`・解除キーは残しておいて構いません。** 2.x の動作には影響しません。
+**`Data`・`Animation` はそのまま残してください**（2.x の修正の記録です）。3.0 の解除キーを入れてあっても、2.x の動作には影響しません。
 
 </details>
 
