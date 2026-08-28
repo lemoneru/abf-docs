@@ -15,18 +15,11 @@
   padding-left: 0;
   padding-right: 0;
 }
-.home-top .VPFeatures {
-  padding: 0;
-}
 /* ヒーローのサムネイルは商品画像なので、本文用のスクショ枠を付けない */
 .home-top img {
   border: none;
 }
-/* サイドバーぶん本文が狭いので、特徴カードは4列に詰めず2列で折り返す */
 @media (min-width: 960px) {
-  .home-top .VPFeatures .item.grid-4 {
-    width: 50%;
-  }
   /* 既定テーマはヒーロー画像を32px上へずらすが、doc レイアウトだと
      ナビの下へ潜って上端が切れるので、縦方向のずらしだけ打ち消す */
   .home-top .VPHero .image-container {

@@ -34,7 +34,7 @@ export default defineConfig({
         items: [
           { text: '実際の修正の流れ', link: '/guide/workflow' },
           { text: '自動修正（推奨）', link: '/guide/auto-fix' },
-          { text: 'ベイクモード（アニメーションと競合するとき）', link: '/guide/bake' },
+          { text: 'ベイクモード（強化版）', link: '/guide/bake' },
           { text: '手動修正（プリセットが無いとき）', link: '/guide/manual-fix' },
           { text: 'メッシュ入れ替え式（従来方式）', link: '/guide/meshswap' },
         ],

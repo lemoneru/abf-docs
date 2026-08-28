@@ -18,19 +18,6 @@ hero:
       text: BOOTH で入手
       link: https://lemoneru.booth.pm/items/7074770
 
-features:
-  - icon: 🖱️
-    title: 右クリック1回で修正
-    details: アバターを右クリック →「自動修正（推奨）」を押すだけ。あとはアップロードすれば反映されます。
-  - icon: 🧩
-    title: 元のアバターは書き換えません
-    details: メッシュはそのまま。追加されたオブジェクトを消せば、いつでも元通りです。
-  - icon: 🎌
-    title: MMD・フェイストラッキングにも
-    details: MMD用のBlendShapeや、フェイストラッキング用の目閉じBlendShapeも修正できます。
-  - icon: ✨
-    title: 対応アバターはワンクリック
-    details: Auto Fixプリセットで100体以上のアバターに対応。選ぶだけで自動修復できます。
 ---
 
 <HomeTop />
@@ -47,7 +34,12 @@ Avatar Blink Fix は、その原因になっている目のBlendShapeそのも�
 
 </div>
 
+**やることは、ヒエラルキーでアバターを右クリックして「自動修正」を押すだけ。**
+100体以上のアバターには Auto Fix プリセットが入っているので、どのBlendShapeを直すかを選ぶ必要もありません。
 MMD用のBlendShapeや、フェイストラッキング用の目閉じBlendShapeも修正できます。
+
+**元のアバターは書き換えません。** 修正が適用されるのはアップロードのときだけなので、
+追加されたオブジェクトを削除すれば、いつでも完全に元通りになります。
 
 ::: tip 直すのは「BlendShape」です
 本ツールが直すのは、目のBlendShapeそのものです。ゲーム内での見え方は、表情アニメーションの組み方にも左右されます。
