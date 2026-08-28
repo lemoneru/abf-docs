@@ -13,7 +13,7 @@ export default defineConfig({
       { text: 'VCC / ALCOM に追加', link: '/add' },
       { text: '無料版と有料版', link: '/guide/editions' },
       { text: '導入', link: '/guide/install' },
-      { text: '使い方', link: '/guide/auto-fix' },
+      { text: '使い方', link: '/guide/workflow' },
       { text: 'FAQ', link: '/faq' },
       { text: '更新履歴', link: '/changelog' },
       { text: 'BOOTH', link: 'https://lemoneru.booth.pm/items/7074770' },
@@ -32,6 +32,7 @@ export default defineConfig({
       {
         text: '使い方',
         items: [
+          { text: '実際の修正の流れ', link: '/guide/workflow' },
           { text: '自動修正（推奨）', link: '/guide/auto-fix' },
           { text: '手動修正（プリセットが無いとき）', link: '/guide/manual-fix' },
           { text: 'ベイクモード', link: '/guide/bake' },
