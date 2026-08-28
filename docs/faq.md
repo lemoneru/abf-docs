@@ -131,12 +131,42 @@ BlendShape の値を変えて改変したら、そのあとで「表情を再読
 
 </details>
 
+<details id="beta">
+<summary>3.0 のベータ版（8月のテスト版）を入れていました</summary>
+
+🔴 **VCC / ALCOM で入れる前に、先に削除が必要です。**
+
+`Assets\LEMONERU\Avatar Blink Fix\` に **`Editor` フォルダがある**方が対象です。
+
+1. **`Editor`・`Runtime`・`json`** の3つを削除する
+2. **`Data`・`Animation` は残す**（修正の記録と、生成したアニメーションです）
+3. そのあと VCC / ALCOM から入れる
+
+消さずに入れると名前が重複して、**Unity がセーフモードに入ります**。
+
+</details>
+
+<details id="revert-to-2x">
+<summary>2.x へ戻したくなったら</summary>
+
+1. **Unity を閉じて**、ごみ箱から前のバージョンのフォルダを戻す
+2. ごみ箱が空になっていたら、[Avatar Blink Fix の販売ページ（BOOTH）](https://lemoneru.booth.pm/items/7074770)の **2.x 最終版**から入れ直してください
+3. 3.0 を外すときは、VCC / ALCOM の Manage Project から削除します
+
+**`Data`・`Animation`・解除キーは残しておいて構いません。** 2.x の動作には影響しません。
+
+</details>
+
 <details id="ndmf">
 <summary>NDMF って必要ですか？</summary>
 
 [自動修正](/guide/auto-fix)・[ベイクモード](/guide/bake)といった非破壊の機能には必要です。VCC / ALCOM から導入すると一緒に入ります。
 
-NDMF が無い環境でも、[メッシュ入れ替え式](/guide/meshswap)（従来の窓）は使えます。
+::: tip ＋が押せない／「nadena.dev.ndmf が見つかりません」と出るとき
+NDMF のリポジトリを登録していない状態です。VCC / ALCOM に **`https://vpm.nadena.dev/`** も追加してください。
+:::
+
+NDMF が無い環境でも、[メッシュ入れ替え式](/guide/meshswap)（従来の窓）は使えます（**unitypackage で入れた場合**）。
 
 </details>
 
@@ -145,9 +175,9 @@ NDMF が無い環境でも、[メッシュ入れ替え式](/guide/meshswap)（�
 <details id="face-not-found">
 <summary>顔のメッシュが自動で見つからない／別のメッシュが選ばれる</summary>
 
-顔のオブジェクト名が `Body` でない場合や、複数のアバターを組み合わせた改変（キメラ）では、自動検出が外れることがあります。
+**3.0.7 で自動検出を作り直しました。** `Body` という名前でなくても、まばたき用の BlendShape を持っているかどうかを見て選ぶので、`Face` などの名前のアバターでも見つかります。まずは**最新版に更新**してみてください。
 
-インスペクタの「顔のメッシュ（自動選択）」の横にある「**手動設定**」にチェックを入れて、**顔のメッシュを直接指定**してください。
+それでも外れる場合（複数のアバターを組み合わせた改変など）は、インスペクタの「顔のメッシュ（自動選択）」の横にある「**手動設定**」にチェックを入れて、**顔のメッシュを直接指定**してください。指定すると、そのまま修正まで自動で進みます。
 
 </details>
 
