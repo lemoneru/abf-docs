@@ -50,6 +50,8 @@
 
 まばたきと表情の Animation を合成します。PhysBone やオブジェクトの ON/OFF など、BlendShape 以外のキーも消えずに引き継がれます。
 
+右クリックの自動修正でも同じことができます → [まばたきと表情アニメーションの合成](/guide/animation)
+
 ## Avatar Mouth Fix と併用する場合
 
 今のバージョンで併用できるのは、「メッシュ入れ替え式の通常修正」→「Avatar Mouth Fix」の順番だけです。

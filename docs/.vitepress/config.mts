@@ -38,6 +38,7 @@ export default defineConfig({
           { text: '通常モードとの違い', link: '/guide/bake-vs-normal' },
           { text: '手動修正（プリセットが無いとき）', link: '/guide/manual-fix' },
           { text: 'メッシュ入れ替え式（従来方式）', link: '/guide/meshswap' },
+          { text: 'まばたきと表情アニメーションの合成', link: '/guide/animation' },
         ],
       },
       {
