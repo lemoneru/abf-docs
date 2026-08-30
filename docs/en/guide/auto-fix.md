@@ -80,11 +80,9 @@ Supported avatar but no preset found? → See the [FAQ](/en/faq#preset-missing).
 
 ## Face tracking (FT) avatars
 
-When FT eye-close BlendShapes (EyeClosed and the like) are found, the tool proposes whether to include them in the fix.
+When FT eye-close BlendShapes are found, you can choose whether to include them. In normal mode the default is "**Don't include**". Switch to "Include in fix" only if FT eye closing breaks in-game.
 
-- In Auto Fix (normal mode), the default is "Don't include". FT avatars usually handle eye closing on the FT side, so there's no need to fix it twice
-- Choose "Include in fix" only if FT eye closing breaks in-game
-- [Bake Mode](/en/guide/bake) defaults to "Include in fix" instead (the reason is on the Bake Mode page)
+→ [Using Face Tracking](/en/guide/face-tracking)
 
 ---
 

@@ -177,6 +177,8 @@ In [Mesh Swap (Legacy)](/en/guide/meshswap), the fix record points at **the mesh
 
 The non-destructive [Auto Fix](/en/guide/auto-fix) doesn't swap the mesh, so it's much less prone to this.
 
+→ The order to work in: [Using Tools That Add BlendShapes](/en/guide/added-blendshapes)
+
 </details>
 
 <details id="cannot-revert">
@@ -237,11 +239,9 @@ The tool **shows such risky BlendShapes in red**. Remove them from the fix targe
 <details id="face-tracking">
 <summary>Does it work on FT avatars?</summary>
 
-Yes. FT eye-close BlendShapes (EyeClosed and the like) are detected automatically, and you choose whether to include them in the fix.
+Yes. FT eye-close BlendShapes (EyeClosed and the like) are detected automatically, and you choose whether to include them. Normal mode defaults to "**Don't include**"; Bake mode defaults to "**Include in fix**".
 
-- **Normal mode defaults to "Don't include."** FT avatars usually handle eye closing on the FT side
-- **Bake mode defaults to "Include in fix."** The reason is on the [Bake Mode page](/en/guide/bake#face-tracking-ft-avatars)
-- If FT eye closing breaks in-game, switch to "Include in fix" and try
+→ How to choose, why, and what it can't fix: [Using Face Tracking](/en/guide/face-tracking)
 
 </details>
 
@@ -250,7 +250,7 @@ Yes. FT eye-close BlendShapes (EyeClosed and the like) are detected automaticall
 
 This can come from how the FT addon's animations are built, and in that case this tool can't fix it.
 
-First, try **adding the FT eye-close BlendShapes to the fix targets** in Advanced Settings. If the symptom remains, check the FT addon's own settings.
+First, try switching the FT eye-close BlendShapes to "**Include in fix**" (→ [how](/en/guide/face-tracking)). If the symptom remains, check the FT addon's own settings.
 
 </details>
 

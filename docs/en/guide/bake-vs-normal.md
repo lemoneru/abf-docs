@@ -32,9 +32,9 @@ Baking turns the edited face into the new "base" face, so the foundation doesn't
 Both are non-destructive. Baking happens at upload (build) time, so the mesh in your scene stays untouched.
 
 ::: details Why is the face-tracking default reversed?
-FT avatars usually adjust eye closing by having animations zero out the edited BlendShapes. After baking, that zeroing hits nothing, so Bake mode has to fix it on this side.
+FT avatars usually adjust eye closing by having animations zero out the edited BlendShapes. After baking, that zeroing hits nothing. In normal mode the FT-side mechanism keeps working, so it's excluded by default. Both can be changed in the Inspector.
 
-In normal mode the FT-side mechanism keeps working, so it's excluded by default. Both can be changed with the Inspector toggle.
+→ [Using Face Tracking](/en/guide/face-tracking)
 :::
 
 ## Where Bake mode is weaker

@@ -64,11 +64,9 @@ When you're done editing, press "**Reload Expression**" to re-record the edited 
 
 ## Face tracking (FT) avatars
 
-In Bake mode, FT eye-close BlendShapes are **included in the fix by default** (the opposite of normal mode).
+In Bake mode, FT eye-close BlendShapes are **included in the fix by default** (the opposite of normal mode), because baking breaks the FT-side cancellation. Don't want that? Use the "Face Tracking BlendShapes" toggle in the Inspector.
 
-FT avatars usually adjust eye closing by having animations cancel out the edited BlendShapes — and baking breaks that cancellation. So when baking, the fix has to handle it on this side.
-
-Don't want that? Use the "Face Tracking BlendShapes" toggle in the Inspector.
+→ [Using Face Tracking](/en/guide/face-tracking)
 
 ## Undoing everything
 

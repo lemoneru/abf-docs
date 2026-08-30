@@ -102,5 +102,7 @@ To stop using the tool, delete the added "Avatar Blink Fix (NDMF)" object. The o
 | Using overdriven values (above 100 / negative) | [Bake Mode](/en/guide/bake) |
 | "Auto Fix (Recommended)" is grayed out | [Manual Fix](/en/guide/manual-fix) |
 | No NDMF / want the 2.x-style workflow | [Mesh Swap (Legacy)](/en/guide/meshswap) |
+| You use face tracking | [Using Face Tracking](/en/guide/face-tracking) |
+| You use a tool that adds BlendShapes | [Using Tools That Add BlendShapes](/en/guide/added-blendshapes) |
 | Want to fix MMD / face-tracking BlendShapes too | [Free vs Complete Edition](/en/guide/editions) |
 | Anything else that's not working | [FAQ](/en/faq) |
