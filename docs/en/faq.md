@@ -111,6 +111,8 @@ Some avatars don't have a BlendShape it can target, so the trial can't run on th
 - **Installed via unitypackage**: download the latest version from the product page and re-import
 - An avatar-side update can also break the preset match. [Manual Fix](/en/guide/manual-fix) still works, and if you [contact us](#contact) we'll consider updating the preset
 
+The list of supported avatars is on the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770).
+
 </details>
 
 <details id="avatar-updated">
@@ -137,7 +139,9 @@ For a summary of what changed in 3.0 → [Coming from 2.x](/en/guide/from-2x)
 <summary>I want to go back to 2.x</summary>
 
 The steps are in [Coming from 2.x: Going back to 2.x](/en/guide/from-2x#going-back-to-2-x).
-The key point: leave `Data` and `Animation` in place (they hold your 2.x fix records). A 3.0 unlock key that's already imported doesn't affect 2.x in any way.
+
+⚠️ **Don't install 2.x while 3.0 is still present** (Unity may stop compiling). **While 3.0 is still installed**, delete the ABF child objects under your avatar, then remove 3.0 before importing 2.x.
+Leave `Data`, `Animation`, `json` and the unlock key in place.
 
 </details>
 

@@ -84,8 +84,15 @@ Bake mode bakes your edited expression into the mesh before fixing. It may reduc
 
 ## Going back to 2.x
 
-1. **Close Unity**
-2. In VCC / ALCOM's Manage Project, remove Avatar Blink Fix 3.0
-3. Open the project in Unity and import the **final 2.x unitypackage** from the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770)
+::: warning Don't install 2.x while 3.0 is still present
+Duplicate classes and assemblies can stop Unity from compiling. **Remove 3.0 first.**
+:::
 
-Leave `Data` and `Animation` in place (they hold your 2.x fix records). A 3.0 unlock key that's already imported doesn't affect 2.x in any way.
+1. **While 3.0 is still installed**, delete the child objects it added under your avatar, then save the scene/prefab
+   (default names: "Avatar Blink Fix (NDMF)", "Avatar Blink Fix (NDMF・トライアル)", "Avatar Blink Fix (Bake)". Removing them first avoids leftover Missing Scripts)
+2. **Close Unity**
+3. In VCC / ALCOM's Manage Project, remove Avatar Blink Fix 3.0 — **do this first**
+4. Open the project in Unity and import the **final 2.x unitypackage** from the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770)
+5. Leave `Data`, `Animation`, `json` and the unlock key in place
+
+`Data` and `Animation` hold your 2.x fix records. A 3.0 unlock key that's already imported doesn't affect 2.x in any way.

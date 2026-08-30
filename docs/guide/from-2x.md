@@ -84,8 +84,15 @@
 
 ## 2.x へ戻したくなったら
 
-1. **Unity を閉じる**
-2. VCC / ALCOM の Manage Project から、Avatar Blink Fix 3.0 を削除する
-3. Unityでプロジェクトを開き、[Avatar Blink Fix の販売ページ（BOOTH）](https://lemoneru.booth.pm/items/7074770)にある **2.x 最終版のunitypackage**をインポートする
+::: warning 3.0 を残したまま 2.x を入れないでください
+同じ名前のクラスやアセンブリが二重になり、Unity のコンパイルが止まることがあります。**3.0 を先に外してください。**
+:::
 
-`Data`・`Animation` はそのまま残してください（2.x の修正の記録です）。3.0 の解除キーを入れてあっても、2.x の動作には影響しません。
+1. **3.0 が入っているうちに**、アバター直下に 3.0 が追加した子オブジェクトがあれば削除し、シーン／Prefab を保存する
+   （標準の名前は「Avatar Blink Fix (NDMF)」「Avatar Blink Fix (NDMF・トライアル)」「Avatar Blink Fix (Bake)」です。先に消しておかないと、外したあとに Missing Script が残ります）
+2. **Unity を閉じる**
+3. VCC / ALCOM の Manage Project から、Avatar Blink Fix 3.0 を**先に**外す
+4. Unity を開き、[Avatar Blink Fix の販売ページ（BOOTH）](https://lemoneru.booth.pm/items/7074770)にある **2.x 最終版のunitypackage**をインポートする
+5. `Data`・`Animation`・`json`・解除キーは、そのまま残して大丈夫です
+
+`Data`・`Animation` は 2.x の修正の記録です。3.0 の解除キーを入れてあっても、2.x の動作には影響しません。

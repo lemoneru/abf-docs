@@ -20,6 +20,7 @@ Installed via VCC / ALCOM? New versions are just the "Update" button — no need
 - Rebuilt the notice for leftover old versions around "**migration**" (one confirmation; the list of moved files goes to the Console)
 - Added a **[Docs (Web)]** button to the Inspector. The "Documentation" link in VCC / ALCOM now points to this site
 - Fixed the fix appearing unapplied right after reopening a project (upload results were never affected)
+- Made Manual Fix easier to use (BlendShapes used by your expression edits can no longer be picked as fix targets / the preview button works even with 0 targets / it now opens ready to edit)
 - Made Manual Fix easier to use (BlendShapes used by your expression can no longer be selected as fix targets / preview can be pressed with 0 items / opens ready to edit)
 
 ## 3.0.4 (2026-08-27)
