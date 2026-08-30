@@ -1,11 +1,5 @@
 # 導入方法
 
-## 動作環境
-
-- Unity 2022.3 系（VRChat 対応バージョン）
-- 非破壊機能（[自動修正](/guide/auto-fix)・[ベイクモード](/guide/bake)）には **NDMF** が必要です
-  - NDMF なしの環境でも[メッシュ入れ替え式](/guide/meshswap)は使えます（unitypackage で入れた場合。VCC / ALCOM で入れると NDMF も一緒に入ります）
-
 ## VCC / ALCOM で導入する（おすすめ）
 
 ::: danger 現在は支援版をご購入いただいた方のみへの配布です
@@ -25,7 +19,7 @@
 
    <AgreeInstall />
 
-   ::: details ボタンで開かないときは
+   ::: details 自動で VCC / ALCOM が開かないときは
    VCC / ALCOM の設定 →「Packages」→「Add Repository」に、次のURLを貼り付けてください。
 
    ```
@@ -92,3 +86,9 @@ VCC / ALCOM を使わない場合向けに、unitypackage も同梱していま�
 ## 次のステップ
 
 導入できたら、[自動修正（推奨）](/guide/auto-fix)へどうぞ。
+
+## 動作環境
+
+- Unity 2022.3 系（VRChat 対応バージョン）
+- 非破壊機能（[自動修正](/guide/auto-fix)・[ベイクモード](/guide/bake)）には **NDMF** が必要です
+  - NDMF なしの環境でも[メッシュ入れ替え式](/guide/meshswap)は使えます（unitypackage で入れた場合。VCC / ALCOM で入れると NDMF も一緒に入ります）

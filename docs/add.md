@@ -17,12 +17,11 @@ title: VCC / ALCOM に追加
 **一般公開の日程は、決まりしだいこのページと BOOTH でお知らせします。** 公開後は、どなたでもご利用いただけます。
 :::
 
-ボタンひとつで、VPMリポジトリを VCC / ALCOM に追加できます。
-**リポジトリを追加するのは、最初の1回だけ。** あとは、使いたいプロジェクトに Avatar Blink Fix を足していくだけです。
+VCC / ALCOM から導入すると、アップデートのたびに unitypackage をインポートする必要がありません。Auto Fixプリセットもツールと一緒に更新されます。
 
 <AgreeInstall />
 
-::: details ボタンで開かないときは
+::: details 自動で VCC / ALCOM が開かないときは
 VCC / ALCOM の設定 →「Packages」→「Add Repository」に、次のURLを貼り付けてください。
 
 ```
