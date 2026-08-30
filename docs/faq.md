@@ -131,21 +131,6 @@ BlendShape の値を変えて改変したら、そのあとで「表情を再読
 
 </details>
 
-<details id="beta">
-<summary>3.0 のベータ版（8月のテスト版）を入れていました</summary>
-
-🔴 **VCC / ALCOM で入れる前に、先に削除が必要です。**
-
-`Assets\LEMONERU\Avatar Blink Fix\` に **`Editor` フォルダがある**方が対象です。
-
-1. **`Editor`・`Runtime`・`json`** の3つを削除する
-2. **`Data`・`Animation` は残す**（修正の記録と、生成したアニメーションです）
-3. そのあと VCC / ALCOM から入れる
-
-消さずに入れると名前が重複して、**Unity がセーフモードに入ります**。
-
-</details>
-
 <details id="revert-to-2x">
 <summary>2.x へ戻したくなったら</summary>
 
