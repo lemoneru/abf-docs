@@ -136,11 +136,8 @@ BlendShape の値を変えて改変したら、そのあとで「表情を再読
 <details id="revert-to-2x">
 <summary>2.x へ戻したくなったら</summary>
 
-1. **Unity を閉じる**
-2. VCC / ALCOM の Manage Project から、Avatar Blink Fix 3.0 を削除する
-3. Unityでプロジェクトを開き、[Avatar Blink Fix の販売ページ（BOOTH）](https://lemoneru.booth.pm/items/7074770)にある **2.x 最終版のunitypackage**をインポートする
-
-**`Data`・`Animation` はそのまま残してください**（2.x の修正の記録です）。3.0 の解除キーを入れてあっても、2.x の動作には影響しません。
+手順は [2.x をお使いの方へ: 2.x へ戻したくなったら](/guide/from-2x#_2-x-へ戻したくなったら) にまとめてあります。
+ポイントは、`Data`・`Animation` をそのまま残すこと（2.x の修正の記録です）。3.0 の解除キーを入れてあっても、2.x の動作には影響しません。
 
 </details>
 
