@@ -4,9 +4,9 @@ Avatar Blink Fix has two fixing modes: normal mode and Bake mode.
 Let's answer "which one should I use?" first.
 
 ::: tip If in doubt
-**Start with normal mode** (right-click → "Auto Fix (Recommended)"). If that fixes it, you're done.
+If you edit expression animations with FaceEmo or another tool, you can use **normal mode**. Remove animation entries that hold a corrected BlendShape at value 0.
 
-If the eyes look wrong in-game when you play expressions, try Bake mode. It may reduce animation-caused breakage.
+If you will keep the avatar's original expression animations unchanged, **Bake Mode** is recommended. You do not need to remove those zero-value entries.
 :::
 
 ## In one sentence each
@@ -72,8 +72,8 @@ When a "conflict with expression animations" is found, this guidance and button 
 
 ## Summary
 
-- If normal mode works, that's all you need. It's available in the free edition
-- If "conflict" appears and the eyes look wrong in-game, switch to Bake mode
+- If you edit expression animations, normal mode works when you remove the zero-value entries
+- If you keep the expression animations unchanged, Bake Mode is recommended
 - Overdriven edits require Bake mode
 - Bake mode bakes a wide range, and expressions read 0 while previewing
 

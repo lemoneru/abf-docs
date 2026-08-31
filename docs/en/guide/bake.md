@@ -11,11 +11,12 @@ This mode is non-destructive too. The baking happens automatically at upload (bu
 
 ## When to use it
 
-- [Auto Fix](/en/guide/auto-fix) reported "conflict with expression animations" and the eyes look wrong in-game
+- [Auto Fix](/en/guide/auto-fix) reported "conflict with expression animations"
+- You want to keep the avatar's original expression animations unchanged
 - Your edits use overdriven values (above 100 or negative)
 
-::: tip Start with Auto Fix (normal mode)
-If normal mode works, there's no need for Bake mode. If the conflict notice appears, check the eye movement in-game first.
+::: tip Recommended when keeping the original expression animations
+In normal mode, you need to remove animation entries that hold a corrected BlendShape at value 0. If you are uploading with the original expression animations and not using FaceEmo or another editing tool, Bake Mode works without that cleanup.
 :::
 
 ## Steps

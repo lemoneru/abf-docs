@@ -1,9 +1,9 @@
 # The Full Workflow
 
 This page answers "so what order do I actually do things in?" —
-the whole flow from expression editing to checking your avatar in-game.
+the whole flow from expression editing, through animation checks and upload, to checking your avatar in-game.
 
-> **① Edit expressions → ② Right-click, Auto Fix → ③ Check the preview → ④ Upload → ⑤ Check in-game**
+> **① Edit expressions → ② Auto Fix → ③ Preview → ④ Check expression animations → ⑤ Upload → ⑥ Check in-game**
 
 Each step links to a page with the details.
 
@@ -61,24 +61,42 @@ If the Inspector button shows the red "**Stop preview**", the preview is ON.
 If you don't see this message, skip this step.
 
 When an expression animation drives a BlendShape that's being fixed, the Inspector shows a yellow notice and a "**Switch to Bake mode**" button.
-The notice alone doesn't mean you must switch. Upload first; if the eyes look wrong in-game when you play expressions, then switch to Bake mode. Your settings carry over.
+If this notice appears, check step ④ before uploading. The next step depends on whether you plan to edit the expression animations or leave them as they are.
 
 If overdriven values (above 100 or negative) are detected, switch to Bake mode — normal mode can't reproduce those values.
 If an animation is breaking the face itself, Bake mode may reduce that too.
 
 → Details: [Bake Mode](/en/guide/bake) ／ [Bake vs Normal Mode](/en/guide/bake-vs-normal)
 
-## ④ Upload as usual
+## ④ Decide how to handle expression animations
+
+Before uploading, decide whether you will edit the expression animations.
+
+### If you also edit the animations with FaceEmo or another tool
+
+When your expression work also changes the expression animations, use FaceEmo or another expression-editing tool, or edit the Animation files manually.
+
+::: warning Remove entries that hold a value at 0
+If an animation curve keeps a BlendShape corrected by Avatar Blink Fix at value 0, it may conflict with the corrected BlendShape. Remove that entry from the expression animation.
+:::
+
+### If you keep the avatar's original expression animations
+
+If you plan to upload with the avatar's original expression animations, without using FaceEmo or another expression-editing tool, [Bake Mode](/en/guide/bake) is recommended.
+
+In Bake Mode, you do not need to remove the zero-value curves described above.
+
+## ⑤ Upload as usual
 
 No special steps. Upload from the VRChat SDK as you always do, and the avatar goes up with the fix applied.
 
 Even with the preview stopped, the fix is applied at upload time (→ [how it works](/en/guide/auto-fix#check-the-fixed-face-right-away)).
 
-## ⑤ Check in-game
+## ⑥ Check in-game
 
 Join VRChat and try blinking and playing expressions. If everything looks right, you're done.
 
-If the eyes move wrong, an expression animation may be conflicting. Try [Bake Mode](/en/guide/bake) as guided above.
+If the eyes move wrong, an expression animation may be conflicting. Check for the zero-value curves described in step ④, or try [Bake Mode](/en/guide/bake).
 
 ## Redoing your expression edits later
 
@@ -96,12 +114,14 @@ To stop using the tool, delete the added "Avatar Blink Fix (NDMF)" object. The o
 
 | Situation | Where to go |
 |---|---|
-| "Conflict with expression animations" appeared | Check in-game first. If the eyes look wrong: [Bake Mode](/en/guide/bake) |
+| "Conflict with expression animations" appeared | Before uploading, see step ④ above |
+| You want to keep the expression animations unchanged | [Bake Mode](/en/guide/bake) is recommended |
 | Eyes move wrong in-game when playing expressions | [Bake Mode](/en/guide/bake) |
 | An animation is breaking the face | [Bake Mode](/en/guide/bake) (may reduce the breakage) |
 | Using overdriven values (above 100 / negative) | [Bake Mode](/en/guide/bake) |
 | "Auto Fix (Recommended)" is grayed out | [Manual Fix](/en/guide/manual-fix) |
 | No NDMF / want the 2.x-style workflow | [Mesh Swap (Legacy)](/en/guide/meshswap) |
+| You use Avatar Mouth Fix | [Normal Fix in Mesh Swap](/en/guide/meshswap#when-combining-with-avatar-mouth-fix) |
 | You use face tracking | [Using Face Tracking](/en/guide/face-tracking) |
 | You use a tool that adds BlendShapes | [Using Tools That Add BlendShapes](/en/guide/added-blendshapes) |
 | Want to fix MMD / face-tracking BlendShapes too | [Free vs Complete Edition](/en/guide/editions) |

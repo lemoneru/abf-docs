@@ -15,7 +15,8 @@ For the full flow from expression editing to upload → [The Full Workflow](/en/
 
    ![Completion dialog: the blink fix has been set up and will be applied at upload time](/images/fixed-dialog.png)
 
-4. Now just upload. The fix is applied automatically
+4. If you use expression animations, [check for conflicts](/en/guide/workflow) before uploading
+5. Upload as usual. The fix is applied automatically
 
 An object called "Avatar Blink Fix (NDMF)" is added under the avatar. All the settings live on it.
 
@@ -64,7 +65,9 @@ Delete the added "Avatar Blink Fix (NDMF)" object. The original mesh was never r
 The tool found an expression animation driving a BlendShape that's being fixed.
 Left as is, the eyes may move wrong in-game when you play expressions.
 
-The notice alone doesn't mean you must switch right away. Upload first; if the eyes look wrong in-game when playing expressions, press "**Switch to Bake mode**". Your settings carry over into [Bake Mode](/en/guide/bake).
+If you edit expression animations with FaceEmo or another tool, remove any entry that holds a corrected BlendShape at value 0. Leaving it in may conflict with the corrected BlendShape.
+
+If you will keep the avatar's original expression animations unchanged, pressing "**Switch to Bake mode**" is recommended. Your settings carry over into [Bake Mode](/en/guide/bake), and you do not need to remove those zero-value entries.
 
 If overdriven values (above 100 or negative) are detected, switch to Bake mode — normal mode can't reproduce them.
 

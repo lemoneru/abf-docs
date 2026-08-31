@@ -19,7 +19,7 @@ outline: [2, 2]
 
 **Normal mode** rebuilds only the eye BlendShapes. **Bake mode** bakes your edited expression into the mesh first, then rebuilds them. It may reduce breakage caused by expression animations.
 
-Use normal mode first. If "conflict with expression animations" appears and the eyes look wrong in-game, switch to Bake mode. Edits using values above 100 or negative values also require Bake mode.
+If you edit expression animations with FaceEmo or another tool, you can use normal mode. Remove animation entries that hold a corrected BlendShape at value 0. If you keep the original expression animations unchanged, Bake Mode is recommended. Edits using values above 100 or negative values also require Bake Mode.
 
 → Comparison table, weaknesses, and how to switch: [Bake vs Normal Mode](/en/guide/bake-vs-normal)
 
@@ -88,6 +88,8 @@ Check in this order:
 1. **Conflict with expression animations** — if the Inspector shows the yellow notice, and it breaks only while playing expressions, press "Switch to Bake mode" (→ [Bake Mode](/en/guide/bake))
 2. **Zero-value keys in expression animations** — if an existing animation contains the fixed BlendShape with value 0, it conflicts. Remove that entry from the animation file
 3. **Reset BlendShapes** — after a fix, if a left/right reset BlendShape at the bottom of the face mesh's list sits at 100, one eye may snap back. Set it to 0
+
+When using Bake Mode, you do not need to remove the zero-value keys in step 2.
 
 </details>
 
@@ -321,7 +323,9 @@ The storage location for manual removal is in the bundled `README.md`.
 
 No. This tool repairs **BlendShapes**. It has no feature that automatically rewrites expression animation files.
 
-If an animation conflict is the problem, try [Bake Mode](/en/guide/bake).
+To change expression animations, use FaceEmo or another expression-editing tool, or edit the Animation files manually. Remove entries that hold a corrected BlendShape at value 0.
+
+If you want to keep the original expression animations unchanged, [Bake Mode](/en/guide/bake) is recommended because those zero-value entries do not need to be removed.
 
 </details>
 
