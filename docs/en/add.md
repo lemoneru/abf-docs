@@ -54,6 +54,8 @@ The paid edition is available on the [Avatar Blink Fix page on BOOTH](https://le
 After purchase, **import the included unlock key into a project once** and you're upgraded.
 **Every project on that PC becomes the Complete Edition** — no per-project setup.
 
+→ [Upgrade to the Complete Edition (how to import the unlock key)](/en/guide/unlock-key)
+
 ::: tip For 2.x owners
 **Upgrading to 3.0 is free of charge.**
 

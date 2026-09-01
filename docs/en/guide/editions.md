@@ -61,7 +61,7 @@ If everything looks fine in-game after the fix, **there's no need to upgrade**.
 
 If you have not purchased it yet, get the Complete Edition from the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770) when you want to fix more.
 
-Already purchased? Download the unlock key from BOOTH and import it into a project once. See [Upgrading to the Complete Edition](/en/guide/install) for the steps.
+Already purchased? Download the unlock key from BOOTH and import it into a project once. See [Upgrade to the Complete Edition](/en/guide/unlock-key) for the steps.
 After that, every project on the same PC runs as the Complete Edition.
 
 - No reinstalling the tool, no recreating projects
