@@ -57,7 +57,7 @@ Add the repository once, and from then on a new version is just an "Update" butt
 
 Right-click your avatar in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended). That's the whole job.
 
-![The Avatar Blink Fix submenu in the right-click menu](/images/context-menu.png)
+![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
 
 - Unlike 2.x, **the mesh is not rewritten** (non-destructive). The fix is applied automatically at upload time
 - Preview turns on automatically, so you can check the fixed face on the spot

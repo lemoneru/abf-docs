@@ -1,6 +1,8 @@
 # Free vs Complete Edition
 
-The main difference is how many BlendShapes you can fix.
+The free edition lets you fix your avatar's usual blink, preview the result, and restore the original.
+
+The Complete Edition can fix other eye-closing expressions as well, including winks, smiling eyes, MMD, and face tracking. If an expression animation conflicts with the fix, Bake Mode may reduce the breakage.
 
 Start with the free edition. If you want to fix more BlendShapes or use the extra features, you can upgrade later.
 
@@ -57,8 +59,10 @@ Even then, the Complete Edition can fix any BlendShape (and on supported avatars
 Try the free edition first.
 If everything looks fine in-game after the fix, **there's no need to upgrade**.
 
-Want to fix more? Get it on the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770).
-Import the unlock key once and every project on that PC becomes the Complete Edition.
+If you have not purchased it yet, get the Complete Edition from the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770) when you want to fix more.
+
+Already purchased? Download the unlock key from BOOTH and import it into a project once. See [Upgrading to the Complete Edition](/en/guide/install) for the steps.
+After that, every project on the same PC runs as the Complete Edition.
 
 - No reinstalling the tool, no recreating projects
 - No re-import needed after updates either

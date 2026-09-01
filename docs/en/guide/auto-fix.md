@@ -9,7 +9,7 @@ For the full flow from expression editing to upload → [The Full Workflow](/en/
 1. **Right-click your avatar in the Hierarchy**
 2. Choose "**Avatar Blink Fix**" → "**自動修正（推奨）**" (Auto Fix – Recommended; the menu is shown in Japanese)
 
-   ![The Avatar Blink Fix submenu in the right-click menu](/images/context-menu.png)
+   ![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
 
 3. When "The blink fix has been set up" appears, you're done
 

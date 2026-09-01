@@ -36,7 +36,7 @@ Avatar Blink Fix repairs the eye BlendShapes that cause this.
 
 All you do is right-click your avatar in the Hierarchy and choose Auto Fix.
 Auto Fix presets are bundled for more than 100 avatars, so you don't even need to pick which BlendShapes to fix.
-MMD BlendShapes and face-tracking eye-close BlendShapes can be fixed too.
+The Complete Edition can also fix MMD BlendShapes and face-tracking eye-close BlendShapes.
 
 **Your original avatar is never rewritten.** The fix is applied only at upload time.
 Delete the added object and everything is back to normal.
@@ -49,10 +49,9 @@ If an animation conflicts with the fix, [Bake mode](/en/guide/bake) may reduce t
 
 ## Free to use
 
-The free edition automatically repairs the blink BlendShape most commonly used in VRChat.
-Try it on your own avatar first.
+The free edition lets you try fixing your usual blink. Preview and restore are included.
 
-The paid edition can fix **many more BlendShapes** (MMD, face tracking, and so on).
+The Complete Edition can fix **other eye-closing expressions as well**, including winks, smiling eyes, MMD, and face tracking. If an expression animation conflicts with the fix, Bake Mode may reduce the breakage.
 
 → [Free vs Complete Edition](/en/guide/editions) (which one do you need?)
 → [Installation](/en/guide/install)
@@ -76,7 +75,7 @@ For what to do when the "Migrate to the new Avatar Blink Fix" dialog appears, an
 
 Right-click your avatar in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended). That's the whole job.
 
-![The Avatar Blink Fix submenu in the right-click menu](/images/context-menu.png)
+![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
 
 Preview turns on automatically, so you can check the fixed face on the spot.
 Then upload as usual — the fix is applied automatically.

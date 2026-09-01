@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="450" viewBox="0 0 960 450" role="img" aria-labelledby="title desc">
+  <title id="title">Hierarchyでアバターを右クリックしてAvatar Blink Fixの自動修正を選ぶ操作図</title>
+  <desc id="desc">左側のHierarchyでアバターを右クリックし、Avatar Blink Fixのサブメニューから自動修正（推奨）を選ぶ流れ</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity="0.38"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#61b7ff"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="450" rx="18" fill="#202124"/>
+  <text x="32" y="42" fill="#f3f3f3" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="21" font-weight="700">Hierarchyでアバターを右クリック / Right-click the avatar</text>
+
+  <g transform="translate(32 68)">
+    <rect width="300" height="338" rx="6" fill="#2b2b2b" stroke="#555"/>
+    <rect width="300" height="38" rx="6" fill="#353535"/>
+    <text x="14" y="26" fill="#e8e8e8" font-family="Segoe UI, sans-serif" font-size="16">Hierarchy</text>
+    <line x1="0" y1="38" x2="300" y2="38" stroke="#1b1b1b"/>
+
+    <path d="M18 62 l7 7 l-7 7 z" fill="#aaa"/>
+    <text x="34" y="74" fill="#d4d4d4" font-family="Segoe UI, sans-serif" font-size="15">SampleScene</text>
+
+    <rect x="7" y="91" width="286" height="34" rx="3" fill="#285d83"/>
+    <path d="M22 101 h13 v13 h-13 z M25 98 h7 v4 h-7 z" fill="#a4c7e4"/>
+    <text x="45" y="114" fill="#fff" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="16">Avatar</text>
+    <text x="46" y="148" fill="#aaa" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="11">この行を右クリック / Right-click this avatar</text>
+
+    <g transform="translate(225 74)">
+      <path d="M0 0 L0 38 L10 29 L18 46 L27 42 L19 25 L33 25 Z" fill="#fff" stroke="#202020" stroke-width="2"/>
+      <circle cx="13" cy="21" r="25" fill="none" stroke="#61b7ff" stroke-width="4"/>
+    </g>
+  </g>
+
+  <path d="M344 177 C375 177 380 177 405 177" fill="none" stroke="#61b7ff" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g transform="translate(420 98)" filter="url(#shadow)">
+    <rect width="218" height="255" rx="5" fill="#f4f4f4"/>
+    <text x="20" y="31" fill="#222" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">Create Empty</text>
+    <text x="20" y="62" fill="#222" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">Create Empty Parent</text>
+    <line x1="8" y1="78" x2="210" y2="78" stroke="#ccc"/>
+    <text x="20" y="106" fill="#222" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">Copy</text>
+    <text x="20" y="137" fill="#777" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">Paste</text>
+    <line x1="8" y1="153" x2="210" y2="153" stroke="#ccc"/>
+    <rect x="5" y="165" width="208" height="34" rx="2" fill="#2d75b6"/>
+    <text x="20" y="188" fill="#fff" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">Avatar Blink Fix</text>
+    <path d="M197 175 l8 7 l-8 7 z" fill="#fff"/>
+    <line x1="8" y1="210" x2="210" y2="210" stroke="#ccc"/>
+    <text x="20" y="238" fill="#222" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">Delete</text>
+  </g>
+
+  <g transform="translate(650 190)" filter="url(#shadow)">
+    <rect width="278" height="130" rx="5" fill="#f4f4f4"/>
+    <rect x="5" y="7" width="268" height="34" rx="2" fill="#2d75b6"/>
+    <text x="18" y="30" fill="#fff" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">自動修正（推奨）</text>
+    <text x="18" y="67" fill="#222" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">自動修正（ベイクモード）</text>
+    <text x="18" y="104" fill="#222" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="15">手動修正</text>
+  </g>
+
+  <text x="420" y="389" fill="#b8ddff" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="17" font-weight="700">Avatar Blink Fix → 自動修正（推奨） / Auto Fix</text>
+  <text x="420" y="416" fill="#c9c9c9" font-family="Yu Gothic UI, Segoe UI, sans-serif" font-size="13">見つからない場合 / If missing: Tools → Avatar Blink Fix</text>
+</svg>

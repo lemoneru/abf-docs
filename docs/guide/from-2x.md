@@ -57,7 +57,7 @@
 
 ヒエラルキーのアバターを右クリックして、「Avatar Blink Fix」→「**自動修正（推奨）**」を選ぶ。作業はこれだけです。
 
-![右クリックメニューの「Avatar Blink Fix」サブメニュー](/images/context-menu.png)
+![Hierarchyでアバターを右クリックし、「Avatar Blink Fix」から「自動修正（推奨）」を選ぶ操作図](/images/context-menu-guide.svg)
 
 - 2.x と違って**メッシュを書き換えません**（非破壊）。修正はアップロード時に自動で反映されます
 - 押すとプレビューがONになるので、その場で修正後の顔を確認できます

@@ -9,7 +9,7 @@
 1. **ヒエラルキーのアバターを右クリック**
 2. 「**Avatar Blink Fix**」→「**自動修正（推奨）**」を選ぶ
 
-   ![右クリックメニューの「Avatar Blink Fix」サブメニュー](/images/context-menu.png)
+   ![Hierarchyでアバターを右クリックし、「Avatar Blink Fix」から「自動修正（推奨）」を選ぶ操作図](/images/context-menu-guide.svg)
 
 3. 「まばたきの修正を設定しました」と出たら完了です
 

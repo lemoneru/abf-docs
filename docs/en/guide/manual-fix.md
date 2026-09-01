@@ -22,7 +22,7 @@ Finish your expression edits before you start.
 1. Right-click your avatar in the Hierarchy
 2. Choose "**Avatar Blink Fix**" → "**手動修正**" (Manual Fix; the menu is shown in Japanese)
 
-![The Avatar Blink Fix submenu in the right-click menu](/images/context-menu.png)
+![Right-clicking an avatar in the Hierarchy and choosing a fix under Avatar Blink Fix](/images/context-menu-guide.svg)
 
 A component is added, with the Inspector's "**Advanced Settings**" already open.
 

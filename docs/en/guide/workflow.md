@@ -32,7 +32,13 @@ Fixing mid-edit is fine too, but if you edit more afterwards you'll need the ste
 
 Right-click your avatar in the Hierarchy and choose "**Avatar Blink Fix**" → "**自動修正（推奨）**" (Auto Fix – Recommended).
 
-![The Avatar Blink Fix submenu in the right-click menu](/images/context-menu.png)
+![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
+
+::: tip If you cannot find the right-click menu
+You can also start from **Tools → Avatar Blink Fix** at the top of Unity. Set your avatar in field ①, then press [Auto Fix].
+
+If the right-click menu itself is missing, NDMF may not be installed → [The right-click menu or Tools entry doesn't show up](/en/faq#the-right-click-menu-or-tools-entry-doesnt-show-up)
+:::
 
 When you see "The blink fix has been set up", you're done setting up.
 An object called "Avatar Blink Fix (NDMF)" is added under the avatar; all the settings live on it.

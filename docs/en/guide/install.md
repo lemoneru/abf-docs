@@ -49,6 +49,8 @@ You'll have to re-import it for every update though, so VCC / ALCOM is easier un
 
 ## Upgrading to the Complete Edition (for buyers)
 
+If the tool says "Complete edition feature" and you have already purchased it, use the steps below to unlock it.
+
 A fresh install runs as the **free edition** (it fixes one automatically selected blink BlendShape).
 Not sure which edition you need? → [Free vs Complete Edition](/en/guide/editions)
 

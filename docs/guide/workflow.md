@@ -22,7 +22,13 @@ Avatar Blink Fix は、修正を押した時点の BlendShape の値を覚えて
 
 ヒエラルキーでアバターを右クリックして、「**Avatar Blink Fix**」→「**自動修正（推奨）**」を選びます。
 
-![右クリックメニューの「Avatar Blink Fix」サブメニュー](/images/context-menu.png)
+![Hierarchyでアバターを右クリックし、「Avatar Blink Fix」から「自動修正（推奨）」を選ぶ操作図](/images/context-menu-guide.svg)
+
+::: tip 右クリックメニューが見つからないとき
+Unity上部の **Tools → Avatar Blink Fix** からも始められます。ウィンドウの①にアバターを設定して、［自動修正］を押してください。
+
+右クリックメニュー自体が表示されない場合は、NDMFが入っていない可能性があります → [右クリックメニューやToolsにツールが出てこない](/faq#右クリックメニューや-tools-にツールが出てこない)
+:::
 
 「まばたきの修正を設定しました」と出れば、設定は完了です。
 アバターの下に「Avatar Blink Fix (NDMF)」というオブジェクトが追加され、設定はすべてこの子が持ちます。

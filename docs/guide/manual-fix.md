@@ -22,7 +22,7 @@ Auto Fix プリセットが無いアバターでも使えます。
 1. ヒエラルキーのアバターを右クリック
 2. 「**Avatar Blink Fix**」→「**手動修正**」を選ぶ
 
-![右クリックメニューの「Avatar Blink Fix」サブメニュー](/images/context-menu.png)
+![Hierarchyでアバターを右クリックし、「Avatar Blink Fix」から修正方法を選ぶ操作図](/images/context-menu-guide.svg)
 
 コンポーネントが追加され、インスペクタの「**詳細設定**」が開いた状態になります。
 
