@@ -1,18 +1,24 @@
 # Bake vs Normal Mode
 
-Avatar Blink Fix has two fixing modes: normal mode and Bake mode.
-Let's answer "which one should I use?" first.
+Avatar Blink Fix offers Normal Mode, Bake Mode, and Manual Fix.
+Use this table to choose where to start.
 
-::: tip If in doubt
-If you edit expression animations with FaceEmo or another tool, you can use **normal mode**. Remove animation entries that hold a corrected BlendShape at value 0.
+| How you use the avatar | Start with | Why |
+|---|---|---|
+| Keep the avatar's original expression animations unchanged | **Bake Mode** | You do not need to remove zero-value entries from the animations |
+| Use face tracking without adjusting the expression animations yourself | **Try Bake Mode first** | FT BlendShapes are included in the fix by default |
+| Edit expression animations with FaceEmo or another tool | **Normal Mode** | Remove zero-value curves for the corrected BlendShapes from the animations |
+| "Auto Fix (Recommended)" is unavailable, or no preset matches | **Manual Fix** | Choose the BlendShapes that deform the eyes yourself |
 
-If you will keep the avatar's original expression animations unchanged, **Bake Mode** is recommended. You do not need to remove those zero-value entries.
-:::
+- **Edits using values above 100 or negative values require Bake Mode.**
+- **When using Avatar Mouth Fix, use [Normal Fix in Mesh Swap](/en/guide/meshswap#when-combining-with-avatar-mouth-fix).**
+- Normal Mode may fit better when an FT addon manages its correction through zero-value animation curves. See [Using Face Tracking](/en/guide/face-tracking) for details.
 
 ## In one sentence each
 
 - **Normal mode** … rebuilds only the eye BlendShapes
 - **Bake mode** … bakes your edited expression into the mesh, then rebuilds the eye BlendShapes
+- **Manual Fix** … lets you choose which BlendShapes Normal Mode should rebuild
 
 Baking turns the edited face into the new "base" face, so the foundation doesn't shift when expression animations play later. That's why Bake mode is robust against animations.
 
@@ -70,15 +76,9 @@ Your selections and settings carry over — nothing starts from scratch.
 
 When a "conflict with expression animations" is found, this guidance and button appear automatically.
 
-## Summary
-
-- If you edit expression animations, normal mode works when you remove the zero-value entries
-- If you keep the expression animations unchanged, Bake Mode is recommended
-- Overdriven edits require Bake mode
-- Bake mode bakes a wide range, and expressions read 0 while previewing
-
 Ready for the steps?
 
 - [Auto Fix (Recommended)](/en/guide/auto-fix) … normal mode
 - [Bake Mode](/en/guide/bake)
+- [Manual Fix](/en/guide/manual-fix)
 - [The Full Workflow](/en/guide/workflow) … from expression editing to checking in-game

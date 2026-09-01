@@ -1,7 +1,9 @@
 # Using Face Tracking
 
-Avatar Blink Fix works on face-tracking (FT) avatars as they are.
-**In most cases the default settings are fine.**
+Avatar Blink Fix works with face-tracking (FT) avatars.
+If you do not adjust the expression animations yourself, try [Bake Mode](/en/guide/bake) first. FT BlendShapes are included in the fix by default.
+
+Normal Mode with "Don't include" may fit better when an FT addon manages its correction through zero-value animation curves.
 
 Read this page if FT eye closing looks wrong in-game, or if you want to know what the settings mean.
 
@@ -19,9 +21,10 @@ The right-click menu is displayed in Japanese regardless of your language settin
 
 | Situation | What to do |
 |---|---|
+| You do not adjust the expression animations yourself | **Try Bake Mode first** |
+| Your FT addon manages correction through zero-value animation curves | Use Normal Mode with "**Don't include**" |
 | [Auto Fix (Recommended)](/en/guide/auto-fix) and nothing looks wrong | **Leave it** — keep "Don't include" |
 | FT eye closing breaks in-game, or eyes sink into the face | Switch to "**Include in fix**" and try again |
-| You're using [Bake Mode](/en/guide/bake) | It's **already set to "Include in fix"**. Leave it |
 
 Switching won't break anything. **Try both and keep whichever looks better.**
 
