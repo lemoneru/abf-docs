@@ -15,32 +15,22 @@
 アップデートのたびにファイルを入れ直さなくてよくなります。新しいバージョンが出たら「更新」を押すだけ！
 :::
 
-1. [利用規約](/terms)を確認してチェックを入れ、ボタンを押す（VCC / ALCOM が起動します）
-
-   <AgreeInstall />
-
-   ::: details 自動で VCC / ALCOM が開かないときは
-   VCC / ALCOM の設定 →「Packages」→「Add Repository」に、次のURLを貼り付けてください。
-
-   ```
-   https://lemoneru.github.io/vpm-repos/index.json
-   ```
-
-   ご購入者は、商品に同梱されている「**VCCに追加**」ショートカットからでも同じことができます。
-   :::
-
-2. リポジトリ「LEMONERU」を追加するか聞かれるので、承認する
-3. プロジェクトのパッケージ管理で「**Avatar Blink Fix**」を探して、＋ボタンで追加する（検索欄に「blink」と入れると早いです）
+1. [VCC / ALCOM に追加](/add)を開き、リポジトリを登録する。登録済みの方は次へ進んでください。
+2. プロジェクトのパッケージ管理で「**Avatar Blink Fix**」を探して、＋ボタンで追加する（検索欄に「blink」と入れると早いです）
 
    ![ALCOMのパッケージ管理画面。Avatar Blink Fix の行と追加ボタン](/images/alcom-add-package.png)
 
    ::: warning ＋が押せない／「nadena.dev.ndmf が見つかりません」と出るとき
    Avatar Blink Fix は **NDMF** を必要とします。NDMF のリポジトリを登録していないと、一緒に入れられません。
 
-   同じ手順で、**`https://vpm.nadena.dev/`** も追加してください。そのあともう一度 ＋ を押せば入ります。
+   NDMFのリポジトリ **`https://vpm.nadena.dev/`** もVCC / ALCOMに登録してください。そのあともう一度 ＋ を押してください。
    :::
 
-4. Unity でプロジェクトを開けば、もう使える状態です
+3. Unityでプロジェクトを開く。インストール直後は無料版として使えるので、購入前にお試しいただけます。
+
+::: tip ツールとプリセットの更新
+新しいバージョンが出たら、VCC / ALCOMのプロジェクトのパッケージ管理で「更新」を押してください。Auto Fixプリセットもツールと一緒に更新され、unitypackageを入れ直す必要はありません。
+:::
 
 ## unitypackage で導入する
 
@@ -53,6 +43,8 @@ VCC / ALCOM を使わない場合向けに、unitypackage も同梱していま�
 
 入れただけの状態では、**無料版**として動きます（自動で選ばれたまばたき用の BlendShape 1つを修正できます）。
 どちらを使えばいいかは → [無料版と有料版の違い](/guide/editions)
+
+コンプリート版は[Avatar Blink Fixの販売ページ（BOOTH）](https://lemoneru.booth.pm/items/7074770)で購入できます。
 
 ご購入者は、解除キーをプロジェクトに1回インポートするだけでアップグレード完了です。
 

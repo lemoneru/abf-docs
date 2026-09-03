@@ -15,32 +15,22 @@ The unlock key is available **from the BOOTH purchase page for supporter-edition
 No more re-importing files for every update. When a new version comes out, just press "Update"!
 :::
 
-1. Read the [Terms of Use](/en/terms), tick the checkbox, and press the button (VCC / ALCOM will open)
-
-   <AgreeInstall />
-
-   ::: details If VCC / ALCOM doesn't open automatically
-   In VCC / ALCOM, go to Settings → "Packages" → "Add Repository" and paste this URL:
-
-   ```
-   https://lemoneru.github.io/vpm-repos/index.json
-   ```
-
-   Buyers can also use the "**VCCに追加**" (Add to VCC) shortcut bundled with the product — it does the same thing.
-   :::
-
-2. You'll be asked to add the "LEMONERU" repository — approve it
-3. In your project's package management, find "**Avatar Blink Fix**" and add it with the ＋ button (typing "blink" in the search box gets you there fast)
+1. Open [Add to VCC / ALCOM](/en/add) and register the repository. If you have already registered it, continue to the next step.
+2. In your project's package management, find "**Avatar Blink Fix**" and add it with the ＋ button (typing "blink" in the search box gets you there fast)
 
    ![ALCOM package management screen showing the Avatar Blink Fix row and add button](/images/alcom-add-package.png)
 
    ::: warning ＋ button disabled / "nadena.dev.ndmf not found"
    Avatar Blink Fix requires **NDMF**. If the NDMF repository isn't registered, the package can't be installed together with it.
 
-   Using the same steps, also add **`https://vpm.nadena.dev/`**. Then press ＋ again and it will install.
+   Register the NDMF repository, **`https://vpm.nadena.dev/`**, in VCC / ALCOM as well. Then press ＋ again.
    :::
 
-4. Open the project in Unity and you're ready to go
+3. Open the project in Unity. A fresh install runs as the free edition, so you can try it before buying.
+
+::: tip Updating the tool and presets
+When an update is available, press "Update" in your project's package management in VCC / ALCOM. The tool and its Auto Fix presets update together; there is no need to re-import a unitypackage.
+:::
 
 ## Installing via unitypackage
 
@@ -53,6 +43,8 @@ If the tool says "Complete edition feature" and you have already purchased it, s
 
 A fresh install runs as the **free edition** (it fixes one automatically selected blink BlendShape).
 Not sure which edition you need? → [Free vs Complete Edition](/en/guide/editions)
+
+The Complete Edition is available on the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770).
 
 Buyers just import the unlock key into a project once, and the upgrade is done.
 

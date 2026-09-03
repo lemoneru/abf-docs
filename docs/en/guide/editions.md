@@ -1,18 +1,13 @@
 # Free vs Complete Edition
 
-The free edition lets you fix your avatar's usual blink, preview the result, and restore the original.
+The main differences are how many BlendShapes you can fix and which extra features you can use.
 
-The Complete Edition can fix other eye-closing expressions as well, including winks, smiling eyes, MMD, and face tracking. If an expression animation conflicts with the fix, Bake Mode may reduce the breakage.
-
-Start with the free edition. If you want to fix more BlendShapes or use the extra features, you can upgrade later.
+The free edition can repair your avatar too. Try it with your expression edits first; you can easily [upgrade to the paid Complete Edition](/en/guide/unlock-key) afterward.
 
 ## What the free edition can do
 
-It automatically repairs the blink BlendShape used in VRChat.
-Typical targets are `vrc.blink`, `eye_blink`, `eye_close` and similar names. MMD-style blink shapes are not covered by the free edition's auto fix.
-
-If your expression edits make the eyelids clip through the eyes when blinking, that's the kind of breakage it repairs.
-**If everything looks fine in-game, the free edition is all you need.**
+Installing Avatar Blink Fix gives you the free edition.
+It can repair `vrc.blink`, a BlendShape commonly used for regular blinking.
 
 → [Installation](/en/guide/install) ／ [Auto Fix steps](/en/guide/auto-fix)
 
