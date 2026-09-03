@@ -24,9 +24,8 @@ hero:
 
 ## What is Avatar Blink Fix?
 
-When you edit your avatar's facial expressions, **the blink and eye-closing BlendShapes can break**.
-You finally get the face you want — and then in-game, the eyelids clip through the eyes or never fully close.
-Avatar Blink Fix repairs the eye BlendShapes that cause this.
+Editing an avatar's facial expressions can break its eye BlendShapes. In-game, the eyes may look crushed or may not close fully.
+Avatar Blink Fix repairs the eye BlendShapes that cause these problems.
 
 <div class="figure-sm">
 
@@ -34,31 +33,33 @@ Avatar Blink Fix repairs the eye BlendShapes that cause this.
 
 </div>
 
-All you do is right-click your avatar in the Hierarchy and choose Auto Fix.
-Auto Fix presets are bundled for more than 100 avatars, so you don't even need to pick which BlendShapes to fix.
-The Complete Edition can also fix MMD BlendShapes and face-tracking eye-close BlendShapes.
+To fix an avatar, right-click it in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended).
+Auto Fix presets support more than 100 avatars, so most supported avatars can be fixed right away.
+For an avatar without a preset, select the items you want to fix.
 
-**Your original avatar is never rewritten.** The fix is applied only at upload time.
-Delete the added object and everything is back to normal.
+The Complete Edition can also fix winks, MMD BlendShapes, and face-tracking BlendShapes.
 
-::: tip What gets fixed is the BlendShape
-This tool repairs the eye BlendShapes themselves. How things look in-game also depends on how your expression animations are set up.
+::: tip This tool repairs BlendShapes
+This tool does not edit animations. Depending on the avatar's animation setup, the result may not work exactly as expected.
 
-If an animation conflicts with the fix, [Bake mode](/en/guide/bake) may reduce the breakage.
+If an animation conflicts with the fix, [Bake Mode](/en/guide/bake), added in 3.0, may reduce the breakage.
+
+If the fix does not work or you are unsure what to do, see the [FAQ](/en/faq).
 :::
 
-## Free to use
+## Try it for free
 
-The free edition lets you try fixing your usual blink. Preview and restore are included.
+The free edition can repair the BlendShape used for a regular blink. You can use the fixed avatar in-game as-is.
 
-The Complete Edition can fix **other eye-closing expressions as well**, including winks, smiling eyes, MMD, and face tracking. If an expression animation conflicts with the fix, Bake Mode may reduce the breakage.
+The Complete Edition can repair all the eye-closing BlendShapes you need, including regular blinks, winks, MMD BlendShapes, and face-tracking BlendShapes.
+If an Auto Fix preset is available, Auto Fix repairs all the necessary BlendShapes at once.
 
 → [Free vs Complete Edition](/en/guide/editions) (which one do you need?)
 → [Installation](/en/guide/install)
 
 ## VPM repository support (new in 3.0)
 
-Unless you have a specific reason not to, install via VCC / ALCOM. No more re-importing a unitypackage for every update, and the Auto Fix presets are updated together with the tool.
+Unless you have a specific reason not to, install through VCC / ALCOM. You can install the latest Avatar Blink Fix and Auto Fix presets together.
 
 **→ [Add to VCC / ALCOM](/en/add)**
 
@@ -73,19 +74,15 @@ For what to do when the "Migrate to the new Avatar Blink Fix" dialog appears, an
 
 ## How to use
 
-Right-click your avatar in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended). That's the whole job.
+Right-click your avatar in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended). An Avatar Blink Fix object is added under the avatar, and the fix is complete.
 
-![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
+Once the object is added, the BlendShapes appear in their fixed state. To stop using the fix, delete that object. The avatar then returns to its original state.
 
-Preview turns on automatically, so you can check the fixed face on the spot.
-Then upload as usual — the fix is applied automatically.
-→ Details: [Auto Fix (Recommended)](/en/guide/auto-fix)
-
-For the full flow from expression editing to checking in-game → [The Full Workflow](/en/guide/workflow)
+→ [Step-by-step workflow](/en/guide/workflow)
 
 If something doesn't work, or you want finer control:
 
-- [Bake Mode](/en/guide/bake) … when expression animations conflict with the fix. May reduce animation-caused breakage (→ [Bake vs Normal Mode](/en/guide/bake-vs-normal))
+- [Bake Mode](/en/guide/bake) … when expression animations conflict with the fix. May reduce animation-caused breakage
 - [Manual Fix](/en/guide/manual-fix) … for avatars without an Auto Fix preset
 - [Mesh Swap (Legacy)](/en/guide/meshswap) … the classic 2.x-style workflow
 
