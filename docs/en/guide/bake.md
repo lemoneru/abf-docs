@@ -1,6 +1,6 @@
 # Bake Mode
 
-[Which Mode Should I Use?](/en/guide/bake-vs-normal)
+[Choosing a Fix Mode](/en/guide/bake-vs-normal)
 
 Bake Mode bakes your edited expression into the mesh as its shape at BlendShape value 0, then applies the fix.<br>
 It may reduce breakage caused by conflicts with expression animations.

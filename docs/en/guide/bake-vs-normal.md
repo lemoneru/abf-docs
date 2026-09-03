@@ -1,15 +1,14 @@
-# Which Mode Should I Use?
+# Choosing a Fix Mode
 
-Normal Mode rebuilds the eye-closing BlendShapes to match your edited expression.<br>
-Bake Mode bakes the edited shape into the mesh before applying the fix.
+Right-click your avatar and choose the fix that suits your setup under [Avatar Blink Fix].
 
-## Which should I use?
+## Choose for your setup
 
 <div class="usage-branch">
 
-### Editing the expression animations yourself
+### Auto Fix (Recommended)
 
-If you edit expression animations yourself and do not use face tracking, use [Auto Fix in Normal Mode](/en/guide/auto-fix).<br>
+If you edit expression animations yourself and do not use face tracking, use [Auto Fix (Recommended)](/en/guide/auto-fix).<br>
 The free edition can fix one BlendShape used for regular blinking.
 
 See [The Full Workflow](/en/guide/workflow) for precautions when reusing existing expression animations.
@@ -18,12 +17,12 @@ See [The Full Workflow](/en/guide/workflow) for precautions when reusing existin
 
 <div class="usage-branch">
 
-### Using face tracking or the avatar's default expression animations
+### Auto Fix (Bake Mode)
 
 [Bake Mode](/en/guide/bake) is recommended when using face tracking.<br>
 Use it when keeping the avatar's original expression animations unchanged as well.
 
-It may also reduce breakage if the eyes look wrong in-game with Normal Mode.
+It may also reduce breakage if the eyes look wrong in-game with Auto Fix (Recommended).
 
 Note: Bake Mode is a Complete Edition feature. Use it for edits with values above 100 or negative values as well.
 
@@ -31,7 +30,7 @@ Note: Bake Mode is a Complete Edition feature. Use it for edits with values abov
 
 ## What changes
 
-| | Normal Mode | Bake Mode |
+| | Auto Fix (Recommended) | Auto Fix (Bake Mode) |
 |---|---|---|
 | Expression edits | Uses the edited BlendShape values | Bakes the edited shape as the shape at value 0 |
 | Expression animations | May conflict, depending on their settings | May reduce breakage caused by conflicts |
@@ -44,7 +43,7 @@ Delete the added Avatar Blink Fix object to restore the avatar.
 
 ## Switching modes
 
-Press [Switch to Bake mode] in the Normal Mode Inspector.<br>
+Select the object added by Auto Fix (Recommended), then press [Switch to Bake mode] in its Inspector.<br>
 Your selections and settings carry over.
 
 Bake Mode may include edits outside the eyes.<br>

@@ -21,7 +21,7 @@ outline: [2, 2]
 
 If you edit expression animations with FaceEmo or another tool, you can use normal mode. Remove animation entries that hold a corrected BlendShape at value 0. If you keep the original expression animations unchanged, Bake Mode is recommended. Edits using values above 100 or negative values also require Bake Mode.
 
-→ Choosing a mode and comparing the differences: [Which Mode Should I Use?](/en/guide/bake-vs-normal)
+→ Choosing a mode and comparing the differences: [Choosing a Fix Mode](/en/guide/bake-vs-normal)
 
 </details>
 

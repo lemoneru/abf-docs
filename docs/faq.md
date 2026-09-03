@@ -21,7 +21,7 @@ outline: [2, 2]
 
 FaceEmoなどで表情Animationを編集する場合は通常モードを使えます。修正したBlendShapeを値0で固定している項目は、Animationファイルから削除してください。元の表情Animationをそのまま使う場合は、ベイクモードがおすすめです。100 を超える値やマイナス値を使っている場合もベイクモードが必要です。
 
-→ モードの選び方や違いは [どのモードで修正したらいい？](/guide/bake-vs-normal)
+→ モードの選び方や違いは [修正モードの選択](/guide/bake-vs-normal)
 
 </details>
 
