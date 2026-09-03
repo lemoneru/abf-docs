@@ -35,7 +35,7 @@ The steps depend on whether you keep the avatar's original animations or edit th
 
 ### Using the avatar's default expression animations
 
-[Bake Mode](/en/guide/bake) is recommended if you want to use the animations unchanged.<br>
+[Auto Fix (Bake Mode)](/en/guide/bake) is recommended if you want to use the animations unchanged.<br>
 Select the added Avatar Blink Fix object and press [Switch to Bake mode] in the Inspector.
 
 It may reduce breakage caused by conflicts with expression animations.

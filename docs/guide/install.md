@@ -38,5 +38,5 @@ VCC / ALCOM を使わない場合向けに、unitypackage も同梱していま�
 ## 動作環境
 
 - Unity 2022.3 系（VRChat 対応バージョン）
-- 非破壊機能（[自動修正](/guide/auto-fix)・[ベイクモード](/guide/bake)）には **NDMF** が必要です
+- 非破壊機能（[自動修正](/guide/auto-fix)・[自動修正（ベイクモード）](/guide/bake)）には **NDMF** が必要です
   - NDMF なしの環境でも[メッシュ入れ替え式](/guide/meshswap)は使えます（unitypackage で入れた場合。VCC / ALCOM で入れると NDMF も一緒に入ります）

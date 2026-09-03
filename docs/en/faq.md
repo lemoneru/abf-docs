@@ -54,7 +54,7 @@ Auto Fix normally turns the preview on automatically, so the fixed face shows ri
 <details id="preview-off">
 <summary>I stopped the preview and the face went back to how it was</summary>
 
-**That's correct behavior!** [Auto Fix](/en/guide/auto-fix) and [Bake Mode](/en/guide/bake) are non-destructive — the actual fix is **applied at upload (build) time**. Even with the preview stopped, the uploaded avatar gets the fix.
+**That's correct behavior!** [Auto Fix](/en/guide/auto-fix) and [Auto Fix (Bake Mode)](/en/guide/bake) are non-destructive — the actual fix is **applied at upload (build) time**. Even with the preview stopped, the uploaded avatar gets the fix.
 
 Want to see it in the scene again? Press "Preview the fix" in the Inspector.
 
@@ -91,7 +91,7 @@ After editing BlendShape values, press "Reload Expression" (or re-detect, in the
 
 By design. Fixing a BlendShape your expression is using would **change the very expression you made**.
 
-- In 3.0, [Bake Mode](/en/guide/bake) can help here: it bakes the expression into the mesh before fixing, so the expression can survive the fix
+- In 3.0, [Auto Fix (Bake Mode)](/en/guide/bake) can help here: it bakes the expression into the mesh before fixing, so the expression can survive the fix
 - The classic workaround: use split left/right BlendShapes (BlinkL / BlinkR etc.) at equal values in the expression, and set the original back to 0
 
 </details>
@@ -101,7 +101,7 @@ By design. Fixing a BlendShape your expression is using would **change the very 
 
 Check in this order:
 
-1. **Conflict with expression animations** — if the Inspector shows the yellow notice, and it breaks only while playing expressions, press "Switch to Bake mode" (→ [Bake Mode](/en/guide/bake))
+1. **Conflict with expression animations** — if the Inspector shows the yellow notice, and it breaks only while playing expressions, press "Switch to Bake mode" (→ [Auto Fix (Bake Mode)](/en/guide/bake))
 2. **Zero-value keys in expression animations** — if an existing animation contains the fixed BlendShape with value 0, it conflicts. Remove that entry from the animation file
 3. **Reset BlendShapes** — after a fix, if a left/right reset BlendShape at the bottom of the face mesh's list sits at 100, one eye may snap back. Set it to 0
 
@@ -166,7 +166,7 @@ Leave `Data`, `Animation`, `json` and the unlock key in place.
 <details id="ndmf">
 <summary>Do I need NDMF?</summary>
 
-Yes, for the non-destructive features ([Auto Fix](/en/guide/auto-fix), [Bake Mode](/en/guide/bake)). Installing via VCC / ALCOM brings it in automatically.
+Yes, for the non-destructive features ([Auto Fix](/en/guide/auto-fix), [Auto Fix (Bake Mode)](/en/guide/bake)). Installing via VCC / ALCOM brings it in automatically.
 
 ::: tip ＋ button disabled / "nadena.dev.ndmf not found"
 The NDMF repository isn't registered. Add **`https://vpm.nadena.dev/`** to VCC / ALCOM as well.
@@ -243,7 +243,7 @@ Narrow the fix targets down to the BlendShape your avatar actually blinks with. 
 <details id="over-range">
 <summary>My edits use values above 100 or negative values</summary>
 
-Supported since 3.0. When overdriven values are involved, the fix goes through [Bake Mode](/en/guide/bake) (the tool guides you).
+Supported since 3.0. When overdriven values are involved, the fix goes through [Auto Fix (Bake Mode)](/en/guide/bake) (the tool guides you).
 
 </details>
 
@@ -343,7 +343,7 @@ No. This tool repairs **BlendShapes**. It has no feature that automatically rewr
 
 To change expression animations, use FaceEmo or another expression-editing tool, or edit the Animation files manually. Remove entries that hold a corrected BlendShape at value 0.
 
-If you want to keep the original expression animations unchanged, [Bake Mode](/en/guide/bake) is recommended because those zero-value entries do not need to be removed.
+If you want to keep the original expression animations unchanged, [Auto Fix (Bake Mode)](/en/guide/bake) is recommended because those zero-value entries do not need to be removed.
 
 </details>
 

@@ -66,7 +66,7 @@ Bake Mode may reduce breakage caused by conflicts with expression animations.<br
 Try it when using your avatar's default expression animations unchanged, or when your avatar uses specialized animations such as those for face tracking.
 
 It bakes your edited expression into the mesh as the shape shown when the BlendShape values are 0, then applies the fix.<br>
-See the [Bake Mode page](/en/guide/bake) for details.
+See the [Auto Fix (Bake Mode) page](/en/guide/bake) for details.
 
 Use normal Auto Fix for a workflow closer to the previous version.<br>
 If your avatar's eyes look wrong when animations play in-game, try switching to Bake Mode.

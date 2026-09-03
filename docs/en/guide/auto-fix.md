@@ -54,7 +54,7 @@ The original mesh is not overwritten, so the avatar returns to its state before 
 An expression animation that controls a BlendShape being fixed can cause the eyes to look wrong in-game.
 
 If you want to keep the original expression animations unchanged, try [Switch to Bake mode].<br>
-Your settings carry over to [Bake Mode](/en/guide/bake), which may reduce the breakage.
+Your settings carry over to [Auto Fix (Bake Mode)](/en/guide/bake), which may reduce the breakage.
 
 Note: Bake Mode is a Complete Edition feature. Use it for edits with values above 100 or negative values as well.
 

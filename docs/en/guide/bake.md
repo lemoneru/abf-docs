@@ -1,4 +1,4 @@
-# Bake Mode
+# Auto Fix (Bake Mode)
 
 [How to Choose a Fix Mode](/en/guide/bake-vs-normal)
 

@@ -1,6 +1,6 @@
 # Using Face Tracking
 
-[Bake Mode](/en/guide/bake) is recommended when using face tracking.
+[Auto Fix (Bake Mode)](/en/guide/bake) is recommended when using face tracking.
 
 Avatar Blink Fix can also repair face-tracking (FT) eye-close BlendShapes affected by expression edits.<br>
 It does not change your FT addon's animations or settings.

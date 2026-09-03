@@ -43,7 +43,7 @@ The Complete Edition can also fix BlendShapes for winks, MMD, and face tracking.
 ::: tip This tool repairs BlendShapes
 This tool does not edit animations. Depending on the avatar's animation setup, the result may not work exactly as expected.
 
-If an animation conflicts with the fix, [Bake Mode](/en/guide/bake), added in 3.0, may reduce the breakage.
+If an animation conflicts with the fix, [Auto Fix (Bake Mode)](/en/guide/bake), added in 3.0, may reduce the breakage.
 
 If the fix does not work or you are unsure what to do, see the [FAQ](/en/faq).
 :::
@@ -78,7 +78,7 @@ After [installation](/en/guide/install), right-click your avatar in the Hierarch
 
 If something doesn't work, or you want finer control:
 
-- [Bake Mode](/en/guide/bake) … when expression animations conflict with the fix. May reduce animation-caused breakage
+- [Auto Fix (Bake Mode)](/en/guide/bake) … when expression animations conflict with the fix. May reduce animation-caused breakage
 - [Manual Fix](/en/guide/manual-fix) … for avatars without an Auto Fix preset
 - [Mesh Swap (Legacy)](/en/guide/meshswap) … the classic 2.x-style workflow
 

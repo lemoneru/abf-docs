@@ -17,7 +17,7 @@ Go for the paid edition if you want to:
 - Fix winks, smiling eyes, and other eye-closing BlendShapes all at once
 - Fix MMD BlendShapes too
 - Fix face-tracking eye-close BlendShapes too
-- Use [Bake Mode](/en/guide/bake) when expression animations conflict with the fix
+- Use [Auto Fix (Bake Mode)](/en/guide/bake) when expression animations conflict with the fix
 - Merge blinking animations, such as fluttering blinks, into expression animations while preserving the expressions → [Animation support (extra feature)](/en/guide/animation)
 - Use fine-tune mode (extra feature)
 
@@ -30,7 +30,7 @@ Go for the paid edition if you want to:
 | Blink BlendShape (`vrc.blink`) | ✅ | ✅ |
 | Mesh Swap (Legacy) | ✅ | ✅ |
 | Auto Fix (NDMF, non-destructive) | ✅ | ✅ |
-| [Bake Mode](/en/guide/bake) | — | ✅ |
+| [Auto Fix (Bake Mode)](/en/guide/bake) | — | ✅ |
 | MMD BlendShapes | — | ✅ |
 | Face-tracking BlendShapes | — | ✅ |
 | Any BlendShape | — | ✅ |

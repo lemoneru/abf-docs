@@ -38,5 +38,5 @@ Once installed, head to [Auto Fix (Recommended)](/en/guide/auto-fix).
 ## System requirements
 
 - Unity 2022.3 (the VRChat-supported version)
-- The non-destructive features ([Auto Fix](/en/guide/auto-fix), [Bake Mode](/en/guide/bake)) require **NDMF**
+- The non-destructive features ([Auto Fix](/en/guide/auto-fix), [Auto Fix (Bake Mode)](/en/guide/bake)) require **NDMF**
   - Without NDMF, [Mesh Swap (Legacy)](/en/guide/meshswap) still works (when installed via unitypackage; installing via VCC / ALCOM brings NDMF in automatically)
