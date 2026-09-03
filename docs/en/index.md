@@ -33,7 +33,7 @@ Avatar Blink Fix repairs the BlendShapes that cause these problems.
 
 </div>
 
-To fix an avatar, right-click it in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended).
+To fix an avatar, right-click the avatar you want to fix in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended).
 
 Auto Fix presets support more than 100 avatars, so most supported avatars can be fixed right away.
 For an avatar without a preset, select the required items.
@@ -50,7 +50,7 @@ If the fix does not work or you are unsure what to do, see the [FAQ](/en/faq).
 
 ## Try it for free
 
-The free edition can repair the BlendShape used for a regular blink. You can use the fixed avatar in-game as-is.
+Even the free edition can repair a regular blink BlendShape, such as `vrc.blink`.
 
 The Complete Edition can repair all the eye-closing BlendShapes you need, including regular blinks, winks, MMD BlendShapes, and face-tracking BlendShapes.
 If an Auto Fix preset is available, Auto Fix repairs all the necessary BlendShapes at once.
@@ -60,17 +60,16 @@ If an Auto Fix preset is available, Auto Fix repairs all the necessary BlendShap
 
 ## VPM repository support (new in 3.0)
 
-Unless you have a specific reason not to, install through VCC / ALCOM. You can install the latest Avatar Blink Fix and Auto Fix presets together.
+You can easily install the latest Avatar Blink Fix and Auto Fix presets together through VCC / ALCOM.
 
 **→ [Add to VCC / ALCOM](/en/add)**
 
 ![ALCOM package management screen showing the Avatar Blink Fix row and add button](/images/alcom-add-package.png)
 
 ::: tip Coming from 2.x?
-**Upgrading to 3.0 is free of charge.** Avatars you already fixed with 2.x keep working as they are.
+If you already purchased the Complete Edition, you can use 3.0 at no extra cost.
 
-For what to do when the "Migrate to the new Avatar Blink Fix" dialog appears, and a summary of what changed:
-→ [Coming from 2.x (migrating to 3.0)](/en/guide/from-2x)
+→ [How to migrate from 2.x](/en/guide/from-2x)
 :::
 
 ## How to use
