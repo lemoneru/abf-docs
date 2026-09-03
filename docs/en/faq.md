@@ -206,26 +206,39 @@ The non-destructive [Auto Fix](/en/guide/auto-fix) doesn't swap the mesh, so it'
 <details id="cannot-revert">
 <summary>It says "restore first" but the restore button is disabled</summary>
 
-A fixed mesh from [Mesh Swap (Legacy)](/en/guide/meshswap) is still in place.
+Do not delete the saved record yet.<br>
+Deleting it while the mesh is still fixed removes the original mesh location, so the tool can no longer restore it.
 
-- Delete that avatar's record from the tool's "**Saved Data**"
-- Then re-assign the face mesh from the original FBX by hand, and you can start over
+If this happened after duplicating or renaming, and the avatar from before that change still exists, assign that avatar to the tool and try [Restore Original].<br>
+If that avatar is no longer available, or you still cannot restore it, keep the record and [contact us](#contact).
 
 </details>
 
 <details id="copied-avatar">
 <summary>Duplicating / renaming my avatar makes it count as "already fixed" or error out</summary>
 
-Mesh Swap keeps its fix records **per avatar name**. Duplicating a fixed avatar or renaming its Prefab makes the record mismatch, and the double-fix guard can kick in.
+Mesh Swap saves its fix records per avatar name.<br>
+Follow this order when duplicating or renaming:
 
-After renaming, delete the old record from "Saved Data", then fix again.
+1. Press [Restore Original] in the tool
+2. Duplicate or rename the avatar
+3. Apply the fix again
+
+If you have already duplicated or renamed it and cannot restore it, see [When the restore button is disabled](#cannot-revert).
 
 </details>
 
 <details id="stale-data">
 <summary>An old record is getting in the way</summary>
 
-Leftover fix records (backups etc.) can interfere. Delete that avatar's record from the tool's "**Saved Data**" and try again.
+An old fix record can sometimes interfere with a new fix.<br>
+To delete the record and start over in Mesh Swap, follow this order:
+
+1. Press [Restore Original] to restore the original mesh
+2. Delete that avatar's record from [Saved Data]
+3. Assign the avatar again and apply the fix
+
+If [Restore Original] is disabled, do not delete the record. See [these instructions](#cannot-revert).
 
 </details>
 
@@ -281,7 +294,13 @@ If the symptom remains, check the FT addon's settings.
 <details id="webcam">
 <summary>Webcam blink tracking breaks the eyes</summary>
 
-Webcam tracking drives BlendShapes past the avatar's own control, which is hard for the tool to counter. The practical workaround is disabling webcam blinking on the VRChat side (Avatar Descriptor settings).
+You can also try disabling webcam-driven blinking.<br>
+Choose whichever is more convenient: changing your in-game settings or configuring the avatar in Unity.
+
+- **In-game:** Open VRChat's Settings → Tracking & IK → Eye Tracking and turn [Disable Eye Lid Tracking] ON. No avatar re-upload is needed.
+- **In Unity:** Open the avatar's VRC Avatar Descriptor → Eye Look → Eyelids, set the BlendShapes [Blink] entry to [-none-], then re-upload. This also disables regular automatic blinking driven by the Avatar Descriptor.
+
+See VRChat's official guides for [in-game settings](https://wiki.vrchat.com/wiki/Settings#Eye_Tracking) and [avatar blinking settings](https://creators.vrchat.com/avatars/#simulated-eye-movement).
 
 </details>
 
@@ -316,26 +335,6 @@ Remove the eye BlendShape entries from the animation in question.
 
 ## Other {#other}
 
-<details id="privacy">
-<summary>Does it store anything on my PC? Does it phone home?</summary>
-
-**It never communicates externally.** There is no license server, either.
-
-The only things stored on your PC are these Unity EditorPrefs:
-
-| What | Key |
-|---|---|
-| The unlock key value (after upgrading) | `AvatarBlinkFix_UnlockSecret` |
-| Display language | `AvatarBlinkFix_Language` |
-| Recent errors (for the support info) | `AvatarBlinkFix_RecentErrors` |
-| Whether the "What's New" notice was shown | `ABF_WhatsNew_3_0_Shown` |
-| Whether Advanced Settings is expanded | `ABF_ShowDetailSettings` |
-
-To erase them, press the tool's **[Return to trial]** button (removes this PC's stored values).
-The storage location for manual removal is in the bundled `README.md`.
-
-</details>
-
 <details id="anim-file">
 <summary>Will it fix my expression animation files themselves?</summary>
 
@@ -350,8 +349,6 @@ If you want to keep the original expression animations unchanged, [Auto Fix (Bak
 ## Contact {#contact}
 
 Still stuck? Message us via the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770).
-
-When you do, pasting the output of the tool's "**Support Information**" → "**Copy Support Information**" tells us your situation right away and speeds up the resolution.
 
 ::: warning Please don't contact avatar creators about this tool
 If a problem occurs while using this tool, please don't take it to the avatar's creator or other third parties. Contact us via the BOOTH message above.

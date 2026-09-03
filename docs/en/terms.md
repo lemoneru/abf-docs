@@ -57,5 +57,3 @@ These terms may be revised as needed. Revisions will be published on this page.
 ## Contact {#contact}
 
 Please message us via the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770).
-
-Pasting the output of the tool's "**Support Information**" → "**Copy Support Information**" tells us your situation right away and speeds up the resolution.

@@ -43,7 +43,11 @@ Press [Restore Original] in the window.<br>
 To redo expression edits, restore first, edit the expression, then apply the fix again.
 
 Fix records are saved per avatar name.<br>
-If a warning appears after duplicating or renaming an avatar, see [Fixing a duplicated avatar](/en/faq#copied-avatar).
+Before duplicating or renaming an avatar, press [Restore Original].<br>
+Apply the fix again after duplicating or renaming it.
+
+Restore the avatar before deleting its record from [Saved Data] as well.<br>
+Deleting the record while the mesh is still fixed removes the original mesh location, so the tool can no longer restore it.
 
 ## When combining with Avatar Mouth Fix
 

@@ -80,4 +80,4 @@ Installed via VCC / ALCOM? New versions are just the "Update" button — no need
 ### Known notes
 
 - If NDMF's preview stalls, the fix can stop showing. Restarting Unity recovers it
-- The scene mesh looking unchanged is normal (the fix is applied at upload time)
+- With preview ON, you can see the corrected appearance in the scene. The fix is applied at upload time even with preview OFF

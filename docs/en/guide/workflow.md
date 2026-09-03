@@ -68,7 +68,7 @@ The fix is applied at upload time even if the preview is OFF.
 Check the blink and expressions in VRChat. If everything looks right, you're done.
 
 If the eyes look wrong in-game, there may be a conflict with an expression animation.<br>
-If you use normal mode, check for remaining zero-value entries or try switching to Bake Mode.
+If you use [Auto Fix (Recommended)], check for remaining zero-value entries or try switching to Bake Mode.
 
 ## Redoing your expression edits later
 
@@ -86,7 +86,7 @@ To restore the avatar to its state before the fix, delete the added Avatar Blink
 
 | Your setup | Method or instructions |
 |---|---|
-| Using values above 100 or negative values | Use Bake Mode. Normal mode cannot reproduce these values |
+| Using values above 100 or negative values | Use Bake Mode. [Auto Fix (Recommended)] cannot reproduce these values |
 | Using Avatar Mouth Fix | Use [Normal Fix in Mesh Swap](/en/guide/meshswap#when-combining-with-avatar-mouth-fix) |
 | Not using NDMF, or keeping the 2.x-style workflow | Use [Mesh Swap (Legacy)](/en/guide/meshswap) |
 | Using face tracking | Bake Mode is recommended. See [Using Face Tracking](/en/guide/face-tracking) |

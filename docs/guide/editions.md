@@ -33,7 +33,7 @@ Avatar Blink Fixをインストールすると、そのまま無料版として�
 | [自動修正（ベイクモード）](/guide/bake) | — | ✅ |
 | MMD用BlendShape | — | ✅ |
 | フェイストラッキング用BlendShape | — | ✅ |
-| 任意のBlendShape | — | ✅ |
+| 任意の目を閉じるBlendShape | — | ✅ |
 | [Animation対応（まばたきと表情の合成）](/guide/animation) | — | ✅ |
 | 微調整モード・設定の書き出し | — | ✅ |
 
@@ -44,7 +44,7 @@ Avatar Blink Fixをインストールすると、そのまま無料版として�
 
 ::: tip 無料版で修正できないアバターもあります
 無料版で修正できるのは、`vrc.blink` や `eye_close` などのBlendShapeです。アバターによってはその名前のBlendShapeがなく、修正できない場合があります。
-その場合でも、有料版なら任意のBlendShapeを修正できます。
+その場合でも、有料版なら任意の目を閉じるBlendShapeを修正できます。
 :::
 
 ## 有料版は必要ですか？

@@ -33,7 +33,7 @@ Go for the paid edition if you want to:
 | [Auto Fix (Bake Mode)](/en/guide/bake) | — | ✅ |
 | MMD BlendShapes | — | ✅ |
 | Face-tracking BlendShapes | — | ✅ |
-| Any BlendShape | — | ✅ |
+| Any eye-closing BlendShape | — | ✅ |
 | [Animation support (blink / expression merging)](/en/guide/animation) | — | ✅ |
 | Fine-tune mode / settings export | — | ✅ |
 
@@ -44,7 +44,7 @@ The list of supported avatars is on the [Avatar Blink Fix page on BOOTH](https:/
 
 ::: tip The free edition cannot fix some avatars
 The free edition can fix BlendShapes such as `vrc.blink` and `eye_close`. Some avatars don't have a BlendShape with one of the supported names, so the free edition may not be able to fix them.
-Even then, the Complete Edition can fix any BlendShape.
+Even then, the Complete Edition can fix any eye-closing BlendShape.
 :::
 
 ## Do I need the paid edition?
