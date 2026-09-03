@@ -74,6 +74,14 @@ If you already purchased the Complete Edition, you can use 3.0 at no extra cost.
 
 After [installation](/en/guide/install), right-click your avatar in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended).
 
+① Right-click your avatar in the Hierarchy.
+
+![Chocolat selected in Unity's Hierarchy](/images/context-menu-hierarchy.png)
+
+② Choose [Avatar Blink Fix] → [自動修正（推奨）] (Auto Fix – Recommended).
+
+![The Avatar Blink Fix context menu showing Auto Fix (Recommended)](/images/context-menu-autofix.png)
+
 → [Step-by-step workflow](/en/guide/workflow)
 
 If something doesn't work, or you want finer control:

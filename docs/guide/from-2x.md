@@ -13,6 +13,8 @@
 
 2.xが入っているプロジェクトに3.0を入れると、この案内が出ます。
 
+![新しいAvatar Blink Fixへの移行を案内するUnityのダイアログ。移行する・あとでのボタン](/images/migration-ja.png)
+
 ［移行する］を選ぶと、以前のデータや設定を引き継いで3.0の機能を使えます。
 
 ::: tip ［あとで］を押した場合
@@ -36,7 +38,13 @@
 ヒエラルキーのアバターを右クリックして、［Avatar Blink Fix］→［自動修正（推奨）］を選びます。<br>
 アバター内にAvatar Blink Fixのオブジェクトが追加され、BlendShapeが修正された状態になります。
 
-![Hierarchyでアバターを右クリックし、「Avatar Blink Fix」から「自動修正（推奨）」を選ぶ操作図](/images/context-menu-guide.svg)
+① ヒエラルキーのアバターを右クリックします。
+
+![HierarchyでChocolatを選択したUnityの実画面](/images/context-menu-hierarchy.png)
+
+② ［Avatar Blink Fix］→［自動修正（推奨）］を選びます。
+
+![Avatar Blink Fixの右クリックメニューと自動修正（推奨）](/images/context-menu-autofix.png)
 
 アバターを修正前に戻すときは、追加されたAvatar Blink Fixのオブジェクトを削除してください。
 

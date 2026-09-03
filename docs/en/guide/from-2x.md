@@ -13,6 +13,8 @@ After importing 3.0, use the unlock key available on the same purchase page.
 
 This dialog appears when you install 3.0 in a project that already has 2.x.
 
+![Unity's migration dialog with Migrate and Later buttons](/images/migration-en.png)
+
 Choose [Migrate] to use the features of 3.0 while keeping your existing data and settings.
 
 ::: tip If you choose [Later]
@@ -36,7 +38,13 @@ The classic unitypackage is still bundled too.
 Right-click your avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（推奨）] (Auto Fix – Recommended).<br>
 An Avatar Blink Fix object is added inside the avatar, and the BlendShapes are fixed.
 
-![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
+① Right-click your avatar in the Hierarchy.
+
+![Chocolat selected in Unity's Hierarchy](/images/context-menu-hierarchy.png)
+
+② Choose [Avatar Blink Fix] → [自動修正（推奨）] (Auto Fix – Recommended).
+
+![The Avatar Blink Fix context menu showing Auto Fix (Recommended)](/images/context-menu-autofix.png)
 
 To restore the avatar to its state before the fix, delete the added Avatar Blink Fix object.
 

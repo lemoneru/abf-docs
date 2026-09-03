@@ -74,6 +74,14 @@ Avatar Blink Fixは、その原因となるBlendShapeを修正するツールで
 
 [導入](/guide/install)後、ヒエラルキーのアバターを右クリックして、［Avatar Blink Fix］→［自動修正（推奨）］を選びます。
 
+① ヒエラルキーのアバターを右クリックします。
+
+![HierarchyでChocolatを選択したUnityの実画面](/images/context-menu-hierarchy.png)
+
+② ［Avatar Blink Fix］→［自動修正（推奨）］を選びます。
+
+![Avatar Blink Fixの右クリックメニューと自動修正（推奨）](/images/context-menu-autofix.png)
+
 → [具体的な動作の流れ](/guide/workflow)
 
 うまくいかないときや、細かく設定したいときは、こちらもどうぞ。
