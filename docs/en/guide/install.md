@@ -35,7 +35,10 @@ You'll have to re-import it for every update though, so VCC / ALCOM is easier un
 
 ## Updating from 2.x
 
-[Coming from 2.x (migration steps and changes)](/en/guide/from-2x)
+Import 3.0 without removing the previous version.
+If a migration prompt appears during installation, click "Migrate." You can keep using your existing data and settings.
+
+For a new project, simply import 3.0.
 
 ## Next step
 
