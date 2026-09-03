@@ -1,10 +1,10 @@
 # Coming from 2.x (Migrating to 3.0)
 
-::: danger 3.0 switched to an "unlock key" system
-In 3.0, you download an unlock key from the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770) and import it once — that makes it the Complete Edition.
+3.0 uses an unlock key system. Without an unlock key, it runs as the free Trial Edition.
 
-2.x owners pay nothing extra. Download the 3.0 unlock key from the same purchase page.
-:::
+If you already use 2.x, download the unlock key from the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770) and import it to activate the Complete Edition. Once imported, it works across all projects on the same PC.
+
+2.x owners pay nothing extra. Use the 3.0 unlock key available on the same purchase page.
 
 ## When "Migrate to the new Avatar Blink Fix" appears
 
@@ -40,27 +40,27 @@ An Avatar Blink Fix object is added inside the avatar, and the BlendShapes are f
 
 ![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
 
-To undo the fix, delete the added object. This restores the avatar to its state before the fix.
+To restore the avatar to its state before the fix, delete the added Avatar Blink Fix object.
 
 → [Full workflow](/en/guide/workflow)
 
 ::: warning When redoing your expression edits
-Press "**Stop preview**" before editing, then press "**Reload Expression**" when you're done.
-When creating or editing expression animation clips in an expression tool, do the opposite: keep the preview ON.
-→ Details: [Auto Fix: Redoing your expression edits later](/en/guide/auto-fix#redoing-your-expression-edits-later)
+Delete the Avatar Blink Fix object or turn the preview OFF in its Inspector before editing your expression. When you're done, run Auto Fix again if you deleted the object, or press [Reload Expression] if you turned the preview off.
+
+When creating or editing expression animations with FaceEmo or a similar tool, turn the preview ON so you can work while seeing the fixed result.
 :::
 
-::: tip The classic window is still there
-The 2.x-style window lives on as "[Mesh Swap (Legacy)](/en/guide/meshswap)". You can keep working the old way, but we recommend the right-click Auto Fix first.
+::: tip You can still use the previous method
+You can still open the window from Tools → Avatar Blink Fix and fix your avatar as before.
 :::
 
-### ③ New: Bake Mode
+### ③ A new fix method: Bake Mode
 
-In 2.x, an expression animation baked into the avatar could pin an eye BlendShape at 0 — things looked fixed in Unity but broke in-game. This was seen on avatars such as Kipfel, Marycia and Azuki.
+Bake Mode may reduce breakage caused by conflicts with expression animations. Try it when using your avatar's default expression animations unchanged, or when your avatar uses specialized animations such as those for face tracking.
 
-Bake mode bakes your edited expression into the mesh before fixing. It may reduce breakage caused by expression animations.
+It bakes your edited expression into the mesh as the shape shown when the BlendShape values are 0, then applies the fix. See the [Bake Mode page](/en/guide/bake) for details.
 
-→ When and how to use it: [Bake Mode](/en/guide/bake). When Auto Fix detects a conflict, it shows guidance with a switch button — no need to memorize any of this.
+Use normal Auto Fix for a workflow closer to the previous version. If your avatar's eyes look wrong when animations play in-game, try switching to Bake Mode.
 
 ## Going back to 2.x
 
