@@ -24,7 +24,7 @@ hero:
 
 ## Avatar Blink Fix とは？
 
-表情改変をすると、目のBlendShapeが破綻し、ゲーム内で目が潰れたり、閉じきらなくなることがあります。
+表情改変をすると、目のBlendShapeが破綻し、ゲーム内で目が潰れたり、閉じきらなくなることがあります。<br>
 Avatar Blink Fixは、その原因となるBlendShapeを修正するツールです。
 
 <div class="figure-sm">
@@ -50,13 +50,11 @@ Avatar Blink Fixは、その原因となるBlendShapeを修正するツールで
 
 ## 無料でお試しいただけます
 
-無料版でも、普段のまばたきに使うBlendShape（`vrc.blink` など）を修正できます。
+無料版では、普段のまばたきに使うBlendShapeを1つ（`vrc.blink` など）修正できます。
 
-コンプリート版では、まばたきに加えて、ウィンク、MMD用BlendShape、フェイストラッキング用BlendShapeなど、目を閉じるために必要なBlendShapeをすべて修正できます。
-対応するAuto Fixプリセットがあれば、自動修正だけで必要なBlendShapeをまとめて修正できます。
+コンプリート版では、まばたきに加え、ウィンクやMMD、フェイストラッキングなど、目を閉じるために必要なBlendShapeをすべて修正できます。
 
-→ [無料版と有料版の違い](/guide/editions)（どちらを使えばいい？ どれをインポートすればいい？）
-→ [導入方法](/guide/install)
+→ [無料版と有料版の違い](/guide/editions)
 
 ## VPMリポジトリに対応しました（3.0から）
 
@@ -74,9 +72,7 @@ Avatar Blink Fixは、その原因となるBlendShapeを修正するツールで
 
 ## 使い方
 
-ヒエラルキーのアバターを右クリックして、［Avatar Blink Fix］→［自動修正（推奨）］を選びます。アバター内にAvatar Blink Fixのオブジェクトが追加され、修正は完了です。
-
-オブジェクトが追加されると、BlendShapeが修正された状態になります。修正をやめるときは、そのオブジェクトを削除してください。削除すると修正前の状態に戻ります。
+[導入](/guide/install)後、ヒエラルキーのアバターを右クリックして、［Avatar Blink Fix］→［自動修正（推奨）］を選びます。
 
 → [具体的な動作の流れ](/guide/workflow)
 

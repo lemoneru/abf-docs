@@ -24,7 +24,7 @@ hero:
 
 ## What is Avatar Blink Fix?
 
-Editing an avatar's facial expressions can break its eye BlendShapes. In-game, the eyes may look crushed or may not close fully.
+Editing an avatar's facial expressions can break its eye BlendShapes. In-game, the eyes may look crushed or may not close fully.<br>
 Avatar Blink Fix repairs the BlendShapes that cause these problems.
 
 <div class="figure-sm">
@@ -50,13 +50,11 @@ If the fix does not work or you are unsure what to do, see the [FAQ](/en/faq).
 
 ## Try it for free
 
-Even the free edition can repair a regular blink BlendShape, such as `vrc.blink`.
+The free edition can repair one regular blink BlendShape, such as `vrc.blink`.
 
-The Complete Edition can repair all the eye-closing BlendShapes you need, including regular blinks, winks, MMD BlendShapes, and face-tracking BlendShapes.
-If an Auto Fix preset is available, Auto Fix repairs all the necessary BlendShapes at once.
+The Complete Edition can repair all the eye-closing BlendShapes you need for regular blinks, winks, MMD, and face tracking.
 
-→ [Free vs Complete Edition](/en/guide/editions) (which one do you need?)
-→ [Installation](/en/guide/install)
+→ [Free vs Complete Edition](/en/guide/editions)
 
 ## VPM repository support (new in 3.0)
 
@@ -74,9 +72,7 @@ If you already purchased the Complete Edition, you can use 3.0 at no extra cost.
 
 ## How to use
 
-Right-click your avatar in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended). An Avatar Blink Fix object is added under the avatar, and the fix is complete.
-
-Once the object is added, the BlendShapes appear in their fixed state. To stop using the fix, delete that object. The avatar then returns to its original state.
+After [installation](/en/guide/install), right-click your avatar in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended).
 
 → [Step-by-step workflow](/en/guide/workflow)
 

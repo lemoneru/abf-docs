@@ -2,15 +2,6 @@
 
 ## Install via VCC / ALCOM (recommended)
 
-::: danger Currently distributed to supporter-edition buyers only
-🔑 **Without an unlock key, the tool does not run as the Complete Edition** (an installed copy runs as the **free edition**).
-The unlock key is available **from the BOOTH purchase page for supporter-edition buyers**.
-
-⚠️ **2.x owners also need an unlock key for 3.0** (unlock keys are new in 3.0 and are not included in 2.x) → [Coming from 2.x](/en/guide/from-2x)
-
-**The public release date will be announced on this page and on BOOTH once decided.** After that, everyone can use the repository.
-:::
-
 1. Open [Add to VCC / ALCOM](/en/add) and register the repository. If you have already registered it, continue to the next step.
 2. In your project's package management, find "**Avatar Blink Fix**" and add it with the ＋ button (typing "blink" in the search box gets you there fast)
 
