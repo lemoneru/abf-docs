@@ -35,11 +35,12 @@ Use the slider values to check which shapes you edited.
 
 ### BlendShapes to Fix
 
-Select the blink and eye-closing BlendShapes you want to repair.<br>
-Common names such as `vrc.blink` are selected automatically even without a preset.
+Select the blink and eye-closing BlendShapes you want to repair.
 
-Check regular blinking first, then add winks or smiling eyes if needed.<br>
-For half-closed eyes, narrowed eyes, or eyelash adjustments, try one at a time and check the result.
+- **Include:** Blinks, winks, smiling eyes, relaxed closed eyes (nagomi), `><` eyes, and other BlendShapes that completely change the eye shape.
+- **Do not include:** Half-closed eyes, narrowed eyes (jitome), or eyelash position adjustments.
+
+Common names such as `vrc.blink` are selected automatically even without a preset.
 
 | Name color | Meaning |
 |---|---|
