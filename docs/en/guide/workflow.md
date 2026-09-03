@@ -1,134 +1,90 @@
 # The Full Workflow
 
-This page answers "so what order do I actually do things in?" —
-the whole flow from expression editing, through animation checks and upload, to checking your avatar in-game.
+Edit your avatar's expression, fix the blink, then check the expression animations before uploading.<br>
+If you haven't installed the tool yet, see [Installation](/en/guide/install).
 
-> **① Edit expressions → ② Auto Fix → ③ Preview → ④ Check expression animations → ⑤ Upload → ⑥ Check in-game**
+## ① Edit the expression
 
-Each step links to a page with the details.
+Adjust the avatar's BlendShapes to create the expression you want.<br>
+Avatar Blink Fix repairs the blink to match this edited expression.
 
-::: tip Haven't installed yet?
-First add the tool via [Add to VCC / ALCOM](/en/add). **A fresh install runs as the free edition.**
+If the avatar already has an Avatar Blink Fix setup, follow "Redoing your expression edits later" below.
+
+## ② Fix the blink
+
+Right-click your avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（推奨）] (Auto Fix – Recommended).<br>
+An Avatar Blink Fix object is added inside the avatar, and you can preview the fixed expression.
+
+Select the added object and check the fix settings in the Inspector.<br>
+If the button says [Stop preview], the preview is ON.
+
+![Avatar Blink Fix Inspector with the Reload Expression and Stop preview buttons](/images/easy-normal.png)
+
+If [自動修正（推奨）] is grayed out, no matching preset was found.<br>
+Use [Manual Fix](/en/guide/manual-fix) and select the required items.
+
+If you cannot find the right-click menu, you can also open the tool from Tools → Avatar Blink Fix at the top of Unity.<br>
+The right-click menu is shown in Japanese even when the tool's Language setting is English.
+
+## ③ Check the expression animations
+
+Check the expression animations before uploading.<br>
+The steps depend on whether you keep the avatar's original animations or edit them yourself.
+
+### Using the avatar's default expression animations
+
+[Bake Mode](/en/guide/bake) is recommended if you want to use the animations unchanged.<br>
+Select the added Avatar Blink Fix object and press [Switch to Bake mode] in the Inspector.
+
+In Bake Mode, you do not need to remove the zero-value entries described below.<br>
+It may reduce breakage caused by conflicts with expression animations.
+
+Note: Bake Mode is a Complete Edition feature.
+
+### Editing the expression animations
+
+Use FaceEmo or a similar tool, or edit the animation files manually.<br>
+Keep the Avatar Blink Fix object and turn the preview ON so you can work while seeing the fixed result.
+
+::: warning In normal mode, remove entries that hold the value at 0
+An entry (curve) that holds a corrected BlendShape at 0 may conflict with the fix.<br>
+Remove the affected entry from the expression animation.<br>
+You do not need to delete the whole animation file.
 :::
 
-::: tip The right-click menu is shown in Japanese
-Due to a Unity limitation, the right-click menu items always appear in Japanese, regardless of the Language setting:
+If "conflict with expression animations" appears, check for these entries as well.
 
-- 自動修正（推奨） = **Auto Fix (Recommended)**
-- 自動修正（ベイクモード） = **Auto Fix (Bake Mode)**
-- 手動修正 = **Manual Fix**
+## ④ Upload and check in-game
 
-Everything else in the tool follows the Language setting.
-:::
+Upload the avatar through the VRChat SDK as usual.<br>
+The fix is applied at upload time even if the preview is OFF.
 
-## ① Finish your expression edits first
+Check the blink and expressions in VRChat. If everything looks right, you're done.
 
-Avatar Blink Fix records the BlendShape values at the moment you run the fix, and builds the correction from them.
-So the most natural flow is to **finish your expression edits, then fix**.
-
-Fixing mid-edit is fine too, but if you edit more afterwards you'll need the steps under "Redoing your expression edits later" below.
-
-## ② Right-click the avatar → Auto Fix (Recommended)
-
-Right-click your avatar in the Hierarchy and choose "**Avatar Blink Fix**" → "**自動修正（推奨）**" (Auto Fix – Recommended).
-
-![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
-
-::: tip If you cannot find the right-click menu
-You can also start from **Tools → Avatar Blink Fix** at the top of Unity. Set your avatar in field ①, then press [Auto Fix].
-
-If the right-click menu itself is missing, NDMF may not be installed → [The right-click menu or Tools entry doesn't show up](/en/faq#the-right-click-menu-or-tools-entry-doesnt-show-up)
-:::
-
-When you see "The blink fix has been set up", you're done setting up.
-An object called "Avatar Blink Fix (NDMF)" is added under the avatar; all the settings live on it.
-
-→ Details: [Auto Fix (Recommended)](/en/guide/auto-fix)
-
-::: warning When "Auto Fix (Recommended)" is grayed out
-That means no Auto Fix preset matches this avatar, so the menu item can't be clicked.
-Pick the BlendShapes to fix yourself and you get the same result.
-→ [Manual Fix (for avatars without a preset)](/en/guide/manual-fix)
-:::
-
-## ③ Check the fixed face in the preview
-
-Running Auto Fix turns the preview on automatically, so the avatar in your scene shows the fixed face right away.
-You can confirm on the spot that it looks the way you want.
-
-If the Inspector button shows the red "**Stop preview**", the preview is ON.
-
-![Inspector after the fix, showing detection counts and the Reload Expression / Stop preview buttons](/images/easy-normal.png)
-
-→ Details: [Auto Fix: Check the fixed face right away](/en/guide/auto-fix#check-the-fixed-face-right-away)
-
-## If "conflict with expression animations" appears
-
-If you don't see this message, skip this step.
-
-When an expression animation drives a BlendShape that's being fixed, the Inspector shows a yellow notice and a "**Switch to Bake mode**" button.
-If this notice appears, check step ④ before uploading. The next step depends on whether you plan to edit the expression animations or leave them as they are.
-
-If overdriven values (above 100 or negative) are detected, switch to Bake mode — normal mode can't reproduce those values.
-If an animation is breaking the face itself, Bake mode may reduce that too.
-
-→ Details: [Bake Mode](/en/guide/bake) ／ [Bake vs Normal Mode](/en/guide/bake-vs-normal)
-
-## ④ Decide how to handle expression animations
-
-Before uploading, decide whether you will edit the expression animations.
-
-### If you also edit the animations with FaceEmo or another tool
-
-When your expression work also changes the expression animations, use FaceEmo or another expression-editing tool, or edit the Animation files manually.
-
-::: warning Remove entries that hold a value at 0
-If an animation curve keeps a BlendShape corrected by Avatar Blink Fix at value 0, it may conflict with the corrected BlendShape. Remove that entry from the expression animation.
-:::
-
-### If you keep the avatar's original expression animations
-
-If you plan to upload with the avatar's original expression animations, without using FaceEmo or another expression-editing tool, [Bake Mode](/en/guide/bake) is recommended.
-
-In Bake Mode, you do not need to remove the zero-value curves described above.
-
-## ⑤ Upload as usual
-
-No special steps. Upload from the VRChat SDK as you always do, and the avatar goes up with the fix applied.
-
-Even with the preview stopped, the fix is applied at upload time (→ [how it works](/en/guide/auto-fix#check-the-fixed-face-right-away)).
-
-## ⑥ Check in-game
-
-Join VRChat and try blinking and playing expressions. If everything looks right, you're done.
-
-If the eyes move wrong, an expression animation may be conflicting. Check for the zero-value curves described in step ④, or try [Bake Mode](/en/guide/bake).
+If the eyes look wrong in-game, there may be a conflict with an expression animation.<br>
+If you use normal mode, check for remaining zero-value entries or try switching to Bake Mode.
 
 ## Redoing your expression edits later
 
-1. Press "**Stop preview**" in the Inspector (editing while the preview is on can give unintended results)
-2. Redo your expression edits
-3. Press "**Reload Expression**" so the tool re-records the edited state
+Turn the preview OFF before adjusting the face's BlendShapes again.
 
-When creating or editing expression animation clips in an expression tool, do the opposite: keep the preview ON.
+1. Press [Stop preview] in the Avatar Blink Fix Inspector
+2. Edit the expression
+3. Press [Reload Expression]
 
-→ Details: [Auto Fix: Redoing your expression edits later](/en/guide/auto-fix#redoing-your-expression-edits-later)
+You can also delete the Avatar Blink Fix object, edit the expression, then run Auto Fix again when you're done.<br>
+When creating or editing expression animations with FaceEmo or a similar tool, keep the preview ON.
 
-To stop using the tool, delete the added "Avatar Blink Fix (NDMF)" object. The original mesh was never rewritten.
+To restore the avatar to its state before the fix, delete the added Avatar Blink Fix object.
 
 ## Quick reference
 
-| Situation | Where to go |
+| Your setup | Method or instructions |
 |---|---|
-| "Conflict with expression animations" appeared | Before uploading, see step ④ above |
-| You want to keep the expression animations unchanged | [Bake Mode](/en/guide/bake) is recommended |
-| Eyes move wrong in-game when playing expressions | [Bake Mode](/en/guide/bake) |
-| An animation is breaking the face | [Bake Mode](/en/guide/bake) (may reduce the breakage) |
-| Using overdriven values (above 100 / negative) | [Bake Mode](/en/guide/bake) |
-| "Auto Fix (Recommended)" is grayed out | [Manual Fix](/en/guide/manual-fix) |
-| No NDMF / want the 2.x-style workflow | [Mesh Swap (Legacy)](/en/guide/meshswap) |
-| You use Avatar Mouth Fix | [Normal Fix in Mesh Swap](/en/guide/meshswap#when-combining-with-avatar-mouth-fix) |
-| You use face tracking | [Using Face Tracking](/en/guide/face-tracking) |
-| You use a tool that adds BlendShapes | [Using Tools That Add BlendShapes](/en/guide/added-blendshapes) |
-| Want to fix MMD / face-tracking BlendShapes too | [Free vs Complete Edition](/en/guide/editions) |
-| Anything else that's not working | [FAQ](/en/faq) |
+| Using values above 100 or negative values | Use Bake Mode. Normal mode cannot reproduce these values |
+| Using Avatar Mouth Fix | Use [Normal Fix in Mesh Swap](/en/guide/meshswap#when-combining-with-avatar-mouth-fix) |
+| Not using NDMF, or keeping the 2.x-style workflow | Use [Mesh Swap (Legacy)](/en/guide/meshswap) |
+| Using face tracking | See [Using Face Tracking](/en/guide/face-tracking) |
+| Using a tool that adds BlendShapes | See [Using Tools That Add BlendShapes](/en/guide/added-blendshapes) |
+
+If the fix does not work as expected, see the [FAQ](/en/faq).
