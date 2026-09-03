@@ -20,6 +20,34 @@
   background-color: var(--vp-c-text-2);
 }
 
+/* モードの選び方：条件を先に、矢印の先に修正方法を表示する */
+.vp-doc .mode-choice {
+  margin: 28px 0;
+  padding: 20px 24px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+}
+.vp-doc .mode-choice > ul {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.vp-doc .mode-choice > ul > li + li {
+  margin-top: 12px;
+}
+.vp-doc .mode-choice > h2 {
+  margin: 20px 0 12px;
+  padding-top: 0;
+  border-top: 0;
+  font-size: 22px;
+  line-height: 1.6;
+}
+.vp-doc .mode-choice > p:last-child {
+  margin-bottom: 0;
+}
+
 /* 本文中のスクリーンショットに枠を付ける（暗色UIがページに溶けないように） */
 .vp-doc img {
   border: 1px solid var(--vp-c-divider);

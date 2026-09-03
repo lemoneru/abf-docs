@@ -1,6 +1,6 @@
 # Auto Fix (Recommended)
 
-[Choosing a Fix Mode](/en/guide/bake-vs-normal)
+[How to Choose a Fix Mode](/en/guide/bake-vs-normal)
 
 Use a matching preset to fix your avatar's blink automatically.<br>
 Finish your expression edits before running the fix.

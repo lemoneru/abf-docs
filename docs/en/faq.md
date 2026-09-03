@@ -15,13 +15,29 @@ outline: [2, 2]
 ## 🔝 Most common {#top}
 
 <details id="what-is-bake">
-<summary>What is Bake mode? How is it different from normal mode?</summary>
+<summary>What is Bake Mode? How is it different from Auto Fix (Recommended)?</summary>
 
-**Normal mode** rebuilds only the eye BlendShapes. **Bake mode** bakes your edited expression into the mesh first, then rebuilds them. It may reduce breakage caused by expression animations.
+Auto Fix (Recommended) uses your edited BlendShape values to fix the eye BlendShapes.<br>
+Bake Mode bakes your edited expression into the mesh as its shape at value 0, then applies the fix.<br>
+It may reduce breakage caused by conflicts with expression animations.
 
-If you edit expression animations with FaceEmo or another tool, you can use normal mode. Remove animation entries that hold a corrected BlendShape at value 0. If you keep the original expression animations unchanged, Bake Mode is recommended. Edits using values above 100 or negative values also require Bake Mode.
+See [How to Choose a Fix Mode](/en/guide/bake-vs-normal) to choose a mode for your setup.
 
-→ Choosing a mode and comparing the differences: [Choosing a Fix Mode](/en/guide/bake-vs-normal)
+</details>
+
+<details id="bake-mouth">
+<summary>The mouth or other parts move unexpectedly after switching to Bake Mode</summary>
+
+Mouth BlendShapes or other non-eye shapes may be included in the bake targets.<br>
+Select the Avatar Blink Fix object and try setting [Bake Range] to [Eyes Only].<br>
+Changing the range resets manual selections to the automatic setup. Shapes using values outside 0–100 remain included.
+
+To exclude individual shapes, press [Stop preview], then open [Advanced Settings] → [BlendShapes to Bake].<br>
+Uncheck the orange items you do not want baked.<br>
+Leave cyan items selected.
+
+Press [Preview the baked result] to check your changes.<br>
+See [Adjusting bake targets](/en/guide/bake#bake-mouth) for the steps.
 
 </details>
 

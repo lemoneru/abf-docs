@@ -26,7 +26,7 @@ const jaSidebar = [
     text: '使い方',
     items: [
       { text: '実際の修正の流れ', link: '/guide/workflow' },
-      { text: '修正モードの選択', link: '/guide/bake-vs-normal' },
+      { text: '修正モードの選び方', link: '/guide/bake-vs-normal' },
       { text: '自動修正（推奨）', link: '/guide/auto-fix' },
       { text: 'ベイクモード', link: '/guide/bake' },
       { text: '手動修正（プリセットが無いとき）', link: '/guide/manual-fix' },
@@ -72,7 +72,7 @@ const enSidebar = [
     text: 'How to Use',
     items: [
       { text: 'The Full Workflow', link: '/en/guide/workflow' },
-      { text: 'Choosing a Fix Mode', link: '/en/guide/bake-vs-normal' },
+      { text: 'How to Choose a Fix Mode', link: '/en/guide/bake-vs-normal' },
       { text: 'Auto Fix (Recommended)', link: '/en/guide/auto-fix' },
       { text: 'Bake Mode', link: '/en/guide/bake' },
       { text: 'Manual Fix (No Preset)', link: '/en/guide/manual-fix' },

@@ -1,6 +1,6 @@
 # Bake Mode
 
-[Choosing a Fix Mode](/en/guide/bake-vs-normal)
+[How to Choose a Fix Mode](/en/guide/bake-vs-normal)
 
 Bake Mode bakes your edited expression into the mesh as its shape at BlendShape value 0, then applies the fix.<br>
 It may reduce breakage caused by conflicts with expression animations.
@@ -11,7 +11,7 @@ Note: Bake Mode is a Complete Edition feature.
 
 - You use face tracking
 - You want to keep the avatar's original expression animations unchanged
-- The eyes look wrong in-game when using Normal Mode
+- The eyes look wrong in-game when using Auto Fix (Recommended)
 - Your expression edits use values above 100 or negative values
 
 ## ① Set up Bake Mode
@@ -19,7 +19,7 @@ Note: Bake Mode is a Complete Edition feature.
 Right-click your avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（ベイクモード）] (Auto Fix – Bake Mode).<br>
 An Avatar Blink Fix object is added inside the avatar, and you can preview the baked expression. The right-click menu is displayed in Japanese.
 
-If you already use Normal Mode, press [Switch to Bake mode] in the Inspector.<br>
+If you already use Auto Fix (Recommended), press [Switch to Bake mode] in the Inspector.<br>
 Your selections and settings carry over.
 
 ![Bake Mode Inspector with bake range and preview settings](/images/easy-bake.png)
@@ -34,10 +34,24 @@ To select individual shapes, open [Advanced Settings] → [BlendShapes to Bake].
 
 | Name color | What gets baked |
 |---|---|
-| Cyan | Eye-area shapes. Leave these selected because they are needed for the fix |
+| Cyan | Eye-area shapes and shapes using values outside 0–100. Leave these selected because they are needed for the fix |
 | Orange | Other areas, such as the mouth and brows. Uncheck shapes you do not want baked |
 
 ![Bake target list with cyan eye-area shapes and orange mouth and brow shapes](/images/bake-legend.png)
+
+### If the mouth or other parts move unexpectedly {#bake-mouth}
+
+Baking mouth BlendShapes or other non-eye shapes can cause unexpected movement.<br>
+Try excluding shapes you do not want baked.
+
+- **To exclude non-eye edits together:** Set [Bake Range] to [Eyes Only]. Shapes using values outside 0–100 remain included even with this setting.
+- **To exclude individual shapes:** Press [Stop preview], then open [Advanced Settings] → [BlendShapes to Bake]. Uncheck the orange items you do not want baked.
+
+Changing [Bake Range] resets manual selections to the automatic setup.<br>
+Choose the range before adjusting individual shapes.
+
+Leave cyan items selected.<br>
+After changing the settings, press [Preview the baked result] and check the expression and mouth movement.
 
 ## ③ Check the preview
 
