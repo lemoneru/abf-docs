@@ -11,10 +11,6 @@ The unlock key is available **from the BOOTH purchase page for supporter-edition
 **The public release date will be announced on this page and on BOOTH once decided.** After that, everyone can use the repository.
 :::
 
-::: tip Why VCC / ALCOM?
-No more re-importing files for every update. When a new version comes out, just press "Update"!
-:::
-
 1. Open [Add to VCC / ALCOM](/en/add) and register the repository. If you have already registered it, continue to the next step.
 2. In your project's package management, find "**Avatar Blink Fix**" and add it with the ＋ button (typing "blink" in the search box gets you there fast)
 
@@ -28,10 +24,6 @@ No more re-importing files for every update. When a new version comes out, just 
 
 3. Open the project in Unity. A fresh install runs as the free edition, so you can try it before buying.
 
-::: tip Updating the tool and presets
-When an update is available, press "Update" in your project's package management in VCC / ALCOM. The tool and its Auto Fix presets update together; there is no need to re-import a unitypackage.
-:::
-
 ## Installing via unitypackage
 
 A unitypackage is also bundled for those not using VCC / ALCOM. Import it into your project and it works as-is.
@@ -39,43 +31,11 @@ You'll have to re-import it for every update though, so VCC / ALCOM is easier un
 
 ## Upgrading to the Complete Edition (for buyers)
 
-If the tool says "Complete edition feature" and you have already purchased it, see [Upgrade to the Complete Edition](/en/guide/unlock-key). It covers downloading the key, importing it, and confirming the upgrade in three steps.
-
-A fresh install runs as the **free edition** (it fixes one automatically selected blink BlendShape).
-Not sure which edition you need? → [Free vs Complete Edition](/en/guide/editions)
-
-The Complete Edition is available on the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770).
-
-Buyers just import the unlock key into a project once, and the upgrade is done.
-
-- On the same PC, every other project also becomes the Complete Edition — no per-project setup
-- On success, you'll see "Complete Edition Unlocked"
-
-  ![Unlock success dialog](/images/unlock-dialog.png)
-
-- No re-import needed after updates either
-
-::: details Do I need to remove the free edition first?
-No. Import the key right on top of the free edition and it becomes the Complete Edition cleanly, with nothing left behind.
-:::
-
-::: tip If you set up an avatar while on the free edition
-Settings made in the free edition are saved with only one fix target.
-After upgrading, press "**Reload Expression**" in the Inspector to set up all BlendShapes as targets.
-(The tool shows the same guidance. Forgetting to press it won't break anything.)
-:::
+[Upgrade to the Complete Edition (importing the unlock key)](/en/guide/unlock-key)
 
 ## Updating from 2.x
 
-What changed is summarized in [Coming from 2.x](/en/guide/from-2x).
-
-- 2.x owners can use 3.0 free of charge
-- Avatars fixed with 2.x keep working. Installing 3.0 won't break them
-  (if you try to right-click-fix an already-fixed avatar, the tool detects it and shows guidance)
-- **You don't need to remove the previous version first.** Just install 3.0
-- If old 2.x files remain, the "**Migrate to the new Avatar Blink Fix**" dialog appears. Press "**Migrate**" and only the new version stays active
-  (your settings and fixed avatars keep working; the old files are only moved to the trash, so you can restore them anytime)
-- You can also do this later from Tools → "Avatar Blink Fix" → "**Migrate to the new version**"
+[Coming from 2.x (migration steps and changes)](/en/guide/from-2x)
 
 ## Next step
 
