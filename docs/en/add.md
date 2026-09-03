@@ -1,11 +1,5 @@
 ---
 title: Add to VCC / ALCOM
-navbar: false
-sidebar: false
-aside: false
-footer: false
-prev: false
-next: false
 ---
 
 # Add to VCC / ALCOM

@@ -1,11 +1,5 @@
 ---
 title: VCC / ALCOM に追加
-navbar: false
-sidebar: false
-aside: false
-footer: false
-prev: false
-next: false
 ---
 
 # VCC / ALCOM に追加
