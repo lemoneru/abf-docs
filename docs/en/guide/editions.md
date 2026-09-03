@@ -3,14 +3,12 @@
 The main differences are how many BlendShapes you can fix and which extra features you can use.
 
 The free edition can repair your avatar too. Try it with your expression edits first.<br>
-You can easily [upgrade to the paid Complete Edition](/en/guide/unlock-key) afterward.
+You can easily upgrade to the paid Complete Edition afterward.
 
 ## What the free edition can do
 
 Installing Avatar Blink Fix gives you the free edition.
 It can repair `vrc.blink`, a BlendShape commonly used for regular blinking.
-
-→ [Installation](/en/guide/install) ／ [Auto Fix steps](/en/guide/auto-fix)
 
 ## What the Complete Edition adds
 
@@ -52,7 +50,7 @@ Even then, the Complete Edition can fix any BlendShape.
 ## Do I need the paid edition?
 
 Try the free edition first.
-If everything looks fine after the fix, there's no need to upgrade.
+If fixing one BlendShape is enough for you to use your avatar without issues, there's no need to upgrade.
 
 If you want to fix other eye-closing BlendShapes, MMD BlendShapes, or face-tracking BlendShapes, you can purchase an unlock key from the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770) and easily upgrade.
 
