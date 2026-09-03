@@ -2,8 +2,10 @@
 
 [How to Choose a Fix Mode](/en/guide/bake-vs-normal)
 
-Bake Mode bakes your edited expression into the mesh as its shape at BlendShape value 0, then applies the fix.<br>
-It may reduce breakage caused by conflicts with expression animations.
+Bake Mode reconstructs your edited expression as the shape at BlendShape value 0.<br>
+This makes the edited expression the default expression, which may reduce breakage caused by animation conflicts.
+
+You can also use it for expression edits with values above 100 or negative values.
 
 Note: Bake Mode is a Complete Edition feature.
 
@@ -39,10 +41,10 @@ To select individual shapes, open [Advanced Settings] → [BlendShapes to Bake].
 
 ![Bake target list with cyan eye-area shapes and orange mouth and brow shapes](/images/bake-legend.png)
 
-### If the mouth or other parts move unexpectedly {#bake-mouth}
+### If the mouth's shape or movement looks wrong {#bake-mouth}
 
-Baking mouth BlendShapes or other non-eye shapes can cause unexpected movement.<br>
-Try excluding shapes you do not want baked.
+Baking mouth edits together with other edits using [All (Recommended)] can make the mouth's shape or movement look wrong.<br>
+If this happens, try excluding the mouth BlendShapes from the bake targets.
 
 - **To exclude non-eye edits together:** Set [Bake Range] to [Eyes Only]. Shapes using values outside 0–100 remain included even with this setting.
 - **To exclude individual shapes:** Press [Stop preview], then open [Advanced Settings] → [BlendShapes to Bake]. Uncheck the orange items you do not want baked.
