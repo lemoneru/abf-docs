@@ -83,7 +83,7 @@ FaceEmoなどで表情アニメーションを作成・変更する場合は、�
 | 100を超える値やマイナス値（限界突破）で改変している | ベイクモードをご利用ください。通常モードでは、その値を再現できません |
 | Avatar Mouth Fixと一緒に使う | [メッシュ入れ替え式の通常修正](/guide/meshswap#avatar-mouth-fix-と併用する場合)をご利用ください |
 | NDMFを使わない／2.xと同じ操作で修正したい | [メッシュ入れ替え式](/guide/meshswap)をご利用ください |
-| フェイストラッキングを使う | [フェイストラッキングを使う方へ](/guide/face-tracking)をご確認ください |
-| BlendShapeを追加するツールも使う | [BlendShapeを追加する改変と一緒に使うとき](/guide/added-blendshapes)をご確認ください |
+| フェイストラッキングを使う | [フェイストラッキングの設定](/guide/face-tracking)をご確認ください |
+| BlendShapeを追加するツールも使う | [BlendShapeを追加する場合の手順](/guide/added-blendshapes)をご確認ください |
 
 うまく修正できないときは、[よくある質問（FAQ）](/faq)をご確認ください。
