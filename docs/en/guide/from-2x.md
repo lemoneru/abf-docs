@@ -1,13 +1,5 @@
 # Coming from 2.x (Migrating to 3.0)
 
-**The short version first.**
-
-- Avatars you fixed with 2.x **keep working as they are**. Installing 3.0 won't break them
-- **You don't need to remove the old Avatar Blink Fix first.** Just install 3.0 as described in [Installation](/en/guide/install)
-- If the "Migrate to the new Avatar Blink Fix" dialog appears, **it's safe to press [Migrate]**
-- From your next avatar edit onward, just right-click → "**自動修正（推奨）**" (Auto Fix – Recommended)
-- **There is no extra charge.** However, 3.0 uses an "unlock key" system (explained right below)
-
 ::: danger 3.0 switched to an "unlock key" system
 In 3.0, you download an unlock key from the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770) and import it once — that makes it the Complete Edition.
 
@@ -16,31 +8,19 @@ In 3.0, you download an unlock key from the [Avatar Blink Fix page on BOOTH](htt
 
 ## When "Migrate to the new Avatar Blink Fix" appears
 
-This dialog appears after installing 3.0 if files from the previous version remain.
+This dialog appears when you install 3.0 in a project that already has 2.x.
 
-### It's safe to press [Migrate]
+Choose [Migrate] to use the features of 3.0 while keeping your existing data and settings.
 
-The old and new versions can't run side by side, so the tool tidies things up so that only the new version is active.
-
-| Moved away | Kept in place |
-|---|---|
-| **Only the tool's own files** | **`Data`** (fix records) |
-| | **`Animation`** (generated animations) |
-| | **Presets you added yourself** |
-| | **Avatars you already fixed** (they keep working) |
-
-Files are only moved to the trash, so you can restore them anytime. A full list of what was moved is printed to the Unity Console.
-
-::: tip Pressing [Later] breaks nothing
-With 2.x still around you'll just see a warning; the project keeps working. You can migrate anytime later from Tools → "Avatar Blink Fix" → "**Migrate to the new version**".
+::: tip If you choose [Later]
+You can migrate later from Tools → Avatar Blink Fix → [Migrate to the new version].
 :::
 
-::: details What if I accidentally right-click-fix an avatar already fixed with 2.x?
-No problem. 3.0 detects it and shows a "Detected a 2.x Fix" dialog, so it never gets fixed twice and broken.
+## Switching a 2.x-fixed avatar to the non-destructive method (NDMF)
 
-In that dialog, **press [Keep As Is]**. Nothing changes and the 2.x fix keeps working.
-Choose [Restore & Migrate] only if you want to switch to the new non-destructive method — it restores the 2.x fix first, then sets the avatar up again the 3.0 way.
-:::
+Right-click the avatar and choose [Avatar Blink Fix] → [自動修正（推奨）] (Auto Fix – Recommended).
+
+If "Detected a 2.x Fix" appears, choose [Restore & Migrate]. The tool restores the avatar from its 2.x fix, then adds the non-destructive fix object.
 
 ## What changed in 3.0
 
@@ -55,14 +35,14 @@ Add the repository once, and from then on a new version is just an "Update" butt
 
 ### ② A new way to fix
 
-Right-click your avatar in the Hierarchy and choose "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended). That's the whole job.
+Right-click your avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（推奨）] (Auto Fix – Recommended).<br>
+An Avatar Blink Fix object is added inside the avatar, and the BlendShapes are fixed.
 
 ![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
 
-- Unlike 2.x, **the mesh is not rewritten** (non-destructive). The fix is applied automatically at upload time
-- Preview turns on automatically, so you can check the fixed face on the spot
-- To undo, delete the added object
-- Details → [Auto Fix (Recommended)](/en/guide/auto-fix)
+To undo the fix, delete the added object. This restores the avatar to its state before the fix.
+
+→ [Full workflow](/en/guide/workflow)
 
 ::: warning When redoing your expression edits
 Press "**Stop preview**" before editing, then press "**Reload Expression**" when you're done.
