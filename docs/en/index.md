@@ -88,5 +88,5 @@ If something doesn't work, or you want finer control:
 
 ## When something goes wrong
 
-- Start with the [FAQ](/en/faq) — sorted by how often each question comes up
-- Still stuck? Message us on [BOOTH](https://lemoneru.booth.pm/items/7074770). Pasting the output of **[Support Information]** from the tool tells us your situation right away and speeds things up
+- Start with the [FAQ](/en/faq).
+- Still stuck? Message us on [BOOTH](https://lemoneru.booth.pm/items/7074770).
