@@ -31,28 +31,34 @@ The right-click menu is shown in Japanese even when the tool's Language setting 
 Check the expression animations before uploading.<br>
 The steps depend on whether you keep the avatar's original animations or edit them yourself.
 
+<div class="usage-branch">
+
 ### Using the avatar's default expression animations
 
 [Bake Mode](/en/guide/bake) is recommended if you want to use the animations unchanged.<br>
 Select the added Avatar Blink Fix object and press [Switch to Bake mode] in the Inspector.
 
-In Bake Mode, you do not need to remove the zero-value entries described below.<br>
 It may reduce breakage caused by conflicts with expression animations.
 
 Note: Bake Mode is a Complete Edition feature.
 
+</div>
+
+<div class="usage-branch">
+
 ### Editing the expression animations
 
 Use FaceEmo or a similar tool, or edit the animation files manually.<br>
-Keep the Avatar Blink Fix object and turn the preview ON so you can work while seeing the fixed result.
+We recommend creating your expression animations from scratch.
 
-::: warning In normal mode, remove entries that hold the value at 0
-An entry (curve) that holds a corrected BlendShape at 0 may conflict with the fix.<br>
-Remove the affected entry from the expression animation.<br>
-You do not need to delete the whole animation file.
-:::
+If you reuse animations included with the avatar, remove entries that hold a corrected BlendShape at 0.<br>
+Leaving them in may cause a conflict with the corrected BlendShape.
+
+Note: Remove only the affected BlendShape entries (curves), not the whole animation file.
 
 If "conflict with expression animations" appears, check for these entries as well.
+
+</div>
 
 ## ④ Upload and check in-game
 
@@ -72,8 +78,7 @@ Turn the preview OFF before adjusting the face's BlendShapes again.
 2. Edit the expression
 3. Press [Reload Expression]
 
-You can also delete the Avatar Blink Fix object, edit the expression, then run Auto Fix again when you're done.<br>
-When creating or editing expression animations with FaceEmo or a similar tool, keep the preview ON.
+You can also delete the Avatar Blink Fix object, edit the expression, then run Auto Fix again when you're done.
 
 To restore the avatar to its state before the fix, delete the added Avatar Blink Fix object.
 

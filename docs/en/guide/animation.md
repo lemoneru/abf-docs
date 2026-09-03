@@ -1,142 +1,97 @@
 # Merging Blinks into Expression Animations (Extra Feature)
 
-Takes your existing expression animations and writes out new ones with blinking mixed in.
+Combine your favorite blink animation, such as a teary blink, with your expressions.<br>
+This feature generates BlendShapes and new animation files for the combined movement.
 
-::: tip Only if you want it
-**If you just want your blink fixed, you don't need this feature.** [Auto Fix](/en/guide/auto-fix) does the whole job.
+Note: This is a Complete Edition extra. You do not need it for a regular blink fix.
 
-This page is a bonus for people who want their avatar to keep blinking while an expression is active.
-The steps are on the long side, so read this only when you actually need it.
-:::
+## ① Prepare the animations
 
-※ Complete Edition feature.
+Finish your expression edits and set up the blink fix, then prepare:
 
-## When you'd use this
+- The expression animations to combine with
+- The blink animation you want to add
 
-> Your expression animations are all made.
-> Now you want your favorite blink playing in every expression.
+This feature does not create the blink animation itself. You need to provide one.
 
-Opening each expression animation and hand-adding blink keys is a chore. This feature builds them all at once.
+## ② Open Animation Support
 
-::: warning A common misunderstanding
-**This is not a feature that creates a blink animation for you.**
-Your existing expression animations and your existing blink animation — those two are the ingredients.
-:::
+Open [Advanced Settings] → [Animation Support] in the Avatar Blink Fix Inspector.<br>
+For Mesh Swap, use [⑥ Blink animation combine] in the window.
 
-## How it works
+<div class="usage-branch">
 
-Knowing this first will keep the steps from feeling mysterious.
+### Expression animations
 
-1. A **new BlendShape combining blink and expression** is added to the face mesh
-2. A **new animation file** driving that BlendShape is written out
-3. Your original expression animations **stay untouched** — nothing is overwritten
+Drag the expression animation `.anim` files into [Expression Animation].<br>
+You can add several files at once.
 
-In other words, **your avatar's setup is not rewritten automatically.** New material simply gets created.
-Only when you put the generated animation where it's used does anything take effect.
+Use [Combine Target BlendShape] to choose where to combine the blink.
 
-## Steps
+</div>
 
-> ① Finish expression edits → ② Set up the blink fix → ③ Add expression animations → ④ Set the blink animation → ⑤ Generate → ⑥ Swap in the generated animations
+<div class="usage-branch">
 
-::: danger Redoing expression edits after ⑤ means starting over
-If you change the face BlendShapes after generating, the generated animations no longer match.
-Finish your expression edits in ①.
-:::
+### Blink animation
 
-### ① Finish your expression edits
+Put the `.anim` file you want to use in [Blink Animation].<br>
+Use [Blink BlendShape] to select the BlendShape used for blinking in that animation.
 
-Build your expressions with the face BlendShapes as usual.
-This feature uses the face you make here as its base.
+</div>
 
-### ② Set up the blink fix
+## ③ Check the blend mode
 
-Right-click the avatar → "Avatar Blink Fix" → "**自動修正（推奨）**" (Auto Fix – Recommended).
-Get the blink fix in place first (→ [Auto Fix](/en/guide/auto-fix)).
+If "Same BlendShapes are used" appears, choose a [Blend Mode].
 
-For the rest of the animation setup and checking, keep the "Avatar Blink Fix" object and work **with the preview ON**. Same if you rebuild expression animations in your expression tool.
-
-### ③ Add your expression animations
-
-Open "**Advanced Settings**" in the Inspector, then open "**Animation Support**" at the very bottom.
-
-Drag & drop the expression animations you're currently using onto the "**Expression Animation**" area.
-You can drop several at once.
-
-::: tip If they won't drop
-If the cursor doesn't change over the drop area, you're holding something that isn't an AnimationClip.
-Drag the `.anim` files directly from the Project window.
-:::
-
-Below it, "**Combine Target BlendShape**" is where the blink gets mixed in. The displayed default is usually fine.
-
-### ④ Set the blink animation
-
-Put the blink `.anim` you want to use into "**Blink Animation**" under the blink settings.
-
-Then use "**Blink BlendShape**" to choose which BlendShape in that animation counts as the blink.
-The candidates are filtered automatically — picking from what appears is fine.
-
-#### If "Same BlendShapes are used" appears
-
-It means the expression side and the blink side are fighting over the same BlendShape.
-Only then does the "**Blend Mode**" selector appear.
-
-| | What happens |
+| Blend mode | Result |
 |---|---|
-| Expression priority | The expression's shape wins. During smiling eyes and the like, that shape is held |
-| Blink priority | The blink wins. Blinking plays through every expression |
+| Expression priority | Prioritizes the expression's shape, such as smiling eyes |
+| Blink priority | Prioritizes blinking while an expression is active |
 
-If unsure, start with "Expression priority" — it keeps the expressions you made looking as designed.
-If you want blinking even during expressions, switch to "Blink priority" and compare both; that's the fastest way to decide.
+Start with [Expression priority].<br>
+If you want blinking during expressions too, try [Blink priority] and compare.
 
-### ⑤ Generate
+## ④ Generate the animations
 
-Press "**Generate Animation BlendShapes/Animations**".
+Press [Generate Animation BlendShapes/Animations].<br>
+New files are created without overwriting the original expression animations. Non-BlendShape keys, such as PhysBones and object toggles, are carried over too.
 
-::: tip The "Overwrite on re-generate" checkbox
-Leave it off the first time.
+The output folder is:
 
-Each press creates a new timestamped folder, so if you know you'll regenerate with the same settings, checking it reuses the previous folder instead.
-:::
-
-**The output lands here:**
-
-```
+```text
 Assets/LEMONERU/Avatar Blink Fix/Animation/<avatar name>/<timestamp>/
 ```
 
-A folder per avatar, then a folder per generation time.
-File names are "**original animation name + `_ABF_Blink`**".
+Generated file names use the original animation name followed by `_ABF_Blink`.
 
-When "Animation Generated" appears, open the folder and check the contents.
-
-### ⑥ Swap in the generated animations
-
-🔴 **Skip this and nothing changes.**
-
-In your expression setup tool, **replace each original animation with its generated `_ABF_Blink` version.**
-Only after the swap does blinking appear in-game.
-
-::: warning Turn off your expression tool's own "blink" option
-If your expression setup tool has a setting that enables blinking, **turn it off.**
-
-The generated animations already contain the blink.
-If the tool adds blinking on top, the two stack and the eye movement breaks.
+::: details About [Overwrite on re-generate]
+By default, each generation creates a timestamped folder.<br>
+Checking this option overwrites the previously generated files in the same location.
 :::
 
-## Checking the result
+## ⑤ Replace the animations
 
-Upload, then watch the blinking in VRChat while switching expressions.
+In FaceEmo or your expression setup tool, replace the original animations with the generated `_ABF_Blink` files.<br>
+This step is required because the avatar's settings are not changed automatically.
 
-- Blinking continues through expressions → success
-- Nothing changed → the ⑥ swap usually hasn't been done
-- Blinking looks unnaturally fast or doubled → your expression tool's blink option is still on
-- An expression looks broken → switch the ④ Blend Mode to the other option and regenerate
+::: warning Your expression tool's blink setting
+Turn OFF any option that enables blinking in the expression setup tool.<br>
+The generated animations already contain blinking, so the movement may be applied twice.
+:::
 
-## When it doesn't work
+Upload after replacing the files, then check blinking in VRChat while switching expressions.
 
-- The generate button is disabled … neither an expression animation nor a blink animation is set. Adding either one enables it
-- Can't find the output … see the path above. The folders are timestamped, so the newest one is this run's
-- I rebuilt my expressions … sorry — start over from ③. The generated animations no longer match the new face
+## When it does not work
 
-Still stuck? Message us on [BOOTH](https://lemoneru.booth.pm/items/7074770).
+| Symptom | What to check |
+|---|---|
+| A file cannot be added to a setting | Drag the `.anim` file from the Project window |
+| The generate button is disabled | Assign an expression animation, or assign a blink animation and select its [Blink BlendShape] |
+| Nothing changes in-game | Check the animation replacement in step ⑤ |
+| Blinking is too fast or appears doubled | Check the expression tool's blink option |
+| An expression looks wrong | Change the blend mode and regenerate |
+
+If you change the face's BlendShapes after generating, update the blink fix settings and regenerate the animations.<br>
+Replace the animations with the newly generated files as well.
+
+If the problem remains, please [get in touch](/en/faq#contact).

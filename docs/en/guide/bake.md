@@ -1,74 +1,65 @@
 # Bake Mode
 
-A mode that bakes your edited expression into the mesh first, then fixes.
-It holds up even when expression animations are involved, and **overdriven values (above 100 / negative) are reproduced as-is**.
+Bake Mode bakes your edited expression into the mesh as its shape at BlendShape value 0, then applies the fix.<br>
+It may reduce breakage caused by conflicts with expression animations.
 
-This mode is non-destructive too. The baking happens automatically at upload (build) time; the original mesh is never rewritten.
-
-※ Bake mode is a Complete Edition feature (not available in the free edition).
-
-→ Which one should I use? [Bake vs Normal Mode](/en/guide/bake-vs-normal)
+Note: Bake Mode is a Complete Edition feature.
 
 ## When to use it
 
-- [Auto Fix](/en/guide/auto-fix) reported "conflict with expression animations"
 - You want to keep the avatar's original expression animations unchanged
-- Your edits use overdriven values (above 100 or negative)
+- The eyes look wrong in-game when using Normal Mode
+- Your expression edits use values above 100 or negative values
 
-::: tip Recommended when keeping the original expression animations
-In normal mode, you need to remove animation entries that hold a corrected BlendShape at value 0. If you are uploading with the original expression animations and not using FaceEmo or another editing tool, Bake Mode works without that cleanup.
+If Normal Mode works well, you can keep using it.<br>
+See [Bake vs Normal Mode](/en/guide/bake-vs-normal) for help choosing.
+
+## ① Set up Bake Mode
+
+Right-click your avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（ベイクモード）] (Auto Fix – Bake Mode).<br>
+An Avatar Blink Fix object is added inside the avatar, and you can preview the baked expression. The right-click menu is displayed in Japanese.
+
+If you already use Normal Mode, press [Switch to Bake mode] in the Inspector.<br>
+Your selections and settings carry over.
+
+![Bake Mode Inspector with bake range and preview settings](/images/easy-bake.png)
+
+## ② Check the bake range
+
+By default, the BlendShapes you edited are baked together.<br>
+MMD BlendShapes and those unchanged from the avatar's original default values are not included automatically.
+
+Use [Bake Range] if you do not want to bake edits outside the eyes.<br>
+To select individual shapes, open [Advanced Settings] → [BlendShapes to Bake].
+
+| Name color | What gets baked |
+|---|---|
+| Cyan | Eye-area shapes. Leave these selected because they are needed for the fix |
+| Orange | Other areas, such as the mouth and brows. Uncheck shapes you do not want baked |
+
+![Bake target list with cyan eye-area shapes and orange mouth and brow shapes](/images/bake-legend.png)
+
+## ③ Check the preview
+
+Baked BlendShapes have a value of 0 during the preview.<br>
+The edited shape is baked into the mesh, so the avatar still shows the edited expression at value 0.
+
+Press [Preview the baked result] to resume the preview.<br>
+Baking and fixing are applied at upload time even if the preview is OFF.
+
+::: warning Redoing expression edits
+Press [Stop preview] before adjusting the face's BlendShapes.<br>
+When you finish editing, press [Reload Expression].
 :::
 
-## Steps
+See [The Full Workflow](/en/guide/workflow) for checks before and after uploading.
 
-1. Right-click your avatar in the Hierarchy
-2. Choose "**Avatar Blink Fix**" → "**自動修正（ベイクモード）**" (Auto Fix – Bake Mode; the menu is shown in Japanese)
-3. Now just upload. Baking and fixing are applied automatically
+## Using face tracking
 
-Already set up in normal mode? The Inspector's "**Switch to Bake mode**" button works too — your selections and settings carry over.
+Bake Mode includes FT eye-close BlendShapes in the fix by default.<br>
+The best method depends on the FT addon's settings. See [Using Face Tracking](/en/guide/face-tracking).
 
-![Bake mode Inspector, with a bake count added to the detections and a Bake Range selector](/images/easy-bake.png)
+## Restoring the avatar
 
-## What gets baked
-
-By default, every BlendShape you edited gets baked. Two kinds are excluded automatically:
-
-- MMD-compatible BlendShapes
-- BlendShapes still at the avatar's original default values
-
-Want to change the range? Use "**Bake Range**" in the Inspector.
-
-### Colors tell you what can be unchecked
-
-The bake target list is color-coded by name:
-
-- <span style="color:#22d3ee">■</span> **Cyan = around the eyes** … needed for the fix, leave these on
-- <span style="color:#f59e0b">■</span> **Orange = outside the eyes** (mouth etc.) … unchecking them doesn't affect the fix
-
-![Bake target BlendShape list showing cyan eye shapes and orange mouth/brow shapes](/images/bake-legend.png)
-
-Since everything you edited is included at first, having lots of orange is normal.
-Leaving them in causes no major problems, but if you want only the essentials, uncheck the orange ones.
-
-The list is under "**Advanced Settings**" → "**BlendShapes to Bake**".
-
-## Preview notes
-
-Bake mode also turns the preview on automatically after setup. Unlike normal mode, though, **BlendShape weights become 0 while previewing** (it reproduces the post-bake state).
-
-The preview button, when OFF, is labeled "**Preview the baked result**" — a different name from normal mode's "Preview the fix", but it does the same thing.
-
-::: warning Stop the preview before editing expressions
-Editing values while they read 0 will give you unexpected results.
-When you're done editing, press "**Reload Expression**" to re-record the edited state.
-:::
-
-## Face tracking (FT) avatars
-
-In Bake mode, FT eye-close BlendShapes are **included in the fix by default** (the opposite of normal mode), because baking breaks the FT-side cancellation. Don't want that? Use the "Face Tracking BlendShapes" toggle in the Inspector.
-
-→ [Using Face Tracking](/en/guide/face-tracking)
-
-## Undoing everything
-
-Same as [Auto Fix](/en/guide/auto-fix): delete the added "Avatar Blink Fix (NDMF)" object and everything is back to normal.
+Delete the added Avatar Blink Fix object.<br>
+The original mesh is not overwritten, so the avatar returns to its state before the fix.

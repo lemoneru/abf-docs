@@ -1,86 +1,70 @@
 # Using Face Tracking
 
-Avatar Blink Fix works with face-tracking (FT) avatars.
-If you do not adjust the expression animations yourself, try [Bake Mode](/en/guide/bake) first. FT BlendShapes are included in the fix by default.
-
-Normal Mode with "Don't include" may fit better when an FT addon manages its correction through zero-value animation curves.
-
-Read this page if FT eye closing looks wrong in-game, or if you want to know what the settings mean.
-
-::: tip This page is about the Complete Edition
-Fixing FT BlendShapes is a paid feature. In the free edition, the section and toggle described here are not shown at all.
-→ [Free vs Complete Edition](/en/guide/editions)
-:::
-
-::: warning About the menu names
-The right-click menu is displayed in Japanese regardless of your language setting (a Unity limitation).
-自動修正（推奨） = Auto Fix (Recommended) ／ 自動修正（ベイクモード） = Auto Fix (Bake Mode)
-:::
-
-## The short answer
-
-| Situation | What to do |
-|---|---|
-| You do not adjust the expression animations yourself | **Try Bake Mode first** |
-| Your FT addon manages correction through zero-value animation curves | Use Normal Mode with "**Don't include**" |
-| [Auto Fix (Recommended)](/en/guide/auto-fix) and nothing looks wrong | **Leave it** — keep "Don't include" |
-| FT eye closing breaks in-game, or eyes sink into the face | Switch to "**Include in fix**" and try again |
-
-Switching won't break anything. **Try both and keep whichever looks better.**
-
-## Where to switch it
-
-Use the ［**Include in fix**］／［**Don't include**］ buttons under "**Face Tracking BlendShapes**" in the Inspector.
-
-If you have Advanced Settings open, the "**Also fix Face Tracking BlendShapes**" checkbox does the same thing. Either one works.
-
-## What the tool tells you, and what to pick
-
-When FT BlendShapes are found, the tool shows a message for your situation. **Following what it says is fine.**
-
-| Message in the tool | What it means | Recommended |
-|---|---|---|
-| Face-tracking BlendShapes were detected. If your FT setup already handles them, keep "Don't include". | FT BlendShapes were found | **Don't include** (switch if symptoms appear) |
-| An FT-side animation is driving the face-tracking BlendShapes. They are likely already handled, so "Don't include" is recommended. | Your FT addon already takes care of them | **Don't include** |
-| In Bake mode, "Include in fix" is recommended. | You set up Bake mode | **Include in fix** (already the default) |
-
-## How the tool decides something is "for FT"
-
-It looks for **`EyeClosedLeft` / `EyeClosedRight`** on the face mesh — the names used by virtually every FT setup.
-If those names aren't there, the FT section isn't shown at all.
-
-If an avatar's Auto Fix preset registers FT BlendShapes under different names, those are picked up too.
-
-## Why normal mode and Bake mode default the opposite way
-
-Most FT avatars are built so that **an FT-side animation zeroes out the BlendShapes your expression edit moved**.
-
-- In **normal mode** that zeroing keeps working. Fixing it here too would be doing it twice, so the default is "**Don't include**"
-- In **Bake mode** the edited state is baked into the mesh itself. Zeroing a baked shape doesn't bring the face back, so it has to be fixed on this side — hence "**Include in fix**" by default
-
-→ For the full comparison: [Bake Mode vs Normal Mode](/en/guide/bake-vs-normal)
-
-## What this does and doesn't fix
-
-::: warning The fix stops at the avatar's BlendShapes
-Avatar Blink Fix rebuilds the **BlendShapes your avatar has**.
+Avatar Blink Fix can also repair face-tracking (FT) eye-close BlendShapes affected by expression edits.<br>
 It does not change your FT addon's animations or settings.
+
+Note: Fixing FT BlendShapes is a Complete Edition feature. These settings do not appear in the free edition.
+
+## Choosing the fix
+
+| Your setup | Suggested setting |
+|---|---|
+| You do not adjust expression animations yourself | Bake Mode with FT BlendShapes included |
+| Your FT addon corrects the expression through zero-value animation curves | Normal Mode with FT BlendShapes excluded |
+| Normal Auto Fix already works well | Keep your current settings |
+
+If eye closing looks wrong in-game, switch between [Include in fix] and [Don't include] and compare the result.<br>
+The best setting depends on the avatar and FT addon.
+
+## Where to change the setting
+
+Select the Avatar Blink Fix object and find [Face Tracking BlendShapes] in the Inspector.
+
+- **[Include in fix]:** Repairs FT eye-close BlendShapes too
+- **[Don't include]:** Leaves FT eye-close BlendShapes unchanged
+
+The [Also fix Face Tracking BlendShapes] checkbox under [Advanced Settings] changes the same setting.
+
+::: details If the setting does not appear
+The tool checks for `EyeClosedLeft` or `EyeClosedRight` on the face mesh, or FT BlendShapes registered in the preset.<br>
+The setting is hidden if no matching shapes are found.
 :::
 
-- ✅ Rebuilds FT eye-close BlendShapes broken by expression editing
-- ❌ Does not rewrite the animations inside an FT addon
-- ❌ Does not counter webcam blink tracking → [FAQ](/en/faq#webcam)
+## Normal Mode and Bake Mode
 
-If symptoms remain even with "Include in fix", check your **FT addon's own settings**.
+<div class="usage-branch">
 
-## After you redo your expression edits
+### Normal Mode
 
-FT BlendShapes need to be re-recorded like everything else. Press "**Reload Expression**".
+The default is [Don't include].<br>
+If the FT addon uses animations to reset the edited BlendShapes to 0 as its correction, that mechanism can keep working.
 
-→ Steps: [Auto Fix: Redoing your expression edits later](/en/guide/auto-fix#redoing-your-expression-edits-later)
+If the tool reports that it detected an FT-side animation, start by checking the result with [Don't include].
 
-## Still not solved?
+</div>
+
+<div class="usage-branch">
+
+### Bake Mode
+
+The default is [Include in fix].<br>
+The edited shape is baked into the mesh, so setting BlendShapes to 0 from the FT side no longer restores the pre-bake shape.
+
+Avatar Blink Fix therefore repairs FT eye-close BlendShapes as well.<br>
+See [Bake Mode](/en/guide/bake) for how to switch.
+
+</div>
+
+## After redoing expression edits
+
+Stop the preview before editing, then press [Reload Expression].<br>
+The FT BlendShapes are also fixed again to match the updated expression.
+
+## When the fix does not work
+
+If symptoms remain with [Include in fix], check your FT addon's settings too.
 
 - [Eyes sink in when smiling after installing an FT addon](/en/faq#ft-addon)
 - [Webcam blink tracking breaks the eyes](/en/faq#webcam)
-- If none of these help, please [get in touch](/en/faq#contact)
+
+If the problem remains, please [get in touch](/en/faq#contact).

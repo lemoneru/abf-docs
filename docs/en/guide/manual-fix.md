@@ -1,134 +1,97 @@
 # Manual Fix (for avatars without a preset)
 
-The tool works on avatars without an Auto Fix preset too.
-In Manual Fix, you pick two things yourself: the BlendShapes your edits used to reshape the eyes, and the blink BlendShapes you want repaired.
+You can fix an avatar without a preset by selecting the required items.<br>
+Choose the BlendShapes used to reshape the eyes and the BlendShapes you want to fix.
 
-::: tip Try "Auto Fix (Recommended)" first
-If your avatar has a preset, [Auto Fix](/en/guide/auto-fix) selects everything for you.
-This page is for when the "Auto Fix (Recommended)" menu item is grayed out — no matching preset.
-:::
+## ① Open Manual Fix
 
-## The overall flow
+Finish your expression edits, then right-click the avatar in the Hierarchy.<br>
+Choose [Avatar Blink Fix] → [手動修正] (Manual Fix). An object is added, and [Advanced Settings] opens in its Inspector. The right-click menu is displayed in Japanese.
 
-> **Finish expression edits → add "Manual Fix" → fill in the two lists → preview → upload**
+The lists can be edited while [Edit manually] is checked.<br>
+Check it if it is OFF. The preview pauses while you edit.
 
-## ① Finish your expression edits first
+Note: Manual Fix is also available for avatars that have a preset.
 
-Manual Fix also works from the BlendShape values at the moment of setup.
-Finish your expression edits before you start.
+## ② Select items in both lists
 
-## ② Right-click the avatar → Manual Fix
+<div class="usage-branch">
 
-1. Right-click your avatar in the Hierarchy
-2. Choose "**Avatar Blink Fix**" → "**手動修正**" (Manual Fix; the menu is shown in Japanese)
+### BlendShapes Deforming Eyes
 
-![Right-clicking an avatar in the Hierarchy and choosing a fix under Avatar Blink Fix](/images/context-menu-guide.svg)
+Select the BlendShapes whose values you changed to reshape the eyes.<br>
+Without a preset, you need to fill in this list yourself.
 
-A component is added, with the Inspector's "**Advanced Settings**" already open.
+- Eye size and openness
+- Upturned or drooping eyes
+- Eyelid and eyelash positions
 
-::: details When "Auto Fix (Recommended)" can't be clicked
-That means there's no preset for this avatar (or it doesn't match). It's supposed to be unclickable — go on with "Manual Fix".
+Do not select unchanged shapes or ones unrelated to the eyes, such as the mouth and brows.<br>
+Use the slider values to check which shapes you edited.
 
-"Manual Fix" is available on preset-supported avatars too, in case you want to pick things yourself.
-:::
+</div>
 
-## ③ Make sure "Edit manually" is checked
+<div class="usage-branch">
 
-Entering via "Manual Fix" starts with the preview OFF and "**Edit manually**" ON, so the lists are ready to edit.
+### BlendShapes to Fix
 
-If the checkbox is somehow off, turn it on. While it's off, the lists are grayed out.
+Select the blink and eye-closing BlendShapes you want to repair.<br>
+Common names such as `vrc.blink` are selected automatically even without a preset.
 
-While the checkbox is on, the fix preview is paused. When you're done selecting, uncheck it and press the preview button in ⑥.
+Check regular blinking first, then add winks or smiling eyes if needed.<br>
+For half-closed eyes, narrowed eyes, or eyelash adjustments, try one at a time and check the result.
 
-## ④ Select the "BlendShapes Deforming Eyes"
-
-This is where you register the BlendShapes your expression edits used to change the eye shape.
-The fix uses them to cancel out your edits — **this list is the foundation of the whole fix.**
-
-::: warning With no preset, this list starts empty
-Only preset-supported avatars get it filled automatically, so in Manual Fix you check the entries yourself.
-
-While it's empty, a hint appears under the list asking you to check the BlendShapes that deform the eyes.
-:::
-
-### What to select
-
-Among the BlendShapes whose values you changed (anything not at 0), pick the ones that affect the eye shape.
-The values are visible on each row's slider.
-
-| ○ Select | ✕ Don't select |
+| Name color | Meaning |
 |---|---|
-| Changed the eyes' **size or openness** | Anything **still at 0** (untouched by your edits) |
-| Changed the eye shape (**upturned / droopy eyes** etc.) | **Mouth, brows, face outline** — anything unrelated to the eyes |
-| Moved the **eyelid or eyelash position** | Whatever you'll pick as a fix target in ⑤ (**can't be in both lists**) |
+| Cyan | Recommended candidates |
+| Gray | Unavailable. This includes shapes used in your expression edits or selected in the list above |
 
-If unsure, check only the eye-area shapes you remember touching during your edits.
+Note: The free edition can fix one regular-blink BlendShape. Additional fixes, such as winks, require the Complete Edition.
 
-## ⑤ Select the "BlendShapes to Fix"
+</div>
 
-Pick the BlendShapes you want repaired (rebuilt).
+## ③ Check the preview
 
-Common blink names (`vrc.blink` and the like) get checked automatically even without a preset. If that covers you, there's nothing to add.
+Uncheck [Edit manually] and press [Preview the fix].<br>
+Check that the eyes close properly when blinking or winking.
 
-### What to select
+If the result is not what you wanted, turn [Edit manually] back ON and adjust the lists in step ②.
 
-Start with the one BlendShape your avatar uses for regular blinking. Winks and smiling eyes can be added later while watching the preview.
+::: details If the button says [Load the expression and preview]
+This appears when [BlendShapes Deforming Eyes] has no entries.<br>
+Pressing it reloads the avatar's expression before starting the preview.
 
-Half-closed eyes, narrowed eyes, eyelash adjusters, eye-size shapes — don't select those in bulk. Add only what you need, one at a time, checking the eye movement in the preview after each addition; the name alone doesn't tell you enough.
-
-### The name colors are your guide
-
-Above the list you'll see "Cyan=Recommended / Gray=Unavailable".
-
-- **Cyan** … recommended candidates. Start here
-- **Gray** … can't be selected. Shapes you checked in ④, and shapes your expression edits are using, end up here (→ [FAQ](/en/faq#used-in-expression))
-
-## ⑥ Check the preview
-
-Turn "**Edit manually**" back OFF and press "**Preview the fix**".
-When the avatar in your scene shows the fixed face, check how the blink and winks close.
-
-::: tip If the button says "Load the expression and preview"
-Your ④ list ("BlendShapes Deforming Eyes") is still empty. It's fine to press it as-is —
-the tool reloads from the avatar first, then goes on to the preview.
-
-If pressing it reports that no eye deformation was found, you haven't changed any face BlendShape values yet (→ [FAQ](/en/faq#no-modification)).
+If no eye deformation is found, check the face's BlendShape values and the items you selected in step ②.
 :::
 
-Not the shape you wanted? Go back to ④⑤ and adjust.
-
-## ⑦ Upload and confirm
-
-Upload as usual and the avatar goes up with the fix applied.
-Even with the preview stopped, the upload still gets fixed.
-
-After uploading, **check that the eye BlendShapes are repaired.**
-
-::: tip If the eyes move wrong in-game
-An expression animation may be conflicting. Try [Bake Mode](/en/guide/bake).
-→ [Bake vs Normal Mode](/en/guide/bake-vs-normal)
-:::
-
-To stop using the tool, delete the added "Avatar Blink Fix (NDMF)" object. The original mesh was never rewritten.
+After fixing, follow [The Full Workflow](/en/guide/workflow) to check expression animations and upload.
 
 ## Starting over
 
-Press "**Reload Expression**" to return to the automatic selection for this avatar. Handy when you want to redo your manual checks.
+Press [Reload Expression] to start your selection over.<br>
+Your manual selections are replaced with the automatic settings for the avatar.
 
-## When it doesn't work
+If you want to edit the face's BlendShapes themselves, stop the preview first.<br>
+See [Redoing your expression edits later](/en/guide/auto-fix#redoing-your-expression-edits-later) for the steps.
 
-- Nothing shows up in the lists → [FAQ: "no eye deformation found"](/en/faq#no-modification)
-- The wrong mesh is picked as the face → [FAQ: face mesh not auto-detected](/en/faq#face-not-found)
-- The BlendShape I want to fix can't be checked → [FAQ: BlendShapes used by your expression edits](/en/faq#used-in-expression)
-- Expressions break the eyes in-game → [Bake Mode](/en/guide/bake)
+To restore the avatar, delete the added Avatar Blink Fix object.
 
-## You can make your own presets
+## When the fix does not work
 
-Fixing the same avatar repeatedly? Make a preset once and Auto Fix works from then on.
+- [No eye deformation found](/en/faq#no-modification)
+- [Face mesh not found, or the wrong mesh is selected](/en/faq#face-not-found)
+- [A BlendShape cannot be selected for fixing](/en/faq#used-in-expression)
 
-The free tool "BlendShapeChecker" can export an Auto Fix preset for your avatar.
-Put the exported JSON directly inside `Assets/LEMONERU/Avatar Blink Fix/json` and it's picked up as-is (the folder is created automatically if missing).
+## Making your own presets
 
-→ [BlendShapeChecker (free, BOOTH)](https://lemoneru.booth.pm/items/8361673)
+The free [BlendShapeChecker](https://lemoneru.booth.pm/items/8361673) tool can export Auto Fix presets.<br>
+This is useful when fixing the same avatar repeatedly.
 
-You're welcome to share the presets you make with others.
+Place the exported JSON directly in this folder.<br>
+The tool creates the folder automatically if it does not exist.
+
+```text
+Assets/LEMONERU/Avatar Blink Fix/json
+```
+
+You are welcome to share the presets you create.

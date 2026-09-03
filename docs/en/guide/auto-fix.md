@@ -1,93 +1,70 @@
 # Auto Fix (Recommended)
 
-The easiest way to use the tool. Start here.
+Use a matching preset to fix your avatar's blink automatically.<br>
+Finish your expression edits before running the fix.
 
-For the full flow from expression editing to upload → [The Full Workflow](/en/guide/workflow)
+## ① Run Auto Fix
 
-## Steps
+Right-click your avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（推奨）] (Auto Fix – Recommended).<br>
+An Avatar Blink Fix object is added inside the avatar, and the fixed expression appears.
 
-1. **Right-click your avatar in the Hierarchy**
-2. Choose "**Avatar Blink Fix**" → "**自動修正（推奨）**" (Auto Fix – Recommended; the menu is shown in Japanese)
+If the menu item is grayed out, use [Manual Fix](/en/guide/manual-fix) to select the required items.<br>
+The right-click menu is displayed in Japanese.
 
-   ![Right-clicking an avatar in the Hierarchy and choosing Avatar Blink Fix, then Auto Fix (Recommended)](/images/context-menu-guide.svg)
+## ② Check the fixed expression
 
-3. When "The blink fix has been set up" appears, you're done
+Select the added object to open its Inspector.<br>
+If the button says [Stop preview], the preview is ON.
 
-   ![Completion dialog: the blink fix has been set up and will be applied at upload time](/images/fixed-dialog.png)
+![Auto Fix Inspector with the Reload Expression and Stop preview buttons](/images/easy-normal.png)
 
-4. If you use expression animations, [check for conflicts](/en/guide/workflow) before uploading
-5. Upload as usual. The fix is applied automatically
+Check that the eyes close properly when blinking or winking.<br>
+The fix is applied at upload time even if you turn the preview OFF.
 
-An object called "Avatar Blink Fix (NDMF)" is added under the avatar. All the settings live on it.
-
-![Inspector after the fix, showing detection counts and the Reload Expression / Stop preview buttons](/images/easy-normal.png)
-
-## Check the fixed face right away
-
-Running Auto Fix turns the preview on automatically, so the avatar in your scene shows the fixed face.
-You can see on the spot whether it's repaired.
-
-If the Inspector button shows the red "**Stop preview**", the preview is ON.
-
-::: tip The real fix happens at upload
-This method is non-destructive — the original mesh is untouched. The preview only shows how the fix will look; the actual fix is **applied at upload (build) time**.
-Even if you stop the preview, the upload still gets fixed.
-:::
+See [The Full Workflow](/en/guide/workflow) for checking expression animations before uploading.
 
 ## Redoing your expression edits later
 
-::: warning Press "Stop preview" first
-While previewing, the displayed mesh is swapped for the fixed one.
-**Editing expressions in that state can give unintended results.**
+Turn the preview OFF before adjusting the face's BlendShapes again.
+
+1. Press [Stop preview] in the Inspector
+2. Edit the expression
+3. Press [Reload Expression]
+
+You can also delete the object, edit the expression, then run Auto Fix again when you're done.
+
+::: details Running Auto Fix again without deleting the object
+A dialog asks whether to replace the existing component.<br>
+Press [Replace] to rebuild the settings from the current expression.
 :::
 
-1. Press "**Stop preview**" in the Inspector
-2. Redo your expression edits
-3. Press "**Reload Expression**"
+## Restoring the avatar
 
-The fix remembers the BlendShape values from the moment you ran Auto Fix. After re-editing, step 3 makes it re-record them.
+Delete the added Avatar Blink Fix object.<br>
+The original mesh is not overwritten, so the avatar returns to its state before the fix.
 
-Deleting the "Avatar Blink Fix (NDMF)" object and right-clicking → Auto Fix again gives the same result. Whichever you find easier.
-If you right-click again without deleting the object, you'll see "Component Already Exists — Replace it with a new one?". **Pressing [Replace] is fine** — the settings are rebuilt from the current face.
+## Other situations
 
-::: tip When creating or editing expression animation clips
-The steps above are for re-adjusting the face mesh's BlendShapes.
+<div class="usage-branch">
 
-When creating or editing expression **animations** in an expression tool, keep the "Avatar Blink Fix (NDMF)" object and work **with the preview ON**.
-:::
+### Conflicts with expression animations
 
-## Undoing everything
+An expression animation that controls a BlendShape being fixed can cause the eyes to look wrong in-game.
 
-Delete the added "Avatar Blink Fix (NDMF)" object. The original mesh was never rewritten.
+If you want to keep the original expression animations unchanged, try [Switch to Bake mode].<br>
+Your settings carry over to [Bake Mode](/en/guide/bake), which may reduce the breakage.
 
-## If "conflict with expression animations" appears
+Note: Bake Mode is a Complete Edition feature. Use it for edits with values above 100 or negative values as well.
 
-The tool found an expression animation driving a BlendShape that's being fixed.
-Left as is, the eyes may move wrong in-game when you play expressions.
+</div>
 
-If you edit expression animations with FaceEmo or another tool, remove any entry that holds a corrected BlendShape at value 0. Leaving it in may conflict with the corrected BlendShape.
+<div class="usage-branch">
 
-If you will keep the avatar's original expression animations unchanged, pressing "**Switch to Bake mode**" is recommended. Your settings carry over into [Bake Mode](/en/guide/bake), and you do not need to remove those zero-value entries.
+### Using face tracking
 
-If overdriven values (above 100 or negative) are detected, switch to Bake mode — normal mode can't reproduce them.
+Normal Mode excludes FT eye-close BlendShapes from the fix by default.<br>
+If the eyes close incorrectly, see [Using Face Tracking](/en/guide/face-tracking).
 
-→ Curious what actually changes? [Bake vs Normal Mode](/en/guide/bake-vs-normal)
+</div>
 
-## Avatars without a preset
-
-The tool works on avatars without an Auto Fix preset too. Right-click → "**手動修正**" (Manual Fix) and pick the BlendShapes to fix yourself.
-
-→ [Manual Fix (for avatars without a preset)](/en/guide/manual-fix)
-
-Supported avatar but no preset found? → See the [FAQ](/en/faq#preset-missing).
-
-## Face tracking (FT) avatars
-
-When FT eye-close BlendShapes are found, you can choose whether to include them. In normal mode the default is "**Don't include**". Switch to "Include in fix" only if FT eye closing breaks in-game.
-
-→ [Using Face Tracking](/en/guide/face-tracking)
-
----
-
-As an extra feature, you can also mix blinking into your existing expression animations (Complete Edition)
-→ [Merging blinks into expression animations](/en/guide/animation)
+If a preset is missing for a supported avatar, see the [FAQ](/en/faq#preset-missing).

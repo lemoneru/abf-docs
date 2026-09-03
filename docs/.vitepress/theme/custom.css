@@ -1,3 +1,25 @@
+/* 使い方の条件分岐・設定項目。見出しの点と字下げで本文から区別する */
+.vp-doc .usage-branch {
+  margin: 28px 0;
+  padding-left: 22px;
+  border-left: 1px solid var(--vp-c-divider);
+}
+.vp-doc .usage-branch > h3 {
+  position: relative;
+  margin-top: 0;
+  line-height: 1.6;
+}
+.vp-doc .usage-branch > h3::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 0.65em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--vp-c-text-2);
+}
+
 /* 本文中のスクリーンショットに枠を付ける（暗色UIがページに溶けないように） */
 .vp-doc img {
   border: 1px solid var(--vp-c-divider);

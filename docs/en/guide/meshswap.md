@@ -1,62 +1,87 @@
 # Mesh Swap (Legacy)
 
-The classic method: build a fixed mesh and swap it into the avatar on the spot. Works just like 2.x.
+This method creates a fixed mesh and swaps it into the avatar.<br>
+It uses the same workflow as 2.x.
 
-The "**Restore Original**" button takes you back anytime.
+Use it without NDMF or when combining Avatar Blink Fix with Avatar Mouth Fix.<br>
+Otherwise, the right-click [Auto Fix](/en/guide/auto-fix) is recommended.
 
-## When to use it
+## ① Open the window
 
-- You don't have NDMF installed
-- Another tool interferes and the [non-destructive Auto Fix](/en/guide/auto-fix) doesn't work
-- You want to keep the 2.x workflow
-- You're combining it with Avatar Mouth Fix (→ [below](#when-combining-with-avatar-mouth-fix))
+Open Tools → Avatar Blink Fix from Unity's top menu.
 
-::: tip The right-click Auto Fix covers most cases
-This method really swaps the mesh, so redoing expression edits means restoring first. Unless you have a specific reason, [Auto Fix (Recommended)](/en/guide/auto-fix) is easier.
-:::
+1. Select the [Mesh Swap (Legacy)] tab
+2. Drag your avatar from the Hierarchy into [① Avatar Prefab]
 
-## Steps
+![Mesh Swap window with the avatar and face mesh assigned](/images/meshswap-window.png)
 
-1. Open the window from "**Tools**" → "**Avatar Blink Fix**"
-2. Select the "**Mesh Swap (Legacy)**" tab
-3. Drag & drop your avatar from the Hierarchy into **① Avatar Prefab**
-4. On a supported avatar, pick it in the preset field and press "**Auto Fix**" — done
-5. On an unsupported avatar, review and check "**③ BlendShapes Deforming Eyes**" and "**④ BlendShapes to Fix**", then run the fix
+## ② Fix the blink
 
-![The Mesh Swap tab with an avatar and face mesh set, Auto Fix button ready](/images/meshswap-window.png)
+<div class="usage-branch">
 
-When the fix finishes, the face mesh is swapped for the fixed one. Upload as-is.
+### With a preset
 
-## Restoring
+Select the avatar in the preset field and press [Auto Fix].
 
-The window's "**Restore Original**" button brings back the original mesh.
+</div>
 
-- To redo expression edits: restore → edit → fix again, in that order
-- Fix records are saved per avatar name. Duplicating or renaming the avatar makes the record mismatch, and the double-fix guard may complain (→ [FAQ](/en/faq#copied-avatar))
+<div class="usage-branch">
 
-## Bake fix
+### Without a preset
 
-Mesh Swap has a "**Bake Fix**" too: it bakes your edited expression into the mesh before fixing, making it robust against expression animations.
+Select items in [③ BlendShapes Deforming Eyes] and [④ BlendShapes to Fix], then run the fix.<br>
+Choose the same types of items described in [Manual Fix](/en/guide/manual-fix).
 
-※ When combining with Avatar Mouth Fix, use Normal Fix, not Bake Fix.
+</div>
 
-## Optional features
+When the fix finishes, the face mesh is replaced with the fixed version.<br>
+For expression animation checks and uploading, follow step ③ onward in [The Full Workflow](/en/guide/workflow).
 
-### ⑤ Fine-tune mode
+## Restoring the avatar
 
-Adjust the fix result per BlendShape. The settings can be exported to / imported from JSON, so you can carry them over to an avatar rebuilt in Blender.
+Press [Restore Original] in the window.<br>
+To redo expression edits, restore first, edit the expression, then apply the fix again.
 
-### ⑥ Blink animation combine
-
-Merges blink and expression animations. Keys other than BlendShapes — PhysBones, object toggles and so on — are carried over intact.
-
-The right-click Auto Fix can do the same → [Merging blinks into expression animations](/en/guide/animation)
+Fix records are saved per avatar name.<br>
+If a warning appears after duplicating or renaming an avatar, see [Fixing a duplicated avatar](/en/faq#copied-avatar).
 
 ## When combining with Avatar Mouth Fix
 
-In the current version, the only supported combination is "Normal Fix in Mesh Swap" → "Avatar Mouth Fix", in that order.
+Apply Normal Fix in Mesh Swap first, then use Avatar Mouth Fix.<br>
+Combining it with non-destructive fixes or Bake Fix is not supported.
 
-If Avatar Mouth Fix is installed and you right-click → "Auto Fix (Recommended)", the tool first asks "**Will you also use Avatar Mouth Fix on this avatar?**".
-If you will, choose [**Use Mouth Fix too**] — the fix runs right there as the supported Mesh Swap Normal Fix. Otherwise choose [**Use Blink Fix only**] for the usual non-destructive fix.
+If Avatar Mouth Fix is installed, the right-click [自動修正（推奨）] (Auto Fix – Recommended) asks whether you want to use both tools.
 
-Combining with the non-destructive fix or Bake Fix is planned for a future update. Picking an unsupported combination shows guidance inside the tool.
+- **[Use Mouth Fix too]:** Runs Normal Fix in Mesh Swap
+- **[Use Blink Fix only]:** Runs the usual non-destructive fix
+
+## Other features
+
+<div class="usage-branch">
+
+### Bake Fix
+
+Mesh Swap can also bake the edited expression before fixing.<br>
+This may reduce breakage caused by conflicts with expression animations.
+
+Note: Bake Fix is a Complete Edition feature. Use Normal Fix when combining with Avatar Mouth Fix.
+
+</div>
+
+<div class="usage-branch">
+
+### ⑤ Fine-tune mode
+
+Adjust the fix result for each BlendShape.<br>
+Settings can be exported to and imported from JSON for use with another edited avatar.
+
+</div>
+
+<div class="usage-branch">
+
+### ⑥ Blink animation combine
+
+Combine blinking with expression animations.<br>
+See [Merging Blinks into Expression Animations](/en/guide/animation) for the steps.
+
+</div>
