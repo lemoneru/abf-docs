@@ -3,17 +3,22 @@
 [Auto Fix (Bake Mode)](/en/guide/bake) is recommended when using face tracking.
 
 Avatar Blink Fix can also repair face-tracking (FT) eye-close BlendShapes affected by expression edits.<br>
+Use the same steps whether or not your FT addon supports expression edits.<br>
 It does not change your FT addon's animations or settings.
 
 Note: Fixing FT BlendShapes is a Complete Edition feature. These settings do not appear in the free edition.
 
 ## Fixing the avatar
 
-1. Right-click the avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（ベイクモード）] (Auto Fix – Bake Mode)
-2. Select the added object and check that FT BlendShapes are set to [Include in fix] in the Inspector
-3. Upload and check eye closing in-game
+1. Prepare an avatar with your expression edits completed and the FT addon installed
+2. Right-click the avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（ベイクモード）] (Auto Fix – Bake Mode)
+3. Select the added object and check that FT BlendShapes are set to [Include in fix] in the Inspector
+4. Upload and check eye closing in-game
 
-If you already use Normal Mode, press [Switch to Bake mode].<br>
+FT eye-close BlendShapes are normally fixed automatically.<br>
+However, the fix may not fully resolve the issue, depending on your expression edits, compatibility with the FT addon, or the BlendShape names.
+
+If you already use Auto Fix (Recommended), press [Switch to Bake mode].<br>
 The right-click menu is displayed in Japanese.
 
 ## Where to change the setting
@@ -29,13 +34,6 @@ The [Also fix Face Tracking BlendShapes] checkbox under [Advanced Settings] chan
 The tool checks for `EyeClosedLeft` or `EyeClosedRight` on the face mesh, or FT BlendShapes registered in the preset.<br>
 The setting is hidden if no matching shapes are found.
 :::
-
-## FT fixes in Bake Mode
-
-Bake Mode sets FT BlendShapes to [Include in fix] by default.<br>
-The edited shape is baked into the mesh, so setting BlendShapes to 0 from the FT side no longer restores the pre-bake shape.
-
-Avatar Blink Fix therefore repairs FT eye-close BlendShapes as well.
 
 ## After redoing expression edits
 
