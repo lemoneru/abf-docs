@@ -1,4 +1,4 @@
-# Bake vs Normal Mode
+# Which Mode Should I Use?
 
 Normal Mode rebuilds the eye-closing BlendShapes to match your edited expression.<br>
 Bake Mode bakes the edited shape into the mesh before applying the fix.
@@ -9,7 +9,7 @@ Bake Mode bakes the edited shape into the mesh before applying the fix.
 
 ### Editing the expression animations yourself
 
-Use [Auto Fix in Normal Mode](/en/guide/auto-fix).<br>
+If you edit expression animations yourself and do not use face tracking, use [Auto Fix in Normal Mode](/en/guide/auto-fix).<br>
 The free edition can fix one BlendShape used for regular blinking.
 
 See [The Full Workflow](/en/guide/workflow) for precautions when reusing existing expression animations.
@@ -18,16 +18,16 @@ See [The Full Workflow](/en/guide/workflow) for precautions when reusing existin
 
 <div class="usage-branch">
 
-### Using the avatar's default expression animations
+### Using face tracking or the avatar's default expression animations
 
-[Bake Mode](/en/guide/bake) is recommended if you want to keep the expression animations unchanged.<br>
+[Bake Mode](/en/guide/bake) is recommended when using face tracking.<br>
+Use it when keeping the avatar's original expression animations unchanged as well.
+
 It may also reduce breakage if the eyes look wrong in-game with Normal Mode.
 
 Note: Bake Mode is a Complete Edition feature. Use it for edits with values above 100 or negative values as well.
 
 </div>
-
-If Normal Mode already works well, there is no need to switch.
 
 ## What changes
 
@@ -52,7 +52,7 @@ Check [Bake Range] after switching.
 
 ## Using other tools and edits
 
-- **Face tracking:** Try Bake Mode if you do not adjust expression animations yourself. Normal Mode may fit better if your FT addon corrects the expression through zero-value animation curves. See [Using Face Tracking](/en/guide/face-tracking).
+- **Face tracking:** Use Bake Mode with FT BlendShapes set to [Include in fix]. See [Using Face Tracking](/en/guide/face-tracking) for the settings.
 - **Avatar Mouth Fix:** Use [Normal Fix in Mesh Swap](/en/guide/meshswap#when-combining-with-avatar-mouth-fix). Combining it with non-destructive fixes or Bake Fix is not supported.
 
 If [自動修正（推奨）] (Auto Fix – Recommended) is unavailable, use [Manual Fix](/en/guide/manual-fix) to select the required items.

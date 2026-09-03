@@ -1,5 +1,7 @@
 # Auto Fix (Recommended)
 
+[Which Mode Should I Use?](/en/guide/bake-vs-normal)
+
 Use a matching preset to fix your avatar's blink automatically.<br>
 Finish your expression edits before running the fix.
 
@@ -62,8 +64,10 @@ Note: Bake Mode is a Complete Edition feature. Use it for edits with values abov
 
 ### Using face tracking
 
-Normal Mode excludes FT eye-close BlendShapes from the fix by default.<br>
-If the eyes close incorrectly, see [Using Face Tracking](/en/guide/face-tracking).
+Bake Mode is recommended when using face tracking.<br>
+Press [Switch to Bake mode] in the Inspector.
+
+See [Using Face Tracking](/en/guide/face-tracking) for the FT BlendShape settings.
 
 </div>
 

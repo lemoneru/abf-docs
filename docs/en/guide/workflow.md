@@ -89,7 +89,7 @@ To restore the avatar to its state before the fix, delete the added Avatar Blink
 | Using values above 100 or negative values | Use Bake Mode. Normal mode cannot reproduce these values |
 | Using Avatar Mouth Fix | Use [Normal Fix in Mesh Swap](/en/guide/meshswap#when-combining-with-avatar-mouth-fix) |
 | Not using NDMF, or keeping the 2.x-style workflow | Use [Mesh Swap (Legacy)](/en/guide/meshswap) |
-| Using face tracking | See [Using Face Tracking](/en/guide/face-tracking) |
+| Using face tracking | Bake Mode is recommended. See [Using Face Tracking](/en/guide/face-tracking) |
 | Using a tool that adds BlendShapes | See [Using Tools That Add BlendShapes](/en/guide/added-blendshapes) |
 
 If the fix does not work as expected, see the [FAQ](/en/faq).

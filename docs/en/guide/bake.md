@@ -1,5 +1,7 @@
 # Bake Mode
 
+[Which Mode Should I Use?](/en/guide/bake-vs-normal)
+
 Bake Mode bakes your edited expression into the mesh as its shape at BlendShape value 0, then applies the fix.<br>
 It may reduce breakage caused by conflicts with expression animations.
 
@@ -7,12 +9,10 @@ Note: Bake Mode is a Complete Edition feature.
 
 ## When to use it
 
+- You use face tracking
 - You want to keep the avatar's original expression animations unchanged
 - The eyes look wrong in-game when using Normal Mode
 - Your expression edits use values above 100 or negative values
-
-If Normal Mode works well, you can keep using it.<br>
-See [Bake vs Normal Mode](/en/guide/bake-vs-normal) for help choosing.
 
 ## ① Set up Bake Mode
 
@@ -57,7 +57,8 @@ See [The Full Workflow](/en/guide/workflow) for checks before and after uploadin
 ## Using face tracking
 
 Bake Mode includes FT eye-close BlendShapes in the fix by default.<br>
-The best method depends on the FT addon's settings. See [Using Face Tracking](/en/guide/face-tracking).
+Keep [Include in fix] selected and check how the eyes close.<br>
+See [Using Face Tracking](/en/guide/face-tracking) for the settings.
 
 ## Restoring the avatar
 

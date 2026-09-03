@@ -1,20 +1,20 @@
 # Using Face Tracking
 
+[Bake Mode](/en/guide/bake) is recommended when using face tracking.
+
 Avatar Blink Fix can also repair face-tracking (FT) eye-close BlendShapes affected by expression edits.<br>
 It does not change your FT addon's animations or settings.
 
 Note: Fixing FT BlendShapes is a Complete Edition feature. These settings do not appear in the free edition.
 
-## Choosing the fix
+## Fixing the avatar
 
-| Your setup | Suggested setting |
-|---|---|
-| You do not adjust expression animations yourself | Bake Mode with FT BlendShapes included |
-| Your FT addon corrects the expression through zero-value animation curves | Normal Mode with FT BlendShapes excluded |
-| Normal Auto Fix already works well | Keep your current settings |
+1. Right-click the avatar in the Hierarchy and choose [Avatar Blink Fix] → [自動修正（ベイクモード）] (Auto Fix – Bake Mode)
+2. Select the added object and check that FT BlendShapes are set to [Include in fix] in the Inspector
+3. Upload and check eye closing in-game
 
-If eye closing looks wrong in-game, switch between [Include in fix] and [Don't include] and compare the result.<br>
-The best setting depends on the avatar and FT addon.
+If you already use Normal Mode, press [Switch to Bake mode].<br>
+The right-click menu is displayed in Japanese.
 
 ## Where to change the setting
 
@@ -30,30 +30,12 @@ The tool checks for `EyeClosedLeft` or `EyeClosedRight` on the face mesh, or FT 
 The setting is hidden if no matching shapes are found.
 :::
 
-## Normal Mode and Bake Mode
+## FT fixes in Bake Mode
 
-<div class="usage-branch">
-
-### Normal Mode
-
-The default is [Don't include].<br>
-If the FT addon uses animations to reset the edited BlendShapes to 0 as its correction, that mechanism can keep working.
-
-If the tool reports that it detected an FT-side animation, start by checking the result with [Don't include].
-
-</div>
-
-<div class="usage-branch">
-
-### Bake Mode
-
-The default is [Include in fix].<br>
+Bake Mode sets FT BlendShapes to [Include in fix] by default.<br>
 The edited shape is baked into the mesh, so setting BlendShapes to 0 from the FT side no longer restores the pre-bake shape.
 
-Avatar Blink Fix therefore repairs FT eye-close BlendShapes as well.<br>
-See [Bake Mode](/en/guide/bake) for how to switch.
-
-</div>
+Avatar Blink Fix therefore repairs FT eye-close BlendShapes as well.
 
 ## After redoing expression edits
 

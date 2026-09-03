@@ -21,7 +21,7 @@ outline: [2, 2]
 
 If you edit expression animations with FaceEmo or another tool, you can use normal mode. Remove animation entries that hold a corrected BlendShape at value 0. If you keep the original expression animations unchanged, Bake Mode is recommended. Edits using values above 100 or negative values also require Bake Mode.
 
-→ Comparison table, weaknesses, and how to switch: [Bake vs Normal Mode](/en/guide/bake-vs-normal)
+→ Choosing a mode and comparing the differences: [Which Mode Should I Use?](/en/guide/bake-vs-normal)
 
 </details>
 
@@ -245,7 +245,8 @@ The tool **shows such risky BlendShapes in red**. Remove them from the fix targe
 <details id="face-tracking">
 <summary>Does it work on FT avatars?</summary>
 
-Yes. FT eye-close BlendShapes (EyeClosed and the like) are detected automatically, and you choose whether to include them. Normal mode defaults to "**Don't include**"; Bake mode defaults to "**Include in fix**".
+Yes. Bake Mode is recommended when using face tracking.<br>
+Set FT eye-close BlendShapes to [Include in fix]. This is a Complete Edition feature.
 
 → How to choose, why, and what it can't fix: [Using Face Tracking](/en/guide/face-tracking)
 
@@ -256,7 +257,8 @@ Yes. FT eye-close BlendShapes (EyeClosed and the like) are detected automaticall
 
 This can come from how the FT addon's animations are built, and in that case this tool can't fix it.
 
-First, try switching the FT eye-close BlendShapes to "**Include in fix**" (→ [how](/en/guide/face-tracking)). If the symptom remains, check the FT addon's own settings.
+Try Bake Mode with FT eye-close BlendShapes set to [Include in fix] (→ [how](/en/guide/face-tracking)).<br>
+If the symptom remains, check the FT addon's settings.
 
 </details>
 

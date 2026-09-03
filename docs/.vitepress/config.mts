@@ -26,9 +26,9 @@ const jaSidebar = [
     text: '使い方',
     items: [
       { text: '実際の修正の流れ', link: '/guide/workflow' },
+      { text: 'どのモードで修正したらいい？', link: '/guide/bake-vs-normal' },
       { text: '自動修正（推奨）', link: '/guide/auto-fix' },
       { text: 'ベイクモード', link: '/guide/bake' },
-      { text: '通常モードとの違い', link: '/guide/bake-vs-normal' },
       { text: '手動修正（プリセットが無いとき）', link: '/guide/manual-fix' },
       { text: 'フェイストラッキング', link: '/guide/face-tracking' },
       { text: 'BlendShapeを追加したとき', link: '/guide/added-blendshapes' },
@@ -72,9 +72,9 @@ const enSidebar = [
     text: 'How to Use',
     items: [
       { text: 'The Full Workflow', link: '/en/guide/workflow' },
+      { text: 'Which Mode Should I Use?', link: '/en/guide/bake-vs-normal' },
       { text: 'Auto Fix (Recommended)', link: '/en/guide/auto-fix' },
       { text: 'Bake Mode', link: '/en/guide/bake' },
-      { text: 'Bake vs Normal Mode', link: '/en/guide/bake-vs-normal' },
       { text: 'Manual Fix (No Preset)', link: '/en/guide/manual-fix' },
       { text: 'Face Tracking', link: '/en/guide/face-tracking' },
       { text: 'Added BlendShapes', link: '/en/guide/added-blendshapes' },
