@@ -169,7 +169,7 @@ Leave `Data`, `Animation`, `json` and the unlock key in place.
 Yes, for the non-destructive features ([Auto Fix](/en/guide/auto-fix), [Auto Fix (Bake Mode)](/en/guide/bake)). Installing via VCC / ALCOM brings it in automatically.
 
 ::: tip ＋ button disabled / "nadena.dev.ndmf not found"
-The NDMF repository isn't registered. Add **`https://vpm.nadena.dev/`** to VCC / ALCOM as well.
+The NDMF repository isn't registered. Add **`https://vpm.nadena.dev/vpm.json`** to VCC / ALCOM as well.
 :::
 
 Without NDMF, [Mesh Swap (Legacy)](/en/guide/meshswap) (the classic window) still works (**when installed via unitypackage**).

@@ -169,7 +169,7 @@ BlendShape の値を変えて改変したら、そのあとで「表情を再読
 [自動修正](/guide/auto-fix)・[自動修正（ベイクモード）](/guide/bake)といった非破壊の機能には必要です。VCC / ALCOM から導入すると一緒に入ります。
 
 ::: tip ＋が押せない／「nadena.dev.ndmf が見つかりません」と出るとき
-NDMF のリポジトリを登録していない状態です。VCC / ALCOM に **`https://vpm.nadena.dev/`** も追加してください。
+NDMF のリポジトリを登録していない状態です。VCC / ALCOM に **`https://vpm.nadena.dev/vpm.json`** も追加してください。
 :::
 
 NDMF が無い環境でも、[メッシュ入れ替え式](/guide/meshswap)（従来の窓）は使えます（**unitypackage で入れた場合**）。
