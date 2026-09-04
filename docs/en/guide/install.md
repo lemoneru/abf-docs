@@ -10,7 +10,7 @@
    ::: warning ＋ button disabled / "nadena.dev.ndmf not found"
    Avatar Blink Fix requires **NDMF**. If the NDMF repository isn't registered, the package can't be installed together with it.
 
-   Register the NDMF repository, **`https://vpm.nadena.dev/`**, in VCC / ALCOM as well. Then press ＋ again.
+   Register the NDMF repository, **`https://vpm.nadena.dev/vpm.json`**, in VCC / ALCOM as well. Then press ＋ again.
    :::
 
 3. Open the project in Unity. A fresh install runs as the free edition, so you can try it before buying.

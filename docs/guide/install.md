@@ -10,7 +10,7 @@
    ::: warning ＋が押せない／「nadena.dev.ndmf が見つかりません」と出るとき
    Avatar Blink Fix は **NDMF** を必要とします。NDMF のリポジトリを登録していないと、一緒に入れられません。
 
-   NDMFのリポジトリ **`https://vpm.nadena.dev/`** もVCC / ALCOMに登録してください。そのあともう一度 ＋ を押してください。
+   NDMFのリポジトリ **`https://vpm.nadena.dev/vpm.json`** もVCC / ALCOMに登録してください。そのあともう一度 ＋ を押してください。
    :::
 
 3. Unityでプロジェクトを開く。インストール直後は無料版として使えるので、購入前にお試しいただけます。
