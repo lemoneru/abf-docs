@@ -9,7 +9,7 @@ Once imported, it works across all projects on the same PC.
 2.x owners pay nothing extra.<br>
 After importing 3.0, use the unlock key available on the same purchase page.
 
-## When "Migrate to the new Avatar Blink Fix" appears
+## When "Older Avatar Blink Fix detected" appears
 
 This dialog appears when you install 3.0 in a project that already has 2.x.
 
