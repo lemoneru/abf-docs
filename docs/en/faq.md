@@ -41,6 +41,28 @@ See [Adjusting bake targets](/en/guide/bake#bake-mouth) for the steps.
 
 </details>
 
+<details id="bake-expression">
+<summary>My usual expressions look wrong after switching to Bake Mode</summary>
+
+An expression animation may be applying another non-zero value to a BlendShape that was already used for the baked expression.<br>
+Applying another value to the same BlendShape can make the expression look too strong or distort its shape.
+
+Open the expression animation and temporarily remove the entries that overlap with the baked expression, then check the result.<br>
+Do not remove every animated item at once. Check only the overlapping items one at a time, and leave BlendShapes that still need to move, such as blinking, in place.
+
+**If the cause is still unclear**
+
+1. Stop Unity Play Mode and any expression preview in your expression-editing tool
+2. Select [Avatar Blink Fix (Bake)] in the Hierarchy
+3. Press [Stop preview] in the Inspector. If the preview is already stopped, leave it as is
+4. At the bottom, press [Output support information] → [Copy support information]
+5. Paste the copied text into a message on the [Avatar Blink Fix page on BOOTH](https://lemoneru.booth.pm/items/7074770)
+
+If the information is split into multiple parts, copy and send every part in order.<br>
+Do not change the settings or press [Reload Expression] while collecting this information.
+
+</details>
+
 <details id="no-visual-change">
 <summary>I ran the fix but the avatar in my scene looks the same</summary>
 
