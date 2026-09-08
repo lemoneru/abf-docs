@@ -266,6 +266,33 @@ If [Restore Original] is disabled, do not delete the record. See [these instruct
 
 ## Results / appearance {#looks}
 
+<details id="correction-side">
+<summary>Closing one eye undoes the expression edits on the other eye</summary>
+
+On some avatars, closing one eye—for example, when winking—may undo the expression edits on the other eye. These steps also apply if you do not use face tracking.
+
+You usually do not need to change this setting.<br>
+If this happens, version 3.0.10 and later let you choose which side ABF corrects for the affected BlendShape.
+
+1. Select the Avatar Blink Fix object added to your avatar
+2. In the Inspector, open [Advanced Settings] → [Eye correction side (usually not needed)]
+3. Press [Add target] and select the affected BlendShape from your fix targets
+4. Change [Auto] to [Left], [Right], or [Both] for the side you want to correct
+
+Left and right are from the avatar's perspective.<br>
+For example, if a right-eye wink undoes the edits on the other eye, try [Right].
+
+To undo the setting, choose [Auto] or press [×] beside the entry.<br>
+That BlendShape returns to automatic detection.
+
+This setting only changes the area corrected by ABF. It does not change the original expression motion, animations, or the FBX.
+
+For Mesh Swap, open the same section in the tool's [Advanced Settings]. First select the eye-closing BlendShape in the fix-target list.
+
+You cannot change this setting while the fine-tuning window is open. Confirm your edits and close that window first.
+
+</details>
+
 <details id="unnatural-eyelid">
 <summary>Eyelids or lashes move unnaturally when blinking</summary>
 
