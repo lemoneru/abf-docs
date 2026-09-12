@@ -5,6 +5,11 @@ The main differences are how many BlendShapes you can fix and which extra featur
 The free edition can repair your avatar too. Try it with your expression edits first.<br>
 You can easily upgrade to the paid Complete Edition afterward.
 
+::: warning Before purchasing
+In both editions, Auto Fix repairs eye-closing BlendShapes. It does not automatically repair values or movements in existing expression animations.<br>
+Even with Bake Mode, the animations may need adjustment. See the [FAQ](/en/faq#anim-file) for details.
+:::
+
 ## What the free edition can do
 
 Installing Avatar Blink Fix gives you the free edition.

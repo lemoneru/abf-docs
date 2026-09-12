@@ -387,11 +387,14 @@ Remove the eye BlendShape entries from the animation in question.
 <details id="anim-file">
 <summary>Will it fix my expression animation files themselves?</summary>
 
-No. This tool repairs **BlendShapes**. It has no feature that automatically rewrites expression animation files.
+No. Auto Fix repairs **eye-closing BlendShapes**. It does not automatically edit or repair values or movements in existing expression animations.
 
-To change expression animations, use FaceEmo or another expression-editing tool, or edit the Animation files manually. Remove entries that hold a corrected BlendShape at value 0.
+A BlendShape may look correct on its own but look wrong when controlled by an expression animation. To change the animation, use FaceEmo or another expression-editing tool, or edit the Animation file manually.
 
-If you want to keep the original expression animations unchanged, [Auto Fix (Bake Mode)](/en/guide/bake) is recommended because those zero-value entries do not need to be removed.
+[Auto Fix (Bake Mode)](/en/guide/bake) may reduce breakage caused by conflicts between expression edits and animations. It does not resolve every case, and the animations may still need adjustment.<br>
+If expressions still look wrong after baking, follow the steps for [checking overlapping animation entries](#bake-expression).
+
+[Merging blinks into expression animations](/en/guide/animation) is a separate beta feature. It combines animations you provide into new files; it does not automatically fix problems in existing animations.
 
 </details>
 

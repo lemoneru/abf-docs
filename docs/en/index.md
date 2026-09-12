@@ -40,10 +40,13 @@ For an avatar without a preset, select the required items.
 
 The Complete Edition can also fix BlendShapes for winks, MMD, and face tracking.
 
-::: tip This tool repairs BlendShapes
-This tool does not edit animations. Depending on the avatar's animation setup, the result may not work exactly as expected.
+::: warning Auto Fix repairs BlendShapes
+**Auto Fix does not automatically edit or repair the values or movements in existing expression animations.**<br>
+It repairs eye-closing BlendShapes.
 
-If an animation conflicts with the fix, [Auto Fix (Bake Mode)](/en/guide/bake), added in 3.0, may reduce the breakage.
+[Auto Fix (Bake Mode)](/en/guide/bake) may reduce breakage caused by animation conflicts. It does not resolve every case, and you may still need to adjust the animations.
+
+Merging blinks into expression animations (a beta feature) is separate from Auto Fix.
 
 If the fix does not work or you are unsure what to do, see the [FAQ](/en/faq).
 :::

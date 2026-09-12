@@ -3,7 +3,8 @@
 Combine your favorite blink animation, such as a teary blink, with your expressions.<br>
 This feature generates BlendShapes and new animation files for the combined movement.
 
-Note: This is a Complete Edition extra. You do not need it for a regular blink fix.
+Note: This is a Complete Edition beta feature. You do not need it for a regular blink fix.<br>
+It merges animations you provide; it does not automatically fix problems in existing expression animations.
 
 ## ① Prepare the animations
 

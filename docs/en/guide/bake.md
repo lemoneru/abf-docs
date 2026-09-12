@@ -5,6 +5,9 @@
 Bake Mode reconstructs your edited expression as the shape at BlendShape value 0.<br>
 This makes the edited expression the default expression, which may reduce breakage caused by animation conflicts.
 
+Bake Mode does not automatically repair values or movements in existing expression animations.<br>
+You may still need to adjust the animations after baking. See the [FAQ](/en/faq#anim-file) for details.
+
 You can also use it for expression edits with values above 100 or negative values.
 
 Note: Bake Mode is a Complete Edition feature.
