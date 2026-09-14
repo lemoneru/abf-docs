@@ -358,11 +358,28 @@ Supported since 3.0. When overdriven values are involved, the fix goes through [
 </details>
 
 <details id="avatar-side">
-<summary>A particular BlendShape breaks the face, fix or no fix</summary>
+<summary>Blinking does not fix correctly when I use a whole-face BlendShape</summary>
 
-Some avatars ship BlendShapes that break when used alone (whole-face reshapers, lash shapes that poke out, and so on).
+BlendShapes that reshape the whole face, or change the eyes and mouth together, may prevent blinking from being fixed correctly.<br>
+Counteracting the eye edits can also undo changes to other facial features. Switching to Bake Mode may not resolve this.
 
-The tool **shows such risky BlendShapes in red**. Remove them from the fix targets and see how it goes.
+**If the fix does not look right**
+
+1. Duplicate the avatar first to preserve the original expression and settings.
+2. Stop the Avatar Blink Fix preview on the duplicate.
+3. Set the whole-face BlendShape values to 0, then recreate a similar face using BlendShapes that adjust the eyes, mouth, and other features individually.
+4. Use [Reload Expression] to load the new edits, then check the blink. If you have not set up a fix yet, start with Auto Fix.
+
+Unchecking a fix target does not change the values used for your expression edits.<br>
+The steps above rebuild the expression without the whole-face BlendShapes.
+
+Some avatars have dedicated blink-helper BlendShapes, but how to combine them depends on the avatar.<br>
+Setting a helper to the same value as the whole-face BlendShape is not a universal solution. Check the avatar's instructions too.
+
+**Presets and warnings**
+
+Shapes registered for caution in a preset may be shown in red in the list or have other notices.<br>
+BlendShapes added by an avatar update may not yet be registered in the preset. The absence of a warning does not guarantee that a shape can be fixed correctly.
 
 </details>
 

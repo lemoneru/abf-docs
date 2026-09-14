@@ -60,6 +60,9 @@ After changing the settings, press [Preview the baked result] and check the expr
 
 ## ③ Check the preview
 
+Whole-face BlendShapes may prevent blinking from being fixed correctly even in Bake Mode.<br>
+If the fix also undoes your facial edits, see [Whole-face BlendShapes](/en/faq#avatar-side).
+
 Baked BlendShapes have a value of 0 during the preview.<br>
 The edited shape is baked into the mesh, so the avatar still shows the edited expression at value 0.
 

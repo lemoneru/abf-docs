@@ -8,6 +8,9 @@ If you haven't installed the tool yet, see [Installation](/en/guide/install).
 Adjust the avatar's BlendShapes to create the expression you want.<br>
 Avatar Blink Fix repairs the blink to match this edited expression.
 
+BlendShapes that reshape the whole face may prevent blinking from being fixed correctly.<br>
+If you use them, see [Whole-face BlendShapes](/en/faq#avatar-side).
+
 If the avatar already has an Avatar Blink Fix setup, follow "Redoing your expression edits later" below.
 
 ## ② Fix the blink
