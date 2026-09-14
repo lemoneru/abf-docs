@@ -73,10 +73,58 @@ Auto Fix normally turns the preview on automatically, so the fixed face shows ri
 
 </details>
 
+<details id="expression-backup">
+<summary>Expression backups</summary>
+
+Avatar Blink Fix saves backups of your expression's BlendShape values when applying fixes and during related operations.<br>
+If your expression edits have been lost, a backup from before the problem may let you restore those values.
+
+**Restoring from a backup**
+
+Do not immediately press [Reload Expression] when your expression looks wrong. Check the backups first.<br>
+Before starting, keep a copy of your current avatar and the Data folder listed below.
+
+1. Stop Unity Play Mode and any preview in your expression-editing tool.
+2. Press [Stop preview] in Avatar Blink Fix to return to the original mesh. If the preview is already stopped, leave it as is.
+3. Open the window from Unity's [Tools] → [Avatar Blink Fix] menu and assign the avatar you want to restore.
+4. Expand [Restore BlendShape Weights from Backup] at the bottom of the window.
+5. Under [Backup], select a backup **for the same avatar, dated before the problem**. Backups for other avatars also appear, so check both the name and date.
+6. Press [Restore from Selected Backup], then [Restore] in the confirmation dialog.
+
+Check the face and its BlendShape values after restoring.<br>
+Only after confirming that the intended expression is back should you use [Reload Expression] or adjust the fix settings as needed.
+
+**Backup location**
+
+In Unity's Project window, open:
+
+`Assets/LEMONERU/Avatar Blink Fix/Data/AvatarName/`
+
+Backups are named `ABF_Backup_timestamp.json`. You do not need to edit these files directly.<br>
+This operation restores expression values. It does not automatically restore fix settings such as bake targets.
+
+**If you cannot find a backup or restore the expression**
+
+The restore section is hidden when no target avatar is assigned or no backups are available.<br>
+Without a backup from before the problem, this method may not recover your expression. Keep the Data folder and contact us through [BOOTH messages](https://lemoneru.booth.pm/items/7074770).
+
+**About the 3.0.13 update**
+
+Version 3.0.13 fixes an issue where edited values could be lost after stopping the Bake Mode preview, entering Unity Play Mode, and leaving it.<br>
+Updating does not restore values that were already lost. If this happened to you, check your backups using the steps above.
+
+If [Reload Expression] asks you to confirm that all values are 0, cancel and check your backups first unless you intentionally set them to 0.
+
+</details>
+
 <details id="preview-off">
 <summary>I stopped the preview and the face went back to how it was</summary>
 
-**That's correct behavior!** [Auto Fix](/en/guide/auto-fix) and [Auto Fix (Bake Mode)](/en/guide/bake) are non-destructive — the actual fix is **applied at upload (build) time**. Even with the preview stopped, the uploaded avatar gets the fix.
+Stopping the preview shows the face without the blinking and other fixes.<br>
+Auto Fix and Auto Fix (Bake Mode) still apply their fixes at upload (build) time, even when the preview is stopped.
+
+Losing your edited expression values, however, is not normal behavior.<br>
+If your expression edits themselves have been lost, see [Expression backups](#expression-backup).
 
 Want to see it in the scene again? Press "Preview the fix" in the Inspector.
 
