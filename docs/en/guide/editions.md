@@ -2,7 +2,7 @@
 
 The main differences are how many BlendShapes you can fix and which extra features you can use.
 
-The free edition can repair your avatar too. Try it with your expression edits first.<br>
+Before purchasing, try fixing your avatar with the free edition and check that blinking works correctly.<br>
 You can easily upgrade to the paid Complete Edition afterward.
 
 ::: warning Before purchasing
