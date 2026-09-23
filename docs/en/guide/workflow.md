@@ -89,6 +89,7 @@ To restore the avatar to its state before the fix, delete the added Avatar Blink
 
 | Your setup | Method or instructions |
 |---|---|
+| Adjusting the shape of corrected blinks or winks | See [Fine-tune or Replace BlendShapes](/en/guide/fine-tune) (Complete Edition; new window coming soon) |
 | Using values above 100 or negative values | Use Bake Mode. [Auto Fix (Recommended)] cannot reproduce these values |
 | Using Avatar Mouth Fix | Use [Normal Fix in Mesh Swap](/en/guide/meshswap#when-combining-with-avatar-mouth-fix) |
 | Not using NDMF, or keeping the 2.x-style workflow | Use [Mesh Swap (Legacy)](/en/guide/meshswap) |
