@@ -8,12 +8,15 @@ title: Fine-tune or Replace BlendShapes
 This page describes the new fine-tuning window. Its interface and steps differ from the public 3.0.16 release.
 :::
 
-Adjust the shape of a corrected blink, wink, or other BlendShape, or replace it with another shape.<br>
-This is an extra feature in the Complete Edition.
+Adjust corrected blinks and winks to get the look you want.<br>
+You can soften how the eyes close or replace a blink with smiling eyes.
+
+This feature is available in the Complete Edition.<br>
+It works with both Auto Fix (Recommended) and Auto Fix (Bake Mode).
 
 ## ① Open fine-tuning
 
-1. Select the Avatar Blink Fix object inside your fixed avatar. Both Auto Fix (Recommended) and Auto Fix (Bake Mode) support this feature.
+1. Select the Avatar Blink Fix object inside your fixed avatar.
 2. Open [Advanced Settings] in the Inspector, then press [Fine tune or replace BlendShapes] near the bottom.
 3. Find the BlendShape in the list of face thumbnails and press [Edit]. You can also search by name.
 
