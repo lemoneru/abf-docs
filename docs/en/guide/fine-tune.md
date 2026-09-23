@@ -4,8 +4,8 @@ title: Fine-tune or Replace BlendShapes
 
 # Fine-tune or Replace BlendShapes
 
-::: info Not yet released
-This page describes the new fine-tuning window. Its interface and steps differ from the public 3.0.16 release.
+::: info Available in 3.0.17 and later
+Update to 3.0.17 or later through VCC / ALCOM to use this window.
 :::
 
 Adjust corrected blinks and winks to get the look you want.<br>

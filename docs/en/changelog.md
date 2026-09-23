@@ -2,6 +2,14 @@
 
 Installed via VCC / ALCOM? New versions are just the "Update" button — no need to re-import the paid files either.
 
+## 3.0.17 (2026-09-23)
+
+- Added [BlendShape fine-tuning and replacement](/en/guide/fine-tune). Adjust blink and wink strength or shape while checking the preview, in both normal and bake modes.
+- Improved automatic wink side detection. Small movements of a few vertices on the opposite side are less likely to be classified as affecting both eyes.
+- Added presets for Hakslea, Grus, Ryouga, and Seiru.
+
+Settings files saved in this version require 3.0.17 or later. Settings saved in earlier versions can still be imported. There is no need to import the unlock key again.
+
 ## 3.0.7 (2026-08-28)
 
 - Fixed a case where **the blink fix didn't take effect when MMD BlendShapes were used in expression edits**

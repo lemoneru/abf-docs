@@ -24,7 +24,7 @@ Go for the paid edition if you want to:
 - Fix face-tracking eye-close BlendShapes too
 - Use [Auto Fix (Bake Mode)](/en/guide/bake) when expression animations conflict with the fix
 - Merge blinking animations, such as fluttering blinks, into expression animations while preserving the expressions → [Animation support (extra feature)](/en/guide/animation)
-- Adjust the shape of corrected blinks and winks (see the guide to the [upcoming fine-tuning and replacement window](/en/guide/fine-tune))
+- Adjust the shape of corrected blinks and winks (see the guide to the [fine-tuning and replacement window](/en/guide/fine-tune), available in 3.0.17 and later)
 
 ## Comparison
 
