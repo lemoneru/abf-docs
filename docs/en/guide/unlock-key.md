@@ -5,7 +5,7 @@ Purchase the Complete Edition or supporter edition on [BOOTH](https://lemoneru.b
 ## How to upgrade
 
 1. Download the unlock key from [BOOTH](https://lemoneru.booth.pm/items/7074770)
-2. Open `AvatarBlinkFix_UnlockKey.unitypackage` and import it into Unity
+2. Extract the downloaded ZIP, then open `コンプリート版解除キー_2608.unitypackage` and import it into Unity<br>(In the set that includes the tool, the file is `③コンプリート版解除キー_2608.unitypackage`.)
 3. When "Complete Edition Unlocked" appears, you are done
 
 ::: tip Other projects

@@ -77,6 +77,7 @@ Auto Fix normally turns the preview on automatically, so the fixed face shows ri
 <summary>Expression backups</summary>
 
 Avatar Blink Fix saves backups of your expression's BlendShape values when applying fixes and during related operations.<br>
+Since 3.0.23, backups are also saved right before a preview starts and 2 seconds after you change the face or Avatar Blink Fix settings. Nothing is saved when the content matches the newest backup.<br>
 If your expression edits have been lost, a backup from before the problem may let you restore those values.
 
 **Restoring from a backup**
@@ -330,8 +331,10 @@ If this happens, version 3.0.10 and later let you choose which side ABF corrects
 Left and right are from the avatar's perspective.<br>
 For example, if a right-eye wink undoes the edits on the other eye, try [Right].
 
-To undo the setting, choose [Auto] or press [×] beside the entry.<br>
-That BlendShape returns to automatic detection.
+To remove the setting, press [×] beside the entry.<br>
+That BlendShape returns to the Auto Fix preset's setting (or to automatic detection if the preset has none).
+
+If you choose [Auto], that BlendShape uses automatic detection even when the preset specifies a side (3.0.20 and later).
 
 This setting only changes the area corrected by ABF. It does not change the original expression motion, animations, or the FBX.
 

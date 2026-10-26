@@ -88,8 +88,8 @@ To restore the avatar, delete the added Avatar Blink Fix object.
 The free [BlendShapeChecker](https://lemoneru.booth.pm/items/8361673) tool can export Auto Fix presets.<br>
 This is useful when fixing the same avatar repeatedly.
 
-Place the exported JSON directly in this folder.<br>
-The tool creates the folder automatically if it does not exist.
+BlendShapeChecker exports the JSON to this folder and creates the folder if it does not exist.<br>
+Place JSON files you receive from others directly in this folder as well. Files inside subfolders are not loaded.
 
 ```text
 Assets/LEMONERU/Avatar Blink Fix/json

@@ -36,8 +36,8 @@ Turn the preview OFF before adjusting the face's BlendShapes again.
 You can also delete the object, edit the expression, then run Auto Fix again when you're done.
 
 ::: details Running Auto Fix again without deleting the object
-A dialog asks whether to replace the existing component.<br>
-Press [Replace] to rebuild the settings from the current expression.
+A "Component Already Exists" dialog appears.<br>
+Press [Replace] to remove the current settings and set them up again from the current expression. Any fine-tuning you made is also removed.
 :::
 
 ## Restoring the avatar

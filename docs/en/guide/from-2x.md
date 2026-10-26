@@ -18,7 +18,7 @@ This dialog appears when you install 3.0 in a project that already has 2.x.
 Choose [Migrate] to use the features of 3.0 while keeping your existing data and settings.
 
 ::: tip If you choose [Later]
-You can migrate later from Tools → Avatar Blink Fix → [Migrate to the new version].
+To migrate later, open the window from Tools → Avatar Blink Fix and press [Migrate to the new version] in the notice at the top.
 :::
 
 ## What changed in 3.0

@@ -88,8 +88,8 @@
 無料ツールの[BlendShapeChecker](https://lemoneru.booth.pm/items/8361673)で、Auto Fixプリセットを書き出せます。<br>
 同じアバターで繰り返し修正するときに便利です。
 
-書き出したJSONは、次のフォルダの直下に置いてください。<br>
-フォルダが無い場合は、ツールが自動で作成します。
+BlendShapeCheckerは、JSONを次のフォルダへ書き出します。フォルダが無い場合は、BlendShapeCheckerが作成します。<br>
+ほかの方から受け取ったJSONも、このフォルダの直下に置いてください。中にさらにフォルダを作ると読み込まれません。
 
 ```text
 Assets/LEMONERU/Avatar Blink Fix/json

@@ -25,8 +25,8 @@ Check the blue [Editing] section to see which BlendShape you are changing.
 
 ### Choose any BlendShape {#other-blendshapes}
 
-::: info Coming in a future update
-The target selection described below is not included in the public 3.0.17 release.
+::: info Available in 3.0.18 and later
+Update to 3.0.18 or later through VCC / ALCOM to use this option.
 :::
 
 You can choose any BlendShape on the same mesh and adjust its resulting shape.
@@ -67,7 +67,7 @@ Only the shape changes. The name of the BlendShape you are editing stays the sam
 
 Press [Restore corrected shape] to remove the replacement.
 
-To include any BlendShape in the replacement candidates, enable [Show BlendShapes outside the correction targets] in the list (the upcoming feature described above).
+To include any BlendShape in the replacement candidates, enable [Show BlendShapes outside the correction targets] in the list (3.0.18 and later).
 
 ## ③ Save your changes
 

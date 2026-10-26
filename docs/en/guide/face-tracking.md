@@ -35,6 +35,13 @@ The tool checks for `EyeClosedLeft` or `EyeClosedRight` on the face mesh, or FT 
 The setting is hidden if no matching shapes are found.
 
 Version 3.0.10 and later also detect `Eye_Left_Blink` and `Eye_Right_Blink`.
+
+The setting also appears for FT add-ons that add their FT BlendShapes during upload.
+:::
+
+::: tip Avatars fixed in Bake Mode with 3.0.20 or earlier
+For FT add-ons that add their FT BlendShapes during upload, the Bake Mode auto setup in 3.0.20 and earlier did not turn on [Include in fix] (fixed in 3.0.21).<br>
+If closing the eyes brings back the eye edits, choose [Include in fix].
 :::
 
 If [closing one eye undoes edits on the other eye](/en/faq#correction-side), follow the steps in the FAQ.

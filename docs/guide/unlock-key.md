@@ -5,7 +5,7 @@
 ## アップグレード方法
 
 1. [BOOTH](https://lemoneru.booth.pm/items/7074770)から解除キーをダウンロードする
-2. `AvatarBlinkFix_UnlockKey.unitypackage` を開き、Unityへインポートする
+2. ダウンロードしたZIPを展開し、`コンプリート版解除キー_2608.unitypackage` を開いてUnityへインポートする<br>（本体と解除キーのセットでは `③コンプリート版解除キー_2608.unitypackage` です）
 3. 「コンプリート版になりました」と表示されたら完了
 
 ::: tip 別のプロジェクトでは
