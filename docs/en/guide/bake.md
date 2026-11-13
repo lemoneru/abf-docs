@@ -74,6 +74,11 @@ Press [Stop preview] before adjusting the face's BlendShapes.<br>
 When you finish editing, press [Reload Expression].
 :::
 
+::: warning Creating expression animations
+After baking, press [Preview the baked result] and create your expressions while the preview is on, matching the face you see.<br>
+If you create them with the preview off, the expression values stack on top of the baked shape, and shapes can look too strong, such as narrower eyes.
+:::
+
 See [The Full Workflow](/en/guide/workflow) for checks before and after uploading.
 
 ## Using face tracking
