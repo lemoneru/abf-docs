@@ -2,6 +2,62 @@
 
 Installed via VCC / ALCOM? New versions are just the "Update" button — no need to re-import the paid files either.
 
+## 3.0.35 (2026-11-13)
+
+- In the bake list, BlendShapes that were not selected automatically now show the reason in small text (MMD / Default / Mouth).
+- The bake preview note now adds: "Create expression animations (FaceEmo, etc.) while looking at the face in the preview." Creating expressions with the preview off can stack the expression values on top of the baked shape, making shapes too strong, such as narrower eyes.
+- When the face mesh of an avatar in the scene goes missing and the original face mesh can be restored, a single short confirmation dialog now restores it.
+- Blinking animation is no longer added to expressions whose eyes are already closed.
+- The conflict check with expression animations did not read the original FX of avatars with FaceEmo applied, or an FX set as an AnimatorOverrideController.
+- In the bake list, checking a BlendShape during preview, reopening the Inspector and pressing Ctrl+Z removed the unchecked BlendShape from the list and did not restore its value.
+
+## 3.0.34 (2026-11-11)
+
+- When a preset with the same name exists in your project (Assets) and both copies are official releases, the newer one is now used automatically. Updating the presets package after installing the BOOTH preset bundle no longer leaves an old copy in use. Presets you edited yourself are still used as before.
+- Presets that were renamed: the old name is hidden from the list once the preset with the new name is installed, and avatars that remember the old name use the new one.
+
+## 3.0.33 (2026-11-10)
+
+- Right-click [Auto Fix (Recommended)] can now be used even when no preset matches the avatar. If a close preset exists it is suggested, and it is used only when you press [Use This]. BlendShapes that are not found are never reassigned to other ones.
+- The preset selector now has a search box and can be scrolled with the mouse wheel.
+- The preset section now tells you when a better matching preset is available.
+- When a preset with the same name exists in your project (Assets) and differs from the package version, you can review the differences and choose [Use Package Version]. Nothing changes unless you press it.
+- Avatar presets moved to a separate package, "Avatar Blink Fix Presets". VCC / ALCOM installs it together with the tool.
+- Preset matching is now done in one place. Automatic selection of fully matching presets is unchanged.
+
+## 3.0.32 (2026-11-09)
+
+- Added a preset for Repi.
+
+## 3.0.31 (2026-11-07)
+
+- Adjusted the Salt preset. The eye size, angle and height blendshapes (eye_size, eye_rotate, eye_height) are now treated as eye customizations when blinking and no longer show a caution. face_young and face_mature, which change the whole face, are no longer cancelled while blinking (the caution remains).
+
+## 3.0.30 (2026-11-07)
+
+- Fixed the Salt preset. When the eyes were customized with the eye position/width blendshapes (eye_up, eye_down, eye_in, eye_out, eye_width_up, eye_width_down), the eyes did not fully close when blinking. The same preset is selected automatically for both Salt Ver1.0.0 and Ver1.0.1.
+
+## 3.0.29 (2026-11-06)
+
+- Added presets for Miredo, Haruka, and Nakiya (+Head body). The regular Nakiya body and the +Head body each get their matching preset automatically.
+- Updated the Nakiya preset. The blink (-E1_blink) and eye expressions such as じ～ and ぐるぐる are now corrected too.
+
+## 3.0.28 (2026-11-02)
+
+- Added presets for add-on blendshapes: Alue (ASCEND add-on) and Hanka (ADDHARD add-on, Pro). Avatars without the add-on still get the regular preset.
+
+## 3.0.27 (2026-11-01)
+
+- Fixed the Salt preset. Salt's own blink is now corrected, and eye customizations are no longer removed in open-eye expressions such as angry or surprised.
+
+## 3.0.26 (2026-11-01)
+
+- Added presets for Chiyu, Rinsyu, and Salt.
+
+## 3.0.25 (2026-10-30)
+
+- Added presets for Chikage, Ranrei, and Uru.
+
 ## 3.0.24 (2026-10-23)
 
 - Added presets for Weary Angel, Lucian, and Ellel.
