@@ -14,6 +14,29 @@ outline: [2, 2]
 
 ## 🔝 Most common {#top}
 
+<details id="broken-in-game">
+<summary>It looks fine in Unity, but the eyes break or don't close in-game</summary>
+
+**First, check whether the Avatar Blink Fix correction is working.**
+
+1. Stop Unity Play Mode and any preview in your expression tool (such as FaceEmo)
+2. Select the Avatar Blink Fix object and make sure the Inspector shows [Stop preview] (the preview is ON)
+3. Select the face mesh (such as Body), then in the Skinned Mesh Renderer's [BlendShapes], move an eye-closing BlendShape slider (such as `vrc.blink` or a wink) from 0 to 100
+
+- **The eyes close cleanly:** The fix is working. The cause is usually the expression animations or face tracking. See "Fixes by cause" below.
+- **The eyes break in Unity too:** Review the fix settings. If the preset does not match, you can reselect the items with [Manual Fix](/en/guide/manual-fix). If that does not help, please [contact us](#contact).
+
+When you are done, return the slider you moved to its original value (usually 0).
+
+**Fixes by cause**
+
+1. **Conflict with expression animations:** If the Inspector shows the yellow notice and the eyes break only while expressions play, press [Switch to Bake mode] (→ [Auto Fix (Bake Mode)](/en/guide/bake)).
+2. **Zero-value entries in expression animations:** If a reused expression animation keeps the fixed BlendShape locked at 0, it conflicts. Delete the entry (curve) itself instead of setting it to 0.
+3. **Face tracking:** If the FT eye-close BlendShapes are not in the fix targets, the eyes break when FT closes them. If the FT add-on also corrects the eyes, the two corrections can collide. → [Face tracking settings](/en/guide/face-tracking)
+4. **Reset BlendShapes:** If a left/right reset BlendShape at the bottom of the face mesh's list sits at 100, one eye may snap back. Set it to 0.
+
+</details>
+
 <details id="what-is-bake">
 <summary>What is Bake Mode? How is it different from Auto Fix (Recommended)?</summary>
 
@@ -131,6 +154,36 @@ Want to see it in the scene again? Press "Preview the fix" in the Inspector.
 
 </details>
 
+<details id="prefab-apply">
+<summary>The face disappeared after applying to a Prefab / "The face mesh was lost" appeared</summary>
+
+Applying overrides to a Prefab or Prefab Variant during the preview can leave the saved face mesh empty.
+
+**If "The face mesh was lost" appears (3.0.23 and later)**
+
+Press [Restore] to put the original face mesh and bake values back into the Prefab.<br>
+The preview of the avatar in the scene ends. If you pressed it by mistake, Ctrl+Z undoes it.
+
+**If you chose [Later] or no dialog appeared**
+
+1. Select the Avatar Blink Fix object you added
+2. Open [This project] at the top of the Inspector and press [Check / recover face mesh]
+3. Review what is shown and press [Restore]
+
+If the Avatar Blink Fix record cannot restore it, you are guided to restore the mesh from the parent Prefab. Edits not saved in the parent may not come back.
+
+Once the face is back, check the face and expressions. Press [Stop preview], then apply the overrides you need again.
+
+**If you manage avatars with Prefab Variants**
+
+You can turn the preview off by default (3.0.16 and later).<br>
+Under [This project] → [ABF preview] at the top of the Inspector, choose [Turn off by default].
+
+With this setting, you start the preview yourself only when you need it. It turns off again after Play Mode or restarting Unity.<br>
+The fix is still applied at upload even while the preview is off.
+
+</details>
+
 <details id="redo-expression">
 <summary>I already fixed, but want to redo my expression edits</summary>
 
@@ -164,19 +217,6 @@ By design. Fixing a BlendShape your expression is using would **change the very 
 
 - In 3.0, [Auto Fix (Bake Mode)](/en/guide/bake) can help here: it bakes the expression into the mesh before fixing, so the expression can survive the fix
 - The classic workaround: use split left/right BlendShapes (BlinkL / BlinkR etc.) at equal values in the expression, and set the original back to 0
-
-</details>
-
-<details id="broken-in-game">
-<summary>Blinking looks broken in-game / eyes don't close</summary>
-
-Check in this order:
-
-1. **Conflict with expression animations** — if the Inspector shows the yellow notice, and it breaks only while playing expressions, press "Switch to Bake mode" (→ [Auto Fix (Bake Mode)](/en/guide/bake))
-2. **Zero-value keys in expression animations** — if an existing animation contains the fixed BlendShape with value 0, it conflicts. Remove that entry from the animation file
-3. **Reset BlendShapes** — after a fix, if a left/right reset BlendShape at the bottom of the face mesh's list sits at 100, one eye may snap back. Set it to 0
-
-When using Bake Mode, you do not need to remove the zero-value keys in step 2.
 
 </details>
 

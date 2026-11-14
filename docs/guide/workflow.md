@@ -28,6 +28,11 @@ Avatar Blink Fixは、この改変後の表情に合わせてまばたきを修�
 
 右クリックのメニューが見つからない場合は、Unity上部のTools → Avatar Blink Fixからも修正できます。
 
+::: warning PrefabにApplyする前に
+プレビュー中にPrefabやPrefab VariantへOverride（Apply）すると、Prefab側の顔メッシュが空になり、顔が表示されなくなることがあります。<br>
+Applyや保存の前に、［プレビューを終了］を押してください。→ [顔が消えたときの戻し方](/faq#prefab-apply)
+:::
+
 ## ③ 表情アニメーションを確認する
 
 アップロードする前に、表情アニメーションも確認してください。<br>

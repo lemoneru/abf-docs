@@ -79,6 +79,11 @@ After baking, press [Preview the baked result] and create your expressions while
 If you create them with the preview off, the expression values stack on top of the baked shape, and shapes can look too strong, such as narrower eyes.
 :::
 
+::: warning Before applying to a Prefab
+Applying overrides to a Prefab or Prefab Variant during the preview can leave the Prefab's face mesh empty, and the face may disappear.<br>
+Press [Stop preview] before applying or saving. → [How to restore a missing face](/en/faq#prefab-apply)
+:::
+
 See [The Full Workflow](/en/guide/workflow) for checks before and after uploading.
 
 ## Using face tracking

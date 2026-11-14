@@ -29,6 +29,11 @@ Use [Manual Fix](/en/guide/manual-fix) and select the required items.
 If you cannot find the right-click menu, you can also open the tool from Tools → Avatar Blink Fix at the top of Unity.<br>
 The right-click menu is shown in Japanese even when the tool's Language setting is English.
 
+::: warning Before applying to a Prefab
+Applying overrides to a Prefab or Prefab Variant during the preview can leave the Prefab's face mesh empty, and the face may disappear.<br>
+Press [Stop preview] before applying or saving. → [How to restore a missing face](/en/faq#prefab-apply)
+:::
+
 ## ③ Check the expression animations
 
 Check the expression animations before uploading.<br>
